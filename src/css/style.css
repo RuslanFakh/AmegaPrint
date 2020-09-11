@@ -1108,7 +1108,6 @@ footer .bottom .text a {
   display: flex;
 }
 .contact-list-main .contact-list-blocks {
-  display: none;
   max-width: 700px;
   flex-basis: 700px;
   background: #FFFFFF;
@@ -1205,6 +1204,7 @@ footer .bottom .text a {
   color: #D32F2F;
 }
 .contact-list-main .contact-list-map {
+  display: none;
   max-width: 700px;
   flex-basis: 700px;
   background: #FFFFFF;

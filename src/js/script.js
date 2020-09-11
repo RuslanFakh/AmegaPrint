@@ -1,127 +1,36 @@
-var $services_main_blocks = $('.services_main_blocks');
+//contact_page
+let listContact = document.querySelector('.contact-list .title-tabs .btn-list')
+let mapContact = document.querySelector('.contact-list .title-tabs .btn-map')
+let listBlock = document.querySelector('.contact-list .contact-list-blocks')
+let mapBlock = document.querySelector('.contact-list .contact-list-map')
 
-$services_main_blocks.slick({
-     dots: true,
-     infinite: true,
-     arrow: true,
-     autoplay: true,
-     speed: 300,
-     slidesToShow: 4,
-     slidesToScroll: 4,
-     responsive: [
-       {
-         breakpoint: 1024,
-         settings: {
-           slidesToShow: 3,
-           slidesToScroll: 3,
-           infinite: true,
-           dots: true
-         }
-       },
-       {
-         breakpoint: 600,
-         settings: {
-           slidesToShow: 2,
-           slidesToScroll: 2
-         }
-       },
-       {
-         breakpoint: 480,
-         settings: {
-           slidesToShow: 1,
-           slidesToScroll: 1
-         }
-       }
-     ]
-   });
+let costTab = document.querySelector('.price-list .title-tabs .btn-cost')
+let possibilityTab = document.getElementById('btn-possibility')
 
+listContact.onclick = function(e){
+  e.preventDefault();
+  listBlock.style.display = 'block'
+  mapBlock.style.display = 'none'
+  listContact.classList.add('active')
+  mapContact.classList.remove('active')
+}
+mapContact.onclick = function(e){
+  e.preventDefault();
+  listBlock.style.display = 'none'
+  mapBlock.style.display = 'block'
+  listContact.classList.remove('active')
+  mapContact.classList.add('active')
+}
 
+//item_page
+// let costTab = document.querySelector('.price-list .title-tabs .btn-cost')
+// let possibilityTab = document.getElementById('btn-possibility')
 
-
-$(document).ready(function(){
-
-$('.readmore').each(function(index) {
- var $this = $(this)
- $this.on('click', function() {
-   var number = $this.data('slide_number');
-   console.log(number);
-   $('.work_main_blocks').slick('slickGoTo', number -1);
- });
-});
-
-
- $('.work_main_blocks').slick({
-   dots: true,
-   infinite: false,
-   speed: 300,
-   slidesToShow: 3,
-   slidesToScroll: 3,
-   responsive: [
-     {
-       breakpoint: 1100,
-       settings: {
-         slidesToShow: 2,
-         slidesToScroll: 2,
-         infinite: true,
-         dots: true
-       }
-     },
-     {
-       breakpoint: 770,
-       settings: {
-         slidesToShow: 1,
-         slidesToScroll: 1
-       }
-     },
-     {
-       breakpoint: 480,
-       settings: {
-         slidesToShow: 1,
-         slidesToScroll: 1
-       }
-     }
-   ]
- });
-
- $('.review_main_blocks').slick({
-   dots: true,
-   infinite: true,
-   autoplay: true,
-   speed: 300,
-   slidesToShow: 1,
-   slidesToScroll: 1,
-   responsive: [
-     {
-       breakpoint: 1100,
-       settings: {
-         slidesToShow: 1,
-         slidesToScroll: 1,
-         infinite: true,
-         dots: true
-       }
-     },
-     {
-       breakpoint: 770,
-       settings: {
-         slidesToShow: 1,
-         slidesToScroll: 1
-       }
-     },
-     {
-       breakpoint: 480,
-       settings: {
-         slidesToShow: 1,
-         slidesToScroll: 1
-       }
-     }
-   ]
- });
-
- var myFullpage = new fullpage('#fullpage', {
-   licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-   anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage'],
-   menu: 'nav',
-   lazyLoad: true
-});
-
-});
+costTab.onclick = function(e){
+  e.preventDefault();
+  alert(1)
+}
+possibilityTab.onclick = function(e){
+  e.preventDefault();
+  alert(2)
+}
