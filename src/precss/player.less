@@ -1,0 +1,65 @@
+.player{
+  padding: 130px 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/Rectangle 62.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0px 0px 19px rgba(95, 95, 95, 0.11);
+  text-align: center;
+  a{
+    margin: 0 auto 12px;
+    display: inline-block;
+    &:hover{
+      img{
+        &.b{
+          display: inline-block;
+        }
+        &.r{
+          display: none;
+        }
+      }
+    }
+    img{
+      &.b{
+        display: none;
+      }
+    }
+  }
+  p{
+    font-family: Exo2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    &.put-btn{
+      text-transform: uppercase;
+    }
+    &.under{
+      font-size: 20px;
+      span{
+        font-size: 34px;
+        color: #D32F2F;
+        //text-shadow: 0 0 5px #FFFFFF;
+
+        text-shadow:
+          -0   -1px 0   #FFFFFF,
+          0   -1px 0   #FFFFFF,
+          -0    1px 0   #FFFFFF,
+          0    1px 0   #FFFFFF,
+          -1px -0   0   #FFFFFF,
+          1px -0   0   #FFFFFF,
+          -1px  0   0   #FFFFFF,
+          1px  0   0   #FFFFFF,
+          -1px -1px 0   #FFFFFF,
+          1px -1px 0   #FFFFFF,
+          -1px  1px 0   #FFFFFF,
+          1px  1px 0   #FFFFFF,
+          -1px -1px 0   #FFFFFF,
+          1px -1px 0   #FFFFFF,
+          -1px  1px 0   #FFFFFF,
+          1px  1px 0   #FFFFFF;
+      }
+    }
+  }
+}

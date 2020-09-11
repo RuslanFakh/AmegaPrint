@@ -1,0 +1,98 @@
+.consultation{
+  margin: 50px auto;
+  &-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .pic-block{
+      .col();
+      .size(6);
+      img{
+        transform: scale(0.95);
+      }
+      position: relative;
+      &::after{
+        content: '';
+        background: url('../img/fig-cons.svg') no-repeat;
+        width: 520px;
+        height: 520px;
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        //transform: scale(1.2);
+      }
+    }
+    .text-block{
+      .col();
+      .size(6);
+      h2{
+        font-family: Exo2;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 30px;
+        color: #000000;
+      }
+      p{
+        font-family: Exo2;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 19px;
+        color: #000000;
+        margin: 30px auto;
+      }
+      a{
+        &.question{
+          display: inline-block;
+          text-decoration: none;
+          font-family: Exo2;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 22px;
+          text-align: center;
+          color: #FFFFFF;
+          padding: 18px 45px;
+          background: #D32F2F;
+          border-radius: 7px;
+          &:hover{
+            background: #000000;
+          }
+        }
+
+      }
+      .social{
+        a{
+          display: inline-block;
+          text-decoration: none;
+          padding: 10px 12px;
+          border: solid 2px #D32F2F;
+          border-radius: 7px;
+          margin-right: 15px;
+          img{
+            width: 28px;
+            height: 28px;
+            &.b{
+              display: none;
+            }
+
+          }
+          &:hover{
+            border: solid 2px #000000;
+            img{
+              &.b{
+                display: inline-block;
+              }
+              &.r{
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
