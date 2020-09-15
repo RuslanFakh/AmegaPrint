@@ -13,8 +13,8 @@ const gulp = require('gulp'),
     cleanCss = require('gulp-clean-css'),
     uglifyJs = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
-    browserSync = require('browser-sync').create();
-
+    browserSync = require('browser-sync').create(),
+    gcmq = require('gulp-group-css-media-queries');
 
 
 const path = {
@@ -71,11 +71,13 @@ function lessDev() {
 }
 
 function css() {
+    console.log(1);
     return gulp.src(path.src.css)
         .pipe(plumber(plumberOptions))
         .pipe(include())
         .pipe(autoprefixer(autoprefixerOptions))
         .pipe(cleanCss({ level: 2 }))
+        .pipe(gcmq())
         .pipe(gulp.dest(path.build.css))
         .pipe(browserSync.stream());
 }

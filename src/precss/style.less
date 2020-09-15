@@ -26,7 +26,8 @@ body{
 @import 'map.less';
 @import 'footer.less';
 
-@import 'slick.less';
+// @import 'slick.less';
+// @import 'slick-theme.less';
 
 
 //item_page
@@ -280,4 +281,119 @@ table {
       font-weight: bold;
     }
   }
+}
+
+.select{
+  // width: 200px;
+	position: relative;
+  text-align-last: left;
+  padding: 5px 0 5px 30px;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  border-radius: 40px;
+  background: url('../img/Vector-contact.svg') no-repeat;
+  background-position: 10px 49%;
+  width: 170px;
+  // z-index: 10;
+  // font-weight: normal;
+  line-height: 13px;
+
+  font-style: italic;
+  font-weight: normal;
+
+  color: #000000;
+
+	&__current{
+    font-family: Exo2;
+    font-size: 12px;
+    line-height: 14px;
+    font-style: italic;
+    width: 100%;
+    color: #C5C5C5;
+    background: #ffffff;
+    border: none;
+    width: 130px;
+		// border: 1px solid @border-color;
+		// padding: @padding;
+		// border-radius: @border-radius;
+		position: relative;
+		// cursor: pointer;
+		// box-shadow: 0 0 5px 3px rgba(#ccc, .2);
+		// background-color: darken(@light, 30);
+		// &::after{
+		// 	content: '';
+		// 	position: absolute;
+		// 	// right: @padding;
+		// 	top: 50%;
+		// 	transform: translateY(-50%);
+		// 	width: 0;
+    //   height: 0;
+    &::after{
+      content: '';
+      background-image: url(../img/select-arrow.svg);
+      background-repeat: no-repeat;
+      width: 9px;
+      height: 9px;
+
+      position: absolute;
+      top: 40%;
+      right: 0;
+    }
+    &:focus{
+      outline: none;
+    }
+			// border-style: solid;
+			// border-width: (@padding / 2) (@padding / 2) 0 (@padding / 2);
+      // border-color: #000 transparent transparent transparent;
+    // }
+  }
+
+	&__list{
+    font-family: Exo2;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    display: block;
+		width: 100%;
+		overflow: hidden;
+		border: 1px solid #E5E5E5;
+		margin-top: 5px;
+		border-radius: 13px;
+		display: none;
+		&--show{
+      // top: -10px;
+      left: 0;
+      display: block;
+      position: absolute;
+      z-index: 10;
+
+    }
+  }
+
+	&__item{
+    // &:first-child{
+    //   padding-top: 35px;
+    // }
+    background: #ffffff;
+    font-family: Exo2;
+    font-size: 12px;
+    line-height: 14px;
+    font-size: 11px;
+    .little{
+      font-size: 9px;
+    }
+    padding: 5px 15px;
+		cursor: pointer;
+		border: none;
+		display: inline-block;
+		width: 100%;
+		&:hover, &:focus{
+      background-color: #D02F2F;
+      color: #ffffff;
+    }
+  }
+
+
 }

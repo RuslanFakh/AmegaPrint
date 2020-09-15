@@ -59,14 +59,46 @@
                 placeholder="Введите запрос"
               />
             </div>
-            <div>
+            <div class="select-block">
               <label for="contact">Контакты</label>
-              <input
-                type="text"
-                name=""
-                id="contact"
-                placeholder="Выберите адрес"
-              />
+              <div class="select">
+                <input class="select__input" type="hidden", name="number">
+                <button class="select__current">One</button>
+                <div class="select__list">
+                  <button class="select__item" data-value="One">
+                    <div>ул. 8 марта, 32/1</div>
+                    <div class="little">(Главный филиал)</div>
+                  </button>
+                  <button class="select__item" data-value="Two">ул. Менделеева, 150/4</button>
+                  <button class="select__item" data-value="Three">ул. Космонавтов, 3</button>
+                  <button class="select__item" data-value="Four">
+                    <div>пл. Верхнеторговая, 1</div>
+                    <div class="little">("Гостиный двор")</div>
+                  </button>
+                  <button class="select__item" data-value="Five">
+                    <div>ул. Менделеева, 205а</div>
+                    <div class="little">(Лайфстайл-центр "Башкирия")</div>
+                  </button>
+                </div>
+              </div>
+              <!-- <select name="" id="">
+                <option style="color: #C5C5C5;" value="" hidden disabled selected>Выберите адрес</option>
+                <option value="">
+                  <p>ул. 8 марта, 32/1</p>
+                </option>
+                <option value="">
+                  <p>ул. Менделеева, 150/4</p>
+                </option>
+                <option value="">
+                  <p>ул. Космонавтов, 3</p>
+                </option>
+                <option value="">
+                  <p>пл. Верхнеторговая, 1</p>
+                </option>
+                <option value="">
+                  <p>ул. Менделеева, 205а</p>
+                </option>
+              </select> -->
             </div>
           </div>
           <div class="phone">
@@ -160,9 +192,15 @@
               </div>
             </div>
             <div class="slider-block-slider">
-              <div class="slider-block-slider-item"><img src="./img/slider_main.png" alt=""></div>
-              <div class="slider-block-slider-item"><img src="./img/slider_main.png" alt=""></div>
-              <div class="slider-block-slider-item"><img src="./img/slider_main.png" alt=""></div>
+                <div class="items">
+                  <img class="item opacity" src="./img/slider_main.png" alt="">
+                  <img class="item" src="./img/slider_main.png" alt="">
+                  <img class="item " src="./img/slider_main.png" alt="">
+                </div>
+              <div class="btn-slider">
+                <a class="prev" href=""><img src="./img/slider-left.svg" alt=""></a>
+                <a class="next" href=""><img src="./img/slider-right.svg" alt=""></a>
+              </div>
             </div>
           </div>
         </div>
@@ -468,10 +506,6 @@
       </footer>
     </div>
 
-
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
-    <script type="text/javascript" src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
