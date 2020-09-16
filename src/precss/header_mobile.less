@@ -1,0 +1,35 @@
+.header_mobile{
+  display: none;
+  .xs-block({
+    display: block;
+  });
+
+  .bg{
+    &:nth-child(2){
+      padding-top: 0;
+      padding-bottom: 7px;
+    }
+    padding: 11px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    .btn-menu{
+      background: #FFFFFF;
+      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+      border-radius: 7px;
+      padding: 10px 14px;
+      min-width: 16px;
+    }
+    label{
+      font-family: Exo2;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 12px;
+      color: #000000;
+      margin-left: 5px;
+    }
+  }
+}

@@ -7,6 +7,9 @@
     .pic-block{
       .col();
       .size(6);
+      .xs-block({
+        display: none;
+      });
       img{
         transform: scale(0.95);
       }
@@ -27,6 +30,7 @@
     .text-block{
       .col();
       .size(6);
+      .size-xs(12);
       h2{
         font-family: Exo2;
         font-style: normal;
@@ -36,6 +40,9 @@
         color: #000000;
       }
       p{
+        .xs-block({
+          margin: 18px auto;
+        });
         font-family: Exo2;
         font-style: normal;
         font-weight: 300;

@@ -1,3 +1,4 @@
+///////////////////////slider
 const slides = document.querySelectorAll('.slider-block-slider .item')
 const btn_prev = document.querySelector('.btn-slider .prev')
 const btn_next = document.querySelector('.btn-slider .next')
@@ -28,8 +29,21 @@ btn_prev.onclick = function(e){
   slides[step].classList.add('opacity')
 }
 
+///////////////////////mobile menu
+const btn_menu = document.querySelector('.btn-menu')
+const btn_close = document.querySelector('.close')
+const mobile_block = document.querySelector('.bg-mobile-menu')
 
-//select
+btn_menu.onclick = function(e){
+	e.preventDefault()
+	mobile_block.style.display = 'block'
+}
+btn_close.onclick = function(e){
+	e.preventDefault()
+	mobile_block.style.display = 'none'
+}
+
+///////////////////////select
 document.querySelectorAll('.select').forEach(select => { //Выбриаем все выпадающие списки на странице
 
 	let selectCurrent = select.querySelector('.select__current'),

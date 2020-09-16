@@ -1,19 +1,46 @@
 nav {
-  display: none;
+  // display: none;
   .xs-block({
-    display: none;
+    // display: none;
   });
   .nav-bg {
 
     background: #d32f2f;
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+    .xs-block({
+      background: none;
+      box-shadow: none;
+    });
     ul {
 
       display: flex;
       justify-content: space-around;
       align-items: center;
       padding: 20px 0;
+      .xs-block({
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 0;
+      });
       li {
+        // .col();
+        // .size-xs(6);
+        .xs-block({
+          background: #d32f2f;
+          padding: 9px;
+          box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+          border-radius: 7px;
+          text-align: left;
+          margin-bottom: 6px;
+          width: 44%;
+          // margin: 0 -10px 6px -10px;
+          // &:nth-child(even){
+          //   margin-left: 0;
+          // }
+          // &:nth-child(odd){
+          //   margin-right: 0;
+          // }
+        });
         // padding: 0 25px;
         position: relative;
         // &::after{
@@ -32,12 +59,21 @@ nav {
           background: #E5E5E5;
           min-width: 1px;
           min-height: 30px;
+          .xs-block({
+            display: none;
+          });
         }
         a {
+
           padding: 0 25px;
           display: flex;
           align-items: center;
           justify-content: space-around;
+          .xs-block({
+            justify-content: start;
+            padding: 0;
+            // width: 100%;
+          });
           text-decoration: none;
           &:hover{
             .nav-block-img{
@@ -52,6 +88,9 @@ nav {
             border-radius: 50%;
             position: relative;
             margin: 0 13px;
+            .xs-block({
+              margin: 0 13px 0 0;
+            });
             img {
               position: absolute;
               top: 50%;
@@ -66,6 +105,10 @@ nav {
             }
           }
           p {
+            .xs-block({
+              font-size: 11px;
+              line-height: 12px;
+            });
             font-family: Exo2;
             font-style: normal;
             font-weight: bold;

@@ -54,3 +54,21 @@ function block(item){
 function none(item){
   item.style.display = 'none'
 }
+
+$('.slider-2-img').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-2-line'
+});
+$('.slider-2-line').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.slider-2-img',
+  dots: false,
+  centerMode: true,
+  focusOnSelect: true,
+  accessibility: true,
+  arrows: true,
+});

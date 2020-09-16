@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.7" />
+    <meta name="viewport" content="width=device-width" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/style.css" />
     <!-- <link rel="stylesheet" href="slick/slick.css" />
@@ -28,6 +28,40 @@
           <div></div>
         </div>
       </div>
+    </div>
+    <section class="bg-mobile-menu">
+      <section class="mobile-menu">
+        <div class="top">
+          <div class="input-block">
+            <label for="search">Поиск по сайту</label>
+            <input
+              type="text"
+              name=""
+              id="search_m"
+              placeholder="Введите запрос"
+            />
+          </div>
+          <div class="close">
+            <a href="">
+              <img src="./img/menu-close.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="list">
+          <ul>
+            <li><a href="">Заказ онлайн</a></li>
+            <li><a href="">Скидки</a></li>
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Информация для клиентов</a></li>
+            <li><a href="">Услуги бизнесу</a></li>
+            <li><a href="">Письмо директору</a></li>
+            <li><a href="">Вакансии</a></li>
+            <li><a href="">Блог</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </div>
+      </section>
+    </section>
       <section class="top-line">
         <section class="wrapper">
           <div class="list">
@@ -81,24 +115,6 @@
                   </button>
                 </div>
               </div>
-              <!-- <select name="" id="">
-                <option style="color: #C5C5C5;" value="" hidden disabled selected>Выберите адрес</option>
-                <option value="">
-                  <p>ул. 8 марта, 32/1</p>
-                </option>
-                <option value="">
-                  <p>ул. Менделеева, 150/4</p>
-                </option>
-                <option value="">
-                  <p>ул. Космонавтов, 3</p>
-                </option>
-                <option value="">
-                  <p>пл. Верхнеторговая, 1</p>
-                </option>
-                <option value="">
-                  <p>ул. Менделеева, 205а</p>
-                </option>
-              </select> -->
             </div>
           </div>
           <div class="phone">
@@ -116,6 +132,54 @@
           </div>
         </div>
       </header>
+      <section class="header_mobile">
+        <div class="bg">
+          <div class="logo-block">
+            <a href="#"><img src="./img/logo-mobile.svg" alt="" /></a>
+          </div>
+          <div class="btn-order-online">
+            <a href="">
+              <p>Заказ онлайн</p>
+              <img src="./img/btn-order-online.svg" alt="" />
+            </a>
+          </div>
+          <div class="btn-menu">
+            <a href=""><img src="./img/menu 1.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="bg">
+          <div class="select-block">
+            <label for="contact">Контакты</label>
+            <div class="select">
+              <input class="select__input" type="hidden", name="number">
+              <button class="select__current">One</button>
+              <div class="select__list">
+                <button class="select__item" data-value="One">
+                  <div>ул. 8 марта, 32/1</div>
+                  <div class="little">(Главный филиал)</div>
+                </button>
+                <button class="select__item" data-value="Two">ул. Менделеева, 150/4</button>
+                <button class="select__item" data-value="Three">ул. Космонавтов, 3</button>
+                <button class="select__item" data-value="Four">
+                  <div>пл. Верхнеторговая, 1</div>
+                  <div class="little">("Гостиный двор")</div>
+                </button>
+                <button class="select__item" data-value="Five">
+                  <div>ул. Менделеева, 205а</div>
+                  <div class="little">(Лайфстайл-центр "Башкирия")</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="phone">
+            <p>Главный филиал</p>
+            <div class="number">
+              <img src="./img/phone-red.svg" alt="" />
+              <a href="tel:8-347-246-38-99">+7 (347) <b>246-38-99</b></a>
+            </div>
+          </div>
+        </div>
+      </section>
       <nav>
         <div class="nav-bg">
           <div class="wrapper">
@@ -243,6 +307,18 @@
               </div>
             </div>
             <div class="menu-right">
+              <div class="side-block">
+                <div class="contain">
+                  <a class="red" href="">
+                    <img src="./img/side-block-1.svg" alt="">
+                    <p>онлайн оплата</p>
+                  </a>
+                  <a class="white" href="">
+                    <img src="./img/side-block-2.svg" alt="">
+                    <p>онлайн чат</p>
+                  </a>
+                </div>
+              </div>
               <p class="top">Копировальный центр АмегаПРИНТ</p>
               <p class="main">Новый формат в печати</p>
               <p class="text">
@@ -459,6 +535,41 @@
 
       </section>
       <footer>
+        <div class="mobile">
+          <div class="bg">
+            <div class="logo-block">
+              <a href="#"><img src="./img/logo-mobile.svg" alt="" /></a>
+            </div>
+            <div class="btn-order-online">
+              <a href="">
+                <p>Заказ онлайн</p>
+                <img src="./img/btn-order-online.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="bg2">
+            <div class="list">
+              <ul>
+                <li><a href="">Заказ онлайн</a></li>
+                <li><a href="">Скидки</a></li>
+                <li><a href="">Доставка</a></li>
+                <li><a href="">Информация для клиентов</a></li>
+                <li><a href="">Услуги бизнесу</a></li>
+                <li><a href="">Письмо директору</a></li>
+                <li><a href="">Вакансии</a></li>
+                <li><a href="">Блог</a></li>
+                <li><a href="">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="phone">
+              <p>Главный филиал</p>
+              <div class="number">
+                <img src="./img/phone-red.svg" alt="" />
+                <a href="tel:8-347-246-38-99">+7 (347) <b>246-38-99</b></a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="wrapper">
           <div class="top">
             <div>
