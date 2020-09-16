@@ -1177,6 +1177,10 @@ footer .mobile .bg2 .list ul li a {
   opacity: .4;
 }
 
+footer .mobile .bg2 .phone a {
+  font-size: 12px;
+}
+
 footer .bottom {
   background: #000;
   padding-top: 10px;
@@ -3217,6 +3221,100 @@ table tr:first-child th:last-child {
   .wrapper {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  header .wrapper .logo-block img {
+    max-width: 100px;
+  }
+
+  nav .nav-bg ul li {
+    width: 46%;
+    padding: 5px;
+  }
+
+  nav .nav-bg ul li a .nav-block-img {
+    margin: 0 5px 0 0;
+  }
+
+  .slider .slider-block .slider-block-text .under {
+    width: 100%;
+  }
+
+  .menu-container .menu-left-blocks {
+    margin: 0 -15px;
+  }
+
+  .menu-container .menu-left-blocks-block {
+    padding: 5px;
+    width: 46%;
+  }
+
+  .header_mobile .bg {
+    padding: 10px 5px;
+  }
+
+  .header_mobile .bg .btn-menu {
+    padding: 6px 10px;
+  }
+
+  .header_mobile .bg label {
+    font-size: 10px;
+  }
+
+  .btn-order-online a p {
+    font-size: 10px;
+    padding: 3px 25px 3px 8px;
+  }
+
+  .btn-order-online a img {
+    max-width: 30px;
+  }
+
+  .phone p {
+    font-size: 10px;
+  }
+
+  .phone .number img {
+    margin: 0 2px 0 0;
+    max-width: 12px;
+  }
+
+  .phone .number a {
+    font-size: 13px;
+  }
+
+  .btn-order-online-rigth {
+    margin: 20px 0 20px 10px;
+  }
+
+  .btn-order-online-rigth img {
+    max-width: 40px;
+  }
+
+  .btn-order-online-rigth p {
+    padding: 8px 20px 8px 60px;
+  }
+
+  .side-menu a {
+    font-size: 12px;
+  }
+
+  .side-menu a img {
+    padding: 10px;
+  }
+
+  .title-tabs {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .title-tabs a {
+    min-width: 100%;
+    padding: 10px 5px;
+  }
+
+  .select {
+    padding: 2px 0 2px 30px;
   }
 }
 

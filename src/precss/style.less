@@ -74,13 +74,19 @@ body{
       background: #000000;
       border-radius: 7px;
       padding: 8px 32px 8px 12px;
-
+      .xxs-block({
+        font-size: 10px;
+        padding: 3px 25px 3px 8px;
+      });
     }
     img{
       display: block;
       margin-left: -20px;
       .xs-block({
         max-width: 38px;
+      });
+      .xxs-block({
+        max-width: 30px;
       });
     }
   }
@@ -97,6 +103,9 @@ body{
     .xs-block({
       line-height: 24px;
     });
+    .xxs-block({
+      font-size: 10px;
+    });
   }
   .number{
     display: flex;
@@ -107,12 +116,19 @@ body{
       .xs-block({
         max-width: 14px;
         white-space: nowrap;
-      })
+      });
+      .xxs-block({
+        margin: 0 2px 0px 0;
+        max-width: 12px;
+      });
     }
     a{
       .xs-block({
         font-size: 16px;
         line-height: 19px;
+      });
+      .xxs-block({
+        font-size: 13px;
       });
       display: block;
       text-decoration: none;
@@ -133,6 +149,9 @@ body{
       background: #D32F2F;
     }
   }
+  .xxs-block({
+    margin: 20px 0 20px 10px;
+  });
   margin: 30px 0;
   text-decoration: none;
   font-family: Exo2;
@@ -151,12 +170,18 @@ body{
     margin-right: -40px;
     z-index: 10;
     transform: scale(1.2);
+    .xxs-block({
+      max-width: 40px;
+    });
   }
   p{
     display: block;
     background: #000000;
     padding: 13px 50px 13px 80px;
     border-radius: 7px;
+    .xxs-block({
+      padding: 8px 20px 8px 60px;
+    });
   }
 }
 table {
@@ -235,6 +260,9 @@ table {
       width: 49%;
       // margin: 5px;
     });
+    .xxs-block({
+      font-size: 12px;
+    });
     text-decoration: none;
     font-family: Exo2;
     font-style: normal;
@@ -253,11 +281,18 @@ table {
     img {
       display: block;
       padding: 13px;
+      .xxs-block({
+        padding: 10px;
+      });
     }
   }
 }
 .title-tabs {
   display: flex;
+  .xxs-block({
+    display: block;
+    margin: 10px 0;
+  });
   .xs-block({
     margin-top: 10px;
   });
@@ -272,6 +307,10 @@ table {
       }
       // min-width: 29%;
       padding: 5px;
+    });
+    .xxs-block({
+      min-width: 100%;
+      padding: 10px 5px;
     });
     z-index: 10;
     text-decoration: none;
@@ -334,6 +373,9 @@ table {
 .select{
   .xs-block({
     width: 140px;
+  });
+  .xxs-block({
+    padding: 2px 0 2px 30px;
   });
   // width: 200px;
 	position: relative;
