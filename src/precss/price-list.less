@@ -3,8 +3,11 @@
   &-main {
     display: flex;
     align-items: flex-start;
+    .xs-block({
+      flex-direction: column-reverse;
+      overflow-y: hidden;
+    });
     .cost-block {
-      // display: none;
       .price-list-blocks {
         background: #ffffff;
         box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
@@ -24,8 +27,12 @@
             text-transform: uppercase;
             margin: 0 30px 0 20px;
             // width: 70px;
+            .xs-block({
+              margin: 0 ;
+            });
             .col();
             .size(2);
+            .size-xs(3);
           }
           .table-block {
             p {
@@ -68,14 +75,24 @@
       }
     }
     .possibility {
+      .col();
+      .size-xs(12);
+      .xs-block({
+        flex-basis: 100px;
+      });
       display: none;
       background: #ffffff;
-      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+      box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.08);
       border-radius: 7px;
       padding: 23px;
       flex-basis: 700px;
       max-width: 700px;
+      // max-height: 100%;
       p {
+        .xs-block({
+          margin: 5px 0;
+          width: inherit;
+        });
         font-family: Exo2;
         font-style: normal;
         font-weight: 300;
@@ -86,6 +103,9 @@
       }
     }
     .video-block{
+      .xs-block({
+        flex-basis: 100px;
+      });
       display: none;
       background: #ffffff;
       box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);

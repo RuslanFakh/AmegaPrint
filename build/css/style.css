@@ -1617,6 +1617,20 @@ footer .bottom .text a {
   z-index: 1000;
 }
 
+.service-main .slider-2 a {
+  position: absolute;
+  z-index: 1000;
+  bottom: 10px;
+}
+
+.service-main .slider-2 a.btn-prev {
+  left: 7px;
+}
+
+.service-main .slider-2 a.btn-next {
+  right: 7px;
+}
+
 .service-main .slider-2 img {
   border-radius: 7px;
 }
@@ -1741,6 +1755,7 @@ footer .bottom .text a {
 }
 
 .offer .links-block a {
+  margin-top: 10px;
   text-decoration: none;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1796,6 +1811,10 @@ footer .bottom .text a {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.maybe-interes-blocks-block img {
+  border-radius: 10px;
 }
 
 .maybe-interes-blocks-block p {
@@ -1924,10 +1943,15 @@ footer .bottom .text a {
 }
 
 .price-list-main .possibility {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
   display: none;
   background: #fff;
-  -webkit-box-shadow: 0 4px 16px rgba(0,0,0,.08);
-  box-shadow: 0 4px 16px rgba(0,0,0,.08);
+  -webkit-box-shadow: 4px 4px 16px rgba(0,0,0,.08);
+  box-shadow: 4px 4px 16px rgba(0,0,0,.08);
   border-radius: 7px;
   padding: 23px;
   -webkit-flex-basis: 700px;
@@ -2011,9 +2035,6 @@ footer .bottom .text a {
 
 .contact-list-main .contact-list-blocks {
   max-width: 700px;
-  -webkit-flex-basis: 700px;
-  -ms-flex-preferred-size: 700px;
-  flex-basis: 700px;
   background: #fff;
   -webkit-box-shadow: 0 4px 16px rgba(0,0,0,.08);
   box-shadow: 0 4px 16px rgba(0,0,0,.08);
@@ -2618,11 +2639,11 @@ table tr:first-child th:last-child {
 
 .bg-mobile-menu {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: rgba(0,0,0,.59);
   -webkit-backdrop-filter: blur(5px);
@@ -3025,6 +3046,103 @@ table tr:first-child th:last-child {
     display: block;
   }
 
+  .service-main {
+    display: block;
+  }
+
+  .service-main .list {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .service-main .slider-2 {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .offer h2 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .offer img {
+    float: none;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .offer .links-block {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .maybe-interes-blocks {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .price-list-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    overflow-y: hidden;
+  }
+
+  .price-list-main .cost-block .price-list-blocks .list-item .title {
+    margin: 0;
+    width: -webkit-calc(25% - 30px);
+    width: calc(25% - 30px);
+  }
+
+  .price-list-main .possibility {
+    width: -webkit-calc(100% - 30px);
+    width: calc(100% - 30px);
+  }
+
+  .price-list-main .possibility {
+    -webkit-flex-basis: 100px;
+    -ms-flex-preferred-size: 100px;
+    flex-basis: 100px;
+  }
+
+  .price-list-main .possibility p {
+    margin: 5px 0;
+    width: inherit;
+  }
+
+  .price-list-main .video-block {
+    -webkit-flex-basis: 100px;
+    -ms-flex-preferred-size: 100px;
+    flex-basis: 100px;
+  }
+
+  .contact-list h2 {
+    margin: 10px 0;
+  }
+
+  .contact-list-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    overflow-y: hidden;
+  }
+
+  .contact-list-main .contact-list-map {
+    -webkit-flex-basis: 100px;
+    -ms-flex-preferred-size: 100px;
+    flex-basis: 100px;
+  }
+
   .btn-order-online a p {
     font-size: 12px;
     padding: 7px 27px 7px 10px;
@@ -3047,6 +3165,43 @@ table tr:first-child th:last-child {
   .phone .number a {
     font-size: 16px;
     line-height: 19px;
+  }
+
+  .side-menu {
+    max-width: 400px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .side-menu a {
+    width: 49%;
+  }
+
+  .title-tabs {
+    margin-top: 10px;
+  }
+
+  .title-tabs a {
+    padding: 5px;
+  }
+
+  .title-tabs a:first-child {
+    min-width: 85px;
+  }
+
+  .title-tabs a:nth-child(2) {
+    max-width: 130px;
   }
 
   .select {

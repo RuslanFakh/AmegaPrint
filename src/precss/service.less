@@ -10,9 +10,13 @@
   }
   &-main{
     display: flex;
+    .xs-block({
+      display: block;
+    });
     .list{
       .col();
       .size(6);
+      .size-xs(12);
       ul{
         margin-left: 15px;
         li{
@@ -48,6 +52,7 @@
     .slider-2{
       .col();
       .size(6);
+      .size-xs(12);
       position: relative;
       .text{
         font-family: Exo2;
@@ -67,6 +72,17 @@
         top: 10px;
         left: 10px;
         z-index: 1000;
+      }
+      a{
+        position: absolute;
+        z-index: 1000;
+        bottom: 10px;
+        &.btn-prev{
+          left: 7px;
+        }
+        &.btn-next{
+          right: 7px;
+        }
       }
       img{
         border-radius: 7px;
@@ -113,6 +129,7 @@
       }
       .slider-2-line{
         margin-top: -35px;
+
         .slick-slide{
           margin: 3px;
         }

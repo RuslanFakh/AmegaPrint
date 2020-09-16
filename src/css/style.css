@@ -1503,12 +1503,22 @@ footer .bottom .text a {
 .service-main {
   display: flex;
 }
+@media screen and (max-width: 375px) {
+  .service-main {
+    display: block;
+  }
+}
 .service-main .list {
   box-sizing: border-box;
   word-wrap: break-word;
   margin-left: 15px;
   margin-right: 15px;
   width: calc(50% - 30px);
+}
+@media screen and (max-width: 375px) {
+  .service-main .list {
+    width: calc(100% - 30px);
+  }
 }
 .service-main .list ul {
   margin-left: 15px;
@@ -1548,6 +1558,11 @@ footer .bottom .text a {
   width: calc(50% - 30px);
   position: relative;
 }
+@media screen and (max-width: 375px) {
+  .service-main .slider-2 {
+    width: calc(100% - 30px);
+  }
+}
 .service-main .slider-2 .text {
   font-family: Exo2;
   font-style: normal;
@@ -1564,6 +1579,17 @@ footer .bottom .text a {
   top: 10px;
   left: 10px;
   z-index: 1000;
+}
+.service-main .slider-2 a {
+  position: absolute;
+  z-index: 1000;
+  bottom: 10px;
+}
+.service-main .slider-2 a.btn-prev {
+  left: 7px;
+}
+.service-main .slider-2 a.btn-next {
+  right: 7px;
 }
 .service-main .slider-2 img {
   border-radius: 7px;
@@ -1620,6 +1646,12 @@ footer .bottom .text a {
   color: #000000;
   margin-bottom: 22px;
 }
+@media screen and (max-width: 375px) {
+  .offer h2 {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+}
 .offer p {
   font-family: Exo2;
   font-style: normal;
@@ -1636,6 +1668,13 @@ footer .bottom .text a {
   float: right;
   border-radius: 7px;
   margin-left: 20px;
+}
+@media screen and (max-width: 375px) {
+  .offer img {
+    float: none;
+    display: block;
+    margin: 10px auto;
+  }
 }
 .offer ul {
   margin-right: -10px;
@@ -1665,7 +1704,14 @@ footer .bottom .text a {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 375px) {
+  .offer .links-block {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .offer .links-block a {
+  margin-top: 10px;
   text-decoration: none;
   display: flex;
 }
@@ -1706,6 +1752,14 @@ footer .bottom .text a {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 375px) {
+  .maybe-interes-blocks {
+    flex-wrap: wrap;
+  }
+}
+.maybe-interes-blocks-block img {
+  border-radius: 10px;
+}
 .maybe-interes-blocks-block p {
   font-weight: 300;
   font-size: 12px;
@@ -1738,6 +1792,12 @@ footer .bottom .text a {
   display: flex;
   align-items: flex-start;
 }
+@media screen and (max-width: 375px) {
+  .price-list-main {
+    flex-direction: column-reverse;
+    overflow-y: hidden;
+  }
+}
 .price-list-main .cost-block .price-list-blocks {
   background: #ffffff;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
@@ -1763,6 +1823,16 @@ footer .bottom .text a {
   margin-left: 15px;
   margin-right: 15px;
   width: calc(16.666666666666668% - 30px);
+}
+@media screen and (max-width: 375px) {
+  .price-list-main .cost-block .price-list-blocks .list-item .title {
+    margin: 0 ;
+  }
+}
+@media screen and (max-width: 375px) {
+  .price-list-main .cost-block .price-list-blocks .list-item .title {
+    width: calc(25% - 30px);
+  }
 }
 .price-list-main .cost-block .price-list-blocks .list-item .table-block p {
   margin-bottom: 10px;
@@ -1803,13 +1873,27 @@ footer .bottom .text a {
   max-width: 500px;
 }
 .price-list-main .possibility {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
   display: none;
   background: #ffffff;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.08);
   border-radius: 7px;
   padding: 23px;
   flex-basis: 700px;
   max-width: 700px;
+}
+@media screen and (max-width: 375px) {
+  .price-list-main .possibility {
+    width: calc(100% - 30px);
+  }
+}
+@media screen and (max-width: 375px) {
+  .price-list-main .possibility {
+    flex-basis: 100px;
+  }
 }
 .price-list-main .possibility p {
   font-family: Exo2;
@@ -1820,6 +1904,12 @@ footer .bottom .text a {
   color: #000000;
   margin: 5px 30px;
 }
+@media screen and (max-width: 375px) {
+  .price-list-main .possibility p {
+    margin: 5px 0;
+    width: inherit;
+  }
+}
 .price-list-main .video-block {
   display: none;
   background: #ffffff;
@@ -1828,6 +1918,11 @@ footer .bottom .text a {
   padding: 23px;
   flex-basis: 700px;
   max-width: 700px;
+}
+@media screen and (max-width: 375px) {
+  .price-list-main .video-block {
+    flex-basis: 100px;
+  }
 }
 .price-list-main .video-block iframe {
   display: inline-block;
@@ -1865,12 +1960,22 @@ footer .bottom .text a {
   line-height: 40px;
   color: #000000;
 }
+@media screen and (max-width: 375px) {
+  .contact-list h2 {
+    margin: 10px 0;
+  }
+}
 .contact-list-main {
   display: flex;
 }
+@media screen and (max-width: 375px) {
+  .contact-list-main {
+    flex-direction: column-reverse;
+    overflow-y: hidden;
+  }
+}
 .contact-list-main .contact-list-blocks {
   max-width: 700px;
-  flex-basis: 700px;
   background: #FFFFFF;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
   border-radius: 7px;
@@ -1971,6 +2076,11 @@ footer .bottom .text a {
   background: #FFFFFF;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
   border-radius: 7px;
+}
+@media screen and (max-width: 375px) {
+  .contact-list-main .contact-list-map {
+    flex-basis: 100px;
+  }
 }
 .three-block-main {
   display: flex;
@@ -2207,6 +2317,16 @@ table tr:first-child th:last-child {
   max-width: 260px;
   margin-left: 18px;
 }
+@media screen and (max-width: 375px) {
+  .side-menu {
+    max-width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
 .side-menu a {
   text-decoration: none;
   font-family: Exo2;
@@ -2222,12 +2342,22 @@ table tr:first-child th:last-child {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 375px) {
+  .side-menu a {
+    width: 49%;
+  }
+}
 .side-menu a img {
   display: block;
   padding: 13px;
 }
 .title-tabs {
   display: flex;
+}
+@media screen and (max-width: 375px) {
+  .title-tabs {
+    margin-top: 10px;
+  }
 }
 .title-tabs a {
   z-index: 10;
@@ -2236,6 +2366,17 @@ table tr:first-child th:last-child {
   align-items: center;
   padding: 14px;
   border-radius: 7px;
+}
+@media screen and (max-width: 375px) {
+  .title-tabs a {
+    padding: 5px;
+  }
+  .title-tabs a:first-child {
+    min-width: 85px;
+  }
+  .title-tabs a:nth-child(2) {
+    max-width: 130px;
+  }
 }
 .title-tabs a p {
   font-family: Exo2;
@@ -2378,11 +2519,11 @@ table tr:first-child th:last-child {
 }
 .bg-mobile-menu {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.59);
   backdrop-filter: blur(5px);

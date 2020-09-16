@@ -10,6 +10,10 @@
     line-height: 30px;
     color: #000000;
     margin-bottom: 22px;
+    .xs-block({
+      margin-bottom: 15px;
+      text-align: center;
+    });
   }
   p {
     font-family: Exo2;
@@ -27,6 +31,11 @@
   }
   img{
     float: right;
+    .xs-block({
+      float: none;
+      display: block;
+      margin: 10px auto;
+    });
     border-radius: 7px;
     margin-left: 20px;
   }
@@ -58,9 +67,16 @@
   .links-block{
     display: flex;
     justify-content: space-between;
+    .xs-block({
+      flex-wrap: wrap;
+      justify-content: center;
+    });
     a{
+
+      margin-top: 10px;
       text-decoration: none;
       display: flex;
+
       img{
         display: block;
         margin: 0;

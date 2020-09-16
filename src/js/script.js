@@ -36,6 +36,7 @@ const mobile_block = document.querySelector('.bg-mobile-menu')
 
 btn_menu.onclick = function(e){
 	e.preventDefault()
+	document.body.style.overflow = 'hidden'
 	mobile_block.style.display = 'block'
 }
 btn_close.onclick = function(e){

@@ -8,13 +8,20 @@
     font-size: 25px;
     line-height: 40px;
     color: #000000;
+    .xs-block({
+      margin: 10px 0;
+    });
   }
   &-main {
     display: flex;
+    .xs-block({
+      flex-direction: column-reverse;
+      overflow-y: hidden;
+    });
     .contact-list-blocks {
       // display: none;
       max-width: 700px;
-      flex-basis: 700px;
+      // flex-basis: 700px;
       background: #FFFFFF;
       box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
       border-radius: 7px;
@@ -111,6 +118,9 @@
       }
     }
     .contact-list-map{
+      .xs-block({
+        flex-basis: 100px;
+      });
       display: none;
       max-width: 700px;
       flex-basis: 700px;

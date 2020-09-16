@@ -18,3 +18,19 @@ mapContact.onclick = function(e){
   listContact.classList.remove('active')
   mapContact.classList.add('active')
 }
+
+///////////////////////mobile menu
+const btn_menu = document.querySelector('.btn-menu')
+const btn_close = document.querySelector('.close')
+const mobile_block = document.querySelector('.bg-mobile-menu')
+
+btn_menu.onclick = function(e){
+  e.preventDefault()
+  document.body.style.overflow = 'hidden'
+	mobile_block.style.display = 'block'
+}
+btn_close.onclick = function(e){
+  e.preventDefault()
+  document.body.style.overflow = ''
+	mobile_block.style.display = 'none'
+}

@@ -27,6 +27,39 @@
         </div>
       </div>
     </div>
+    <section class="bg-mobile-menu">
+      <section class="mobile-menu">
+        <div class="top">
+          <div class="input-block">
+            <label for="search">Поиск по сайту</label>
+            <input
+              type="text"
+              name=""
+              id="search_m"
+              placeholder="Введите запрос"
+            />
+          </div>
+          <div class="close">
+            <a href="">
+              <img src="./img/menu-close.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="list">
+          <ul>
+            <li><a href="">Заказ онлайн</a></li>
+            <li><a href="">Скидки</a></li>
+            <li><a href="">Доставка</a></li>
+            <li><a href="">Информация для клиентов</a></li>
+            <li><a href="">Услуги бизнесу</a></li>
+            <li><a href="">Письмо директору</a></li>
+            <li><a href="">Вакансии</a></li>
+            <li><a href="">Блог</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </div>
+      </section>
+    </section>
       <section class="top-line">
         <section class="wrapper">
           <div class="list">
@@ -58,14 +91,28 @@
                 placeholder="Введите запрос"
               />
             </div>
-            <div>
+            <div class="select-block">
               <label for="contact">Контакты</label>
-              <input
-                type="text"
-                name=""
-                id="contact"
-                placeholder="Выберите адрес"
-              />
+              <div class="select">
+                <input class="select__input" type="hidden", name="number">
+                <button class="select__current">One</button>
+                <div class="select__list">
+                  <button class="select__item" data-value="One">
+                    <div>ул. 8 марта, 32/1</div>
+                    <div class="little">(Главный филиал)</div>
+                  </button>
+                  <button class="select__item" data-value="Two">ул. Менделеева, 150/4</button>
+                  <button class="select__item" data-value="Three">ул. Космонавтов, 3</button>
+                  <button class="select__item" data-value="Four">
+                    <div>пл. Верхнеторговая, 1</div>
+                    <div class="little">("Гостиный двор")</div>
+                  </button>
+                  <button class="select__item" data-value="Five">
+                    <div>ул. Менделеева, 205а</div>
+                    <div class="little">(Лайфстайл-центр "Башкирия")</div>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
           <div class="phone">
@@ -83,6 +130,54 @@
           </div>
         </div>
       </header>
+      <section class="header_mobile">
+        <div class="bg">
+          <div class="logo-block">
+            <a href="#"><img src="./img/logo-mobile.svg" alt="" /></a>
+          </div>
+          <div class="btn-order-online">
+            <a href="">
+              <p>Заказ онлайн</p>
+              <img src="./img/btn-order-online.svg" alt="" />
+            </a>
+          </div>
+          <div class="btn-menu">
+            <a href=""><img src="./img/menu 1.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="bg">
+          <div class="select-block">
+            <label for="contact">Контакты</label>
+            <div class="select">
+              <input class="select__input" type="hidden", name="number">
+              <button class="select__current">One</button>
+              <div class="select__list">
+                <button class="select__item" data-value="One">
+                  <div>ул. 8 марта, 32/1</div>
+                  <div class="little">(Главный филиал)</div>
+                </button>
+                <button class="select__item" data-value="Two">ул. Менделеева, 150/4</button>
+                <button class="select__item" data-value="Three">ул. Космонавтов, 3</button>
+                <button class="select__item" data-value="Four">
+                  <div>пл. Верхнеторговая, 1</div>
+                  <div class="little">("Гостиный двор")</div>
+                </button>
+                <button class="select__item" data-value="Five">
+                  <div>ул. Менделеева, 205а</div>
+                  <div class="little">(Лайфстайл-центр "Башкирия")</div>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="phone">
+            <p>Главный филиал</p>
+            <div class="number">
+              <img src="./img/phone-red.svg" alt="" />
+              <a href="tel:8-347-246-38-99">+7 (347) <b>246-38-99</b></a>
+            </div>
+          </div>
+        </div>
+      </section>
       <nav>
         <div class="nav-bg">
           <div class="wrapper">
@@ -157,6 +252,12 @@
             </div>
             <div class="slider-2">
               <div class="text">оперативная полиграфия</div>
+              <a class="btn-prev" href="">
+                <img src="./img/slider-2-prev.svg" alt="">
+              </a>
+              <a class="btn-next" href="">
+                <img src="./img/slider-2-next.svg" alt="">
+              </a>
               <div class="slider-2-img">
                 <img src="./img/slider-2-1.png" alt="">
                 <img src="./img/slider-2-2.png" alt="">
@@ -169,6 +270,8 @@
                 <img src="./img/slider-2-2.png" alt="">
                 <img src="./img/slider-2-1.png" alt="">
                 <img src="./img/slider-2-2.png" alt="">
+
+
               </div>
             </div>
           </div>
