@@ -3,6 +3,7 @@
   &-main {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     .xs-block({
       flex-direction: column-reverse;
       overflow-y: hidden;
@@ -13,7 +14,8 @@
         box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
         border-radius: 7px;
         padding: 15px;
-        max-width: 700px;
+        // max-width: 700px;
+        width: 100%;
         .list-item {
           font-family: Exo2;
           font-style: normal;
@@ -80,13 +82,14 @@
       .xs-block({
         flex-basis: 100px;
       });
+      width: 100%;
       display: none;
       background: #ffffff;
       box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.08);
       border-radius: 7px;
       padding: 23px;
       flex-basis: 700px;
-      max-width: 700px;
+      // max-width: 700px;
       // max-height: 100%;
       p {
         .xs-block({
@@ -112,11 +115,18 @@
       border-radius: 7px;
       padding: 23px;
       flex-basis: 700px;
-      max-width: 700px;
+      // max-width: 700px;
+      width: 100%;
+      .md-block({
+        padding: 0;
+      });
       iframe{
         display: inline-block;
         width: 100%;
-        height: 100%;
+        min-height: 400px;
+        .md-block({
+          min-height: 200px;
+        });
         // margin: 0 auto -100px;
         text-align: center;
       }

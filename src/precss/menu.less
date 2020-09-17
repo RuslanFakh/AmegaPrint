@@ -1,5 +1,6 @@
 .menu-container {
   margin: 20px auto;
+  position: relative;
   .menu {
     display: flex;
     justify-content: space-between;
@@ -87,6 +88,10 @@
       .size-xs(12);
       position: relative;
       .side-block{
+        display: none;
+        .md-block({
+          display: block;
+        });
         position: absolute;
         right: 0;
         .contain{
@@ -131,6 +136,7 @@
           }
         }
       }
+
       p {
         font-family: Exo2;
         font-style: normal;

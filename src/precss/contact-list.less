@@ -14,13 +14,16 @@
   }
   &-main {
     display: flex;
+    justify-content: space-between;
+    // flex-direction: row-reverse;
     .xs-block({
       flex-direction: column-reverse;
       overflow-y: hidden;
     });
     .contact-list-blocks {
       // display: none;
-      max-width: 700px;
+      // max-width: 700px;
+      width: 100%;
       // flex-basis: 700px;
       background: #FFFFFF;
       box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
@@ -118,16 +121,70 @@
       }
     }
     .contact-list-map{
+      width: 100%;
       .xs-block({
         flex-basis: 100px;
       });
       display: none;
-      max-width: 700px;
-      flex-basis: 700px;
+      // max-width: 700px;
+      // flex-basis: 700px;
       background: #FFFFFF;
       box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
       border-radius: 7px;
-
+      iframe{
+        width: inherit;
+      }
+      .list-item {
+        padding: 0 20px;
+        font-family: Exo2;
+        margin-top: 16px;
+        .list-item-text {
+          font-style: normal;
+          color: #000000;
+          font-weight: bold;
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 12px;
+          p {
+            font-size: 14px;
+            position: relative;
+            margin-left: 21px;
+            span{
+              font-weight: normal;
+            }
+            &::before{
+              content: '';
+              background-image: url('../img/position.svg');
+              background-repeat: no-repeat;
+              display: block;
+              width: 10px;
+              height: 14px;
+              position: absolute;
+              top: 2px;
+              left: -21px;
+            }
+          }
+          a {
+            cursor: pointer;
+            display: block;
+            font-size: 12px;
+            line-height: 14px;
+            position: relative;
+            margin-left: 21px;
+            text-decoration: underline;
+            &::before{
+              content: '';
+              background-image: url('../img/photograph 1.svg');
+              background-repeat: no-repeat;
+              display: block;
+              width: 12px;
+              height: 12px;
+              position: absolute;
+              top: 1px;
+              left: -21px;
+            }
+          }
+        }}
     }
   }
 }
