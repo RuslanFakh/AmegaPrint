@@ -90,3 +90,7 @@ document.querySelectorAll('.select').forEach(select => { //Выбриаем вс
   })
 
 })
+
+const year = document.getElementById('year')
+let date = new Date()
+year.innerHTML = date.getFullYear()

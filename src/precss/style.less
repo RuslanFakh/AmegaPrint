@@ -245,9 +245,16 @@ table {
   }
 }
 .side-menu { //contact_ & item_  page
-  max-width: 260px;
-  min-width: 240px;
-  .xs-block({
+  // max-width: 260px;
+  // min-width: 240px;
+  width: 260px;
+  .md-block({
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+  });
+  .sm-block({
     max-width: 400px;
     display: flex;
     flex-wrap: wrap;
@@ -257,8 +264,16 @@ table {
   });
   margin-left: 18px;
   a {
-    .xs-block({
-      width: 49%;
+    width: inherit;
+    .md-block({
+      max-width: 16%;
+      font-size: 12px;
+      padding: 10px;
+    });
+    .sm-block({
+      min-width: 49%;
+      font-size: 15px;
+      padding: 0;
       // margin: 5px;
     });
     .xxs-block({
@@ -282,6 +297,12 @@ table {
     img {
       display: block;
       padding: 13px;
+      .md-block({
+        padding: 0 10px 0 0;
+      });
+      .sm-block({
+        padding: 13px;
+      });
       .xxs-block({
         padding: 10px;
       });
@@ -289,6 +310,7 @@ table {
   }
 }
 .title-tabs {
+  // margin-bottom: 5px;
   display: flex;
   .xxs-block({
     display: block;

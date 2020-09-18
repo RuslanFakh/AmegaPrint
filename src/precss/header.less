@@ -1,6 +1,6 @@
 header{
   // display: none;
-  .xs-block({
+  .sm-block({
     display: none;
   });
   margin: 18px auto;
@@ -8,6 +8,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     .logo-block{
       a{
         display: block;
@@ -77,70 +78,14 @@ header{
         color: #C5C5C5;
         font-style: italic;
       }
-      // select:invalid:not(:focus) {
-      //   color: gray;
-      // }
-      // select:invalid:focus {
-      //   color: transparent;
-      // }
-      // select:focus option {
-      //   color: initial;
-      // }
-      // select{
-      //   padding: 5px 0 5px 30px;
-      //   border: 1px solid #E5E5E5;
-      //   box-sizing: border-box;
-      //   border-radius: 40px;
-      //   background: url('../img/Vector-contact.svg') no-repeat;
-      //   background-position: 10px 49%;
-      //   width: 170px;
-      //   font-family: Exo2;
-
-      //   font-weight: normal;
-      //   line-height: 13px;
-
-
-      //     font-family: Exo2;
-      //     font-style: italic;
-      //     font-weight: normal;
-      //     font-size: 12px;
-      //     line-height: 14px;
-      //     color: #000000;
-
-      //   &:focus{
-      //     border: 1px solid #E5E5E5;
-      //     box-sizing: border-box;
-      //     border-radius: 40px;
-      //   }
-      //   &:checked{
-      //     border: none;
-      //   }
-      //   option{
-      //     &:before{
-      //       content: '(Главный филиал)';
-      //       display: block;
-      //       font-size: 8px;
-      //     }
-      //     font-style: normal;
-      //     font-size: 11px;
-      //     color: #000000;
-      //     max-width: 170px;
-      //     &:hover{
-      //       background: #D32F2F;
-      //       color: #ffffff;
-      //     }
-      //     p{
-      //       font-size: 11px;
-      //     }
-      //     span{
-      //       font-size: 8px;
-      //       display: block;
-      //     }
-      //   }
-
-      // }
     }
-
-
+    .btn-order-online{
+      .md-block({
+        display: none;
+      });
+      .sm-block({
+        display: block;
+      })
+    }
   }
 }

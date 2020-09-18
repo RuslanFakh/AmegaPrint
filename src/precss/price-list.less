@@ -4,8 +4,11 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    .xs-block({
+    .md-block({
       flex-direction: column-reverse;
+
+    });
+    .sm-block({
       overflow-y: hidden;
     });
     .cost-block {
@@ -14,13 +17,25 @@
         box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
         border-radius: 7px;
         padding: 15px;
-        // max-width: 700px;
+        box-sizing: border-box;
         width: 100%;
+        .md-block({
+          max-width: 728px;
+        });
+        // .md-block({
+        //   padding: 15px 10px;
+        // });
+        // max-width: 700px;
+        // width: 100%;
         .list-item {
           font-family: Exo2;
           font-style: normal;
           color: #000000;
           display: flex;
+          // .md-block({
+          //   justify-content: space-between;
+          // });
+
           margin-bottom: 30px;
           .title {
             font-weight: bold;
@@ -28,6 +43,10 @@
             line-height: 17px;
             text-transform: uppercase;
             margin: 0 30px 0 20px;
+            // .md-block({
+            //   text-align: center;
+            //   margin: 0 auto;
+            // });
             // width: 70px;
             .xs-block({
               margin: 0 ;
@@ -37,6 +56,9 @@
             .size-xs(3);
           }
           .table-block {
+            // .md-block({
+            //   margin: 0 auto;
+            // });
             p {
               margin-bottom: 10px;
               &.top {
@@ -77,21 +99,24 @@
       }
     }
     .possibility {
-      .col();
-      .size-xs(12);
+      // .col();
+      // .size-xs(12);
       .xs-block({
         flex-basis: 100px;
       });
       width: 100%;
+      // box-sizing: border-box;
+      max-width: 728px;
       display: none;
       background: #ffffff;
       box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.08);
       border-radius: 7px;
       padding: 23px;
-      flex-basis: 700px;
+      // flex-basis: 700px;
       // max-width: 700px;
       // max-height: 100%;
       p {
+        // width: 100%;
         .xs-block({
           margin: 5px 0;
           width: inherit;
@@ -114,10 +139,13 @@
       box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
       border-radius: 7px;
       padding: 23px;
-      flex-basis: 700px;
+      // flex-basis: 700px;
       // max-width: 700px;
-      width: 100%;
+      // width: 100%;
       .md-block({
+        padding: 20px;
+      });
+      .sm-block({
         padding: 0;
       });
       iframe{

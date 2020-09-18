@@ -1,14 +1,17 @@
 .advantage {
   margin-top: 120px;
-  .xs-block({
+  .sm-block({
     margin-top: 50px;
   });
   &-blocks {
-    .xs-block({
+    .sm-block({
       background: none;
       box-shadow: none;
       border-radius: none;
       display: block;
+    });
+    .xxs-block({
+      margin: 0;
     });
     display: flex;
     justify-content: space-around;
@@ -17,7 +20,7 @@
     box-shadow: 0px 0px 19px rgba(95, 95, 95, 0.11);
     border-radius: 7px;
     &-block {
-      .xs-block({
+      .sm-block({
         background: #d32f2f;
         box-shadow: 0px 0px 19px rgba(95, 95, 95, 0.11);
         border-radius: 7px;
@@ -45,7 +48,7 @@
         width: 225px;
         position: absolute;
         transform: translate(-50%, -50%);
-        .xs-block({
+        .sm-block({
           // display: none;
           display: block;
           height: 150px;
@@ -57,7 +60,7 @@
         &::after{
           content: '';
           background: url("../img/fig1.svg") no-repeat;
-          .xs-block({
+          .sm-block({
             background: url("../img/piece-of-shit-1.svg") no-repeat;
             left: 20%;
             top: 10%;
@@ -70,7 +73,7 @@
         &::after{
           content: '';
           background: url("../img/fig2.svg") no-repeat;
-          .xs-block({
+          .sm-block({
             background: url("../img/piece-of-shit-2.svg") no-repeat;
             // right: -100%;
             left: 80%;
@@ -83,7 +86,7 @@
         &::after{
           content: '';
           background: url("../img/fig3.svg") no-repeat;
-          .xs-block({
+          .sm-block({
             background: url("../img/piece-of-shit-3.svg") no-repeat;
             left: 27%;
             top: 55%;
@@ -97,7 +100,7 @@
       img {
         display: block;
         margin-top: -50%;
-        .xs-block({
+        .sm-block({
           max-width: 100px;
           max-height: 90px;
           margin-top: -40px;
@@ -110,7 +113,7 @@
         }
       }
       p {
-        .xs-block({
+        .sm-block({
 
           margin: 0 20px;
         });
