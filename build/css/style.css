@@ -2871,9 +2871,9 @@ table tr:first-child th:last-child {
 }
 
 .side-block-2 {
-  position: absolute;
+  position: fixed;
   right: -160px;
-  top: 50px;
+  top: 50%;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);

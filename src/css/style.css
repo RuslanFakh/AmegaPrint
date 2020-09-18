@@ -2984,9 +2984,9 @@ table tr:first-child th:last-child {
   color: #FFFFFF;
 }
 .side-block-2 {
-  position: absolute;
+  position: fixed;
   right: -160px;
-  top: 50px;
+  top: 50%;
   transform: rotate(-90deg);
 }
 @media screen and (max-width: 768px) {
