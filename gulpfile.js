@@ -14,7 +14,8 @@ const gulp = require('gulp'),
     uglifyJs = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
     browserSync = require('browser-sync').create(),
-    gcmq = require('gulp-group-css-media-queries');
+    babel = require('gulp-babel'),
+    cssmin = require('gulp-cssmin');
 
 
 const path = {
@@ -23,6 +24,7 @@ const path = {
         css: 'build/css/',
         img: 'build/img/',
         fonts: 'build/fonts/',
+        js: 'build/js'
     },
     src: {
         html: 'src/*.html',
@@ -31,7 +33,8 @@ const path = {
         less_css: 'src/css/',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
-        svg: 'src/svg/*.svg'
+        svg: 'src/img/*.svg',
+        js: 'src/js/**/*.js'
     },
     watch: {
         html: 'src/**/*.html',
@@ -77,7 +80,7 @@ function css() {
         .pipe(include())
         .pipe(autoprefixer(autoprefixerOptions))
         .pipe(cleanCss({ level: 2 }))
-        .pipe(gcmq())
+        .pipe(cssmin())
         .pipe(gulp.dest(path.build.css))
         .pipe(browserSync.stream());
 }
@@ -86,6 +89,9 @@ function js() {
     return gulp.src(path.src.js)
         .pipe(plumber(plumberOptions))
         .pipe(include())
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
         .pipe(uglifyJs())
         .pipe(gulp.dest(path.build.js))
         .pipe(browserSync.stream());
@@ -114,7 +120,7 @@ function svg() {
                 }
             }
         }))
-        .pipe(gulp.dest(path.build.svg));
+        .pipe(gulp.dest(path.build.img));
 };
 
 function img() {
