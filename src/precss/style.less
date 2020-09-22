@@ -185,6 +185,7 @@ body{
   }
 }
 table {
+  width: 100%;
   font-size: 12px;
   margin: 10px 0;
   border-collapse: collapse;
@@ -195,8 +196,13 @@ table {
     padding: 9px;
     border: 1px solid #e5e5e5;
     // text-align: center;
+    a{
+      text-decoration: none;
+      color: #000000;
+    }
     span{
       font-weight: bold;
+
     }
     img{
       display: block;
@@ -212,10 +218,12 @@ table {
       &:first-child {
         border-left: none;
         border-top: none;
+
       }
       &:last-child {
         border-right: none;
         border-top: none;
+        max-width: 80px;
       }
     }
   }
@@ -398,6 +406,7 @@ table {
 }
 
 .select{
+  cursor: pointer;
   .xs-block({
     width: 140px;
   });
@@ -425,6 +434,7 @@ table {
   // overflow: hidden;
 
 	&__current{
+    cursor: pointer;
     overflow: hidden;
     font-family: Exo2;
     font-size: 12px;
@@ -461,7 +471,7 @@ table {
       background-repeat: no-repeat;
       width: 9px;
       height: 9px;
-
+      cursor: pointer;
       position: absolute;
       top: 40%;
       right: 0;
@@ -476,6 +486,7 @@ table {
   }
 
 	&__list{
+    cursor: pointer;
     font-family: Exo2;
     font-style: normal;
     font-weight: normal;
@@ -491,6 +502,7 @@ table {
 		display: none;
 		&--show{
       // top: -10px;
+      cursor: pointer;
       left: 0;
       display: block;
       position: absolute;
@@ -503,6 +515,7 @@ table {
     // &:first-child{
     //   padding-top: 35px;
     // }
+    cursor: pointer;
     background: #ffffff;
     font-family: Exo2;
     font-size: 12px;

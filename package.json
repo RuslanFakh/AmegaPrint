@@ -30,6 +30,7 @@
     "gulp-svgmin": "^2.1.0",
     "gulp-uglify": "^3.0.1",
     "gulp-watch": "^5.0.1",
+    "jquery": "^3.5.1",
     "smart-grid": "^2.1.2"
   },
   "dependencies": {

@@ -72,16 +72,22 @@
 
       }
       .social{
+        display: flex;
+        align-items: center;
         a{
-          display: inline-block;
+          display: block;
           text-decoration: none;
           padding: 10px 12px;
           border: solid 2px #D32F2F;
           border-radius: 7px;
           margin-right: 15px;
+          width: 28px;
+          height: 28px;
+          vertical-align: bottom;
           img{
-            width: 28px;
-            height: 28px;
+            &:nth-child(odd){
+              margin-bottom: -7px;
+            }
             &.b{
               display: none;
             }
