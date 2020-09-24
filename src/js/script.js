@@ -1,5 +1,6 @@
 ///////////////////////slider
 const slides = document.querySelectorAll('.slider-block-slider .item')
+const slides_text = document.querySelectorAll('.slider-block-text')
 const btn_prev = document.querySelector('.btn-slider .prev')
 const btn_next = document.querySelector('.btn-slider .next')
 
@@ -9,25 +10,37 @@ btn_next.onclick = function(e){
   e.preventDefault();
 
   // for(let i=0; i < slides.length; i++){
-    slides[step].classList.remove('opacity')
+		slides[step].classList.remove('opacity')
+		slides_text[step].classList.remove('opacity')
+
     step++
     if(step == slides.length){
       step = 0
     }
     slides[step].classList.add('opacity')
+    slides_text[step].classList.add('opacity')
   // }
 }
 
 btn_prev.onclick = function(e){
   e.preventDefault()
   slides[step].classList.remove('opacity')
+  slides_text[step].classList.remove('opacity')
   step--
   if(step < 0){
     step = slides.length - 1
   }
 
   slides[step].classList.add('opacity')
+  slides_text[step].classList.add('opacity')
 }
+
+
+
+
+
+
+
 
 ///////////////////////mobile menu
 const btn_menu = document.querySelector('.btn-menu')
@@ -94,3 +107,58 @@ document.querySelectorAll('.select').forEach(select => { //Выбриаем вс
 const year = document.getElementById('year')
 let date = new Date()
 year.innerHTML = date.getFullYear()
+
+
+///////// chat
+
+const chat = document.getElementById('chat')
+chat.onclick = function(e){
+	e.preventDefault()
+	alert('Это чат!')
+}
+
+
+///////////////////// pay
+
+const pay = document.querySelector('.pay-btn')
+const pay1 = document.querySelector('.pay-btn1')
+const pay_block = document.querySelector('.bg-pay-inline')
+const pay_close = document.querySelector('.close-pay')
+pay.onclick = function(e){
+	e.preventDefault()
+	pay_block.style.display = 'block'
+	// alert(1)
+}
+pay1.onclick = function(e){
+	e.preventDefault()
+	pay_block.style.display = 'block'
+	// alert(1)
+}
+pay_close.onclick = function(e){
+	e.preventDefault(e)
+	pay_block.style.display = 'none'
+}
+
+//////////////////////// form
+
+const send = document.getElementById('btn-pay')
+const field_number = document.getElementById('order-number')
+const field_sum = document.getElementById('sum')
+const warning = document.querySelector('.warning')
+
+
+let a, b
+field_number.addEventListener('input', function(){
+	a = document.getElementById('order-number').value
+})
+field_sum.addEventListener('input', function(){
+	b = document.getElementById('sum').value
+})
+send.onclick = function(e){
+	e.preventDefault()
+	if((a === '') || (b === '')){
+		warning.style.display = 'block'
+	}
+}
+
+$('.slick-slider-bloc-mather-fucker').slick();

@@ -28,7 +28,44 @@
         </div>
       </div>
     </div>
-
+    <div class="bg-pay-inline">
+      <div class="online-pay">
+        <div class="top">
+          <div class="pic">
+            <img src="./img/side-block-1.svg" alt="">
+          </div>
+          <div>
+            <h2>Оплата услуг</h2>
+          </div>
+          <a href="" class="close-pay">
+            <!-- <img class="grey" src="./img/close-pay-1.svg" alt="">
+            <img class="red" src="./img/close-pay-2.svg" alt=""> -->
+            <img class="grey" src="./img/close-11.svg" alt="">
+            <img class="red" src="./img/close-22.svg" alt="">
+          </a>
+        </div>
+        <div class="bottom">
+          <p>Уважаемые клиенты! Для вашего удобства реализована функция онлайн оплаты заказов. Вам необходимо указать номер заказа, сумму. Вы будете перенаправлены на шлюз ПАО "Сбербанк"</p>
+          <form>
+            <div class="input-main">
+              <div class="input-block">
+                <label for="order-number">Номер заказа: <span>*</span></label>
+                <input type="text" placeholder="Введите номер заказа" id="order-number">
+                <p id="order-war" class="warning">Поле не заполнено!</p>
+              </div>
+              <div class="input-block">
+                <label for="sum">Сумма оплаты: <span>*</span></label>
+                <input type="text" placeholder="Введите сумму оплаты" id="sum">
+              </div>
+            </div>
+            <div class="btn" >
+              <p><span> * </span> - Обязательные поля</p>
+              <button id="btn-pay" type="submit">Оплатить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <section class="bg-mobile-menu">
       <section class="mobile-menu">
         <div class="top">
@@ -240,11 +277,11 @@
       <section class="contact-list">
         <div class="side-block-2">
           <div class="contain">
-            <a class="white" href="">
+            <a id="chat" class="white" href="">
               <img src="./img/side-block-2.svg" alt="">
               <p>онлайн чат</p>
             </a>
-            <a class="red" href="">
+            <a class="red pay-btn" href="">
               <img src="./img/side-block-1.svg" alt="">
               <p>онлайн оплата</p>
             </a>

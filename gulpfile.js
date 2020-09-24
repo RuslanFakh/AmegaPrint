@@ -126,10 +126,13 @@ function svg() {
 function img() {
     return gulp.src(path.src.img)
         .pipe(cache(imagemin([
-            imagemin.gifsicle({ interlaced: true }),
+            imagemin.gifsicle({ quality: 75, interlaced: true }),
             imagemin.jpegtran({ progressive: true }),
             imagemin.optipng({ optimizationLevel: 5 }),
-            imagemin.svgo({ plugins: [{ removeViewBox: true }] })
+            imagemin.svgo({ plugins: [
+                { removeViewBox: true },
+                {cleanupIDs: false}
+            ] })
         ])))
         .pipe(gulp.dest(path.build.img))
         .pipe(browserSync.stream());
