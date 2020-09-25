@@ -1,47 +1,3 @@
-///////////////////////slider
-const slides = document.querySelectorAll('.slider-block-slider .item')
-const slides_text = document.querySelectorAll('.slider-block-text')
-const btn_prev = document.querySelector('.btn-slider .prev')
-const btn_next = document.querySelector('.btn-slider .next')
-
-let step = 0
-
-btn_next.onclick = function(e){
-  e.preventDefault();
-
-  // for(let i=0; i < slides.length; i++){
-		slides[step].classList.remove('opacity')
-		slides_text[step].classList.remove('opacity')
-
-    step++
-    if(step == slides.length){
-      step = 0
-    }
-    slides[step].classList.add('opacity')
-    slides_text[step].classList.add('opacity')
-  // }
-}
-
-btn_prev.onclick = function(e){
-  e.preventDefault()
-  slides[step].classList.remove('opacity')
-  slides_text[step].classList.remove('opacity')
-  step--
-  if(step < 0){
-    step = slides.length - 1
-  }
-
-  slides[step].classList.add('opacity')
-  slides_text[step].classList.add('opacity')
-}
-
-
-
-
-
-
-
-
 ///////////////////////mobile menu
 const btn_menu = document.querySelector('.btn-menu')
 const btn_close = document.querySelector('.close')
@@ -54,6 +10,7 @@ btn_menu.onclick = function(e){
 }
 btn_close.onclick = function(e){
 	e.preventDefault()
+	document.body.style.overflow = ''
 	mobile_block.style.display = 'none'
 }
 
