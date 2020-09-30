@@ -77,10 +77,10 @@ chat.onclick = function(e){
 
 ///////////////////// pay
 
-const pay = document.querySelector('.pay-btn')
+const pay = document.getElementById('pay-btn')
 const pay1 = document.querySelector('.pay-btn1')
-const pay_block = document.querySelector('.bg-pay-inline')
-const pay_close = document.querySelector('.close-pay')
+const pay_block = document.querySelector('.pay-online')
+const pay_close = document.querySelectorAll('.close-pay')
 pay.onclick = function(e){
 	e.preventDefault()
 	pay_block.style.display = 'block'
@@ -91,10 +91,31 @@ pay1.onclick = function(e){
 	pay_block.style.display = 'block'
 	// alert(1)
 }
-pay_close.onclick = function(e){
+pay_close[0].onclick = function(e){
 	e.preventDefault(e)
 	pay_block.style.display = 'none'
 }
+
+///////////////////// mail to director
+
+const message_director = document.getElementById('dir_mes')
+const message_director1 = document.getElementById('dir_mes1')
+const close_mes = document.querySelector('#close-mes-dir')
+const mail_director_block = document.querySelector('.mail-to-director')
+
+message_director.onclick = function(e){
+	e.preventDefault()
+	mail_director_block.style.display = 'block'
+}
+message_director1.onclick = function(e){
+	e.preventDefault()
+	mail_director_block.style.display = 'block'
+}
+close_mes.onclick = function(e){
+	e.preventDefault()
+	mail_director_block.style.display = 'none'
+}
+
 
 //////////////////////// form
 
@@ -118,4 +139,45 @@ send.onclick = function(e){
 	}
 }
 
-$('.slick-slider-bloc-mather-fucker').slick();
+
+// order online
+
+var fileInput  = document.querySelector( "#file" ),
+    button     = document.querySelector( "#btn" ),
+		the_return = document.querySelector(".file-name");
+
+// console.log(the_return)
+button.addEventListener( "keydown", function( event ) {
+    if ( event.keyCode == 13 || event.keyCode == 32 ) {
+        fileInput.focus();
+    }
+});
+button.addEventListener( "click", function( event ) {
+	event.preventDefault()
+   fileInput.focus();
+   return false;
+});
+fileInput.addEventListener( "change", function( event ) {
+    the_return.value = this.value;
+});
+
+let radio = document.getElementsByName('method')
+let choose_block = document.querySelector('.choose')
+let address_block = document.querySelector('.address')
+
+radio[0].onclick = function(){
+	choose_block.style.display = 'block'
+	address_block.style.display = 'none'
+}
+radio[1].onclick = function(){
+	choose_block.style.display = 'none'
+	address_block.style.display = 'block'
+}
+
+if(radio[0].checked){
+
+}
+if(radio[1].checked){
+
+
+}

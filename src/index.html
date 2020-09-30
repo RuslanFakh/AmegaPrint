@@ -30,41 +30,194 @@
         </div>
       </div>
     </div>
-    <div class="bg-pay-inline">
-      <div class="online-pay">
-        <div class="top">
-          <div class="pic">
-            <img src="./img/side-block-1.svg" alt="">
+    <div class="pay-online">
+      <div class="bg-pay-inline">
+        <div class="online-pay">
+          <div class="top">
+            <div class="pic">
+              <img src="./img/side-block-1.svg" alt="">
+            </div>
+            <div>
+              <h2>Оплата услуг</h2>
+            </div>
+            <a href="" class="close-pay">
+              <!-- <img class="grey" src="./img/close-pay-1.svg" alt="">
+              <img class="red" src="./img/close-pay-2.svg" alt=""> -->
+              <img class="grey" src="./img/close-11.svg" alt="">
+              <img class="red" src="./img/close-22.svg" alt="">
+            </a>
           </div>
-          <div>
-            <h2>Оплата услуг</h2>
+          <div class="bottom">
+            <p>Уважаемые клиенты! Для вашего удобства реализована функция онлайн оплаты заказов. Вам необходимо указать номер заказа, сумму. Вы будете перенаправлены на шлюз ПАО "Сбербанк"</p>
+            <form>
+              <div class="input-main">
+                <div class="input-block">
+                  <label for="order-number">Номер заказа: <span>*</span></label>
+                  <input type="text" placeholder="Введите номер заказа" id="order-number">
+                  <p id="order-war" class="warning">Поле не заполнено!</p>
+                </div>
+                <div class="input-block">
+                  <label for="sum">Сумма оплаты: <span>*</span></label>
+                  <input type="text" placeholder="Введите сумму оплаты" id="sum">
+                </div>
+              </div>
+              <div class="btn" >
+                <p><span> * </span> - Обязательные поля</p>
+                <button id="btn-pay" type="submit">Оплатить</button>
+              </div>
+            </form>
           </div>
-          <a href="" class="close-pay">
-            <!-- <img class="grey" src="./img/close-pay-1.svg" alt="">
-            <img class="red" src="./img/close-pay-2.svg" alt=""> -->
-            <img class="grey" src="./img/close-11.svg" alt="">
-            <img class="red" src="./img/close-22.svg" alt="">
-          </a>
         </div>
-        <div class="bottom">
-          <p>Уважаемые клиенты! Для вашего удобства реализована функция онлайн оплаты заказов. Вам необходимо указать номер заказа, сумму. Вы будете перенаправлены на шлюз ПАО "Сбербанк"</p>
-          <form>
-            <div class="input-main">
-              <div class="input-block">
-                <label for="order-number">Номер заказа: <span>*</span></label>
-                <input type="text" placeholder="Введите номер заказа" id="order-number">
-                <p id="order-war" class="warning">Поле не заполнено!</p>
-              </div>
-              <div class="input-block">
-                <label for="sum">Сумма оплаты: <span>*</span></label>
-                <input type="text" placeholder="Введите сумму оплаты" id="sum">
-              </div>
+      </div>
+    </div>
+    <div class="mail-to-director">
+      <div class="bg-pay-inline">
+        <div class="online-pay">
+          <div class="top top-noitems">
+            <div class="pic-phone">
+              <img src="./img/phone-call.svg" alt="">
             </div>
-            <div class="btn" >
-              <p><span> * </span> - Обязательные поля</p>
-              <button id="btn-pay" type="submit">Оплатить</button>
+            <div>
+              <h2>Письмо директору</h2>
+              <p class="title-under">Если Вы столкнулись с какой либо проблемой или у Вас есть предложение, Вы всегда можете написать руководителю и ваше письмо(жалоба) будет рассмотрена в ближайшее время</p>
             </div>
-          </form>
+            <a href="" class="close-pay" id="close-mes-dir">
+              <!-- <img class="grey" src="./img/close-pay-1.svg" alt="">
+              <img class="red" src="./img/close-pay-2.svg" alt=""> -->
+              <img class="grey" src="./img/close-11.svg" alt="">
+              <img class="red" src="./img/close-22.svg" alt="">
+            </a>
+          </div>
+          <div class="bottom">
+            <form>
+              <div class="input-main input-main-noflex">
+                <div class="input-block">
+                  <label for="order-number">Имя: <span>*</span></label>
+                  <input type="text" placeholder="Введите имя" id="name">
+                  <p id="order-war" class="warning">Поле не заполнено!</p>
+                </div>
+                <div class="input-block">
+                  <label for="sum">Телефон: <span>*</span></label>
+                  <input type="text" placeholder="Введите номер телефона" id="phone">
+                </div>
+                <div class="input-block">
+                  <label for="sum">E-mail: <span>*</span></label>
+                  <input type="text" placeholder="Введите E-mail" id="email">
+                </div>
+                <div class="input-block">
+                  <label for="sum">Сообщение: </label>
+                  <input type="textarea" id="message">
+                </div>
+              </div>
+              <div class="btn" >
+                <p><span> * </span> - Обязательные поля</p>
+                <button id="btn-send" type="submit">Оплатить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="order-online">
+      <div class="bg-pay-inline">
+        <div class="online-pay">
+          <div class="top">
+            <div class="pic">
+              <img src="./img/pencil.svg" alt="">
+            </div>
+            <div>
+              <h2>Отправить заказ онлайн</h2>
+            </div>
+            <a href="" class="close-pay">
+              <!-- <img class="grey" src="./img/close-pay-1.svg" alt="">
+              <img class="red" src="./img/close-pay-2.svg" alt=""> -->
+              <img class="grey" src="./img/close-11.svg" alt="">
+              <img class="red" src="./img/close-22.svg" alt="">
+            </a>
+          </div>
+          <div class="bottom">
+            <form>
+              <div class="input-main">
+                <div class="input-block">
+                  <label for="name-order">Имя: <span>*</span></label>
+                  <input type="text" placeholder="Введите номер заказа" id="name-order">
+                  <p id="order-war" class="warning">Поле не заполнено!</p>
+                </div>
+                <div class="input-block">
+                  <label for="surname">Фамилия: <span>*</span></label>
+                  <input type="text" placeholder="Введите сумму оплаты" id="surname">
+                </div>
+                <div class="input-block">
+                  <label for="phone-order">Телефон: <span>*</span></label>
+                  <input type="text" placeholder="Введите сумму оплаты" id="phone-order">
+                </div>
+                <div class="input-block">
+                  <label for="email-order">E-mail: <span>*</span></label>
+                  <input type="text" placeholder="Введите сумму оплаты" id="email-order">
+                </div>
+
+              </div >
+              <div class="input-main input-main-noflex">
+                <div class="input-block">
+                  <label for="comment-order">Ваш комментарий к заказу (тираж, цветность, формат печати, сроки изготовления) </label>
+                  <input type="text" placeholder="Введите сумму оплаты" id="comment-order">
+                </div>
+              </div>
+              <div class="input-main input-main-noflex">
+                <div class="input-block">
+                  <div class="file-block">
+                    <label for="file">Загрузить файлы для печати (rar, zip, 7z, doc, docx, xls, xlsx, pdf, cdw, jpg, jpeg, tiff, dwg, bmp, cdr, eps, psd, png, tif, до 10 мб)</label>
+                    <!-- <input type="file" name="file" id="file" class="file"> -->
+                    <div class="d-flex">
+                      <input type="text" name="file-name" id="file-name" class="file-name" readonly="readonly">
+                      <div class="sdfsdg">
+                        <button id="btn" class="btn"><img src="./img/plus.svg" alt=""></button>
+                        <input type="file" name="file" id="file" class="file">
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="input-main input-main-noflex">
+                  <div class="input-block">
+                    <label for="file-order">Если у вас более одного файла и/или их размер более 10 мб, загрузите их на файлообменник, например на <a href=""><span>http://dropmefiles.com</span></a>. Ссылку на файл разместите в это поле.</label>
+                    <input type="text" placeholder="Введите сумму оплаты" id="file-order">
+                  </div>
+                </div>
+                <div class="delivery">
+                  <div class="radio">
+                    <div class="radio-block">
+
+                      <input type="radio" placeholder="Введите сумму оплаты" id="adress-order" name="method" checked="checked">
+                      <label for="adress-order">Самовывоз по адресу:</label>
+                    </div>
+                    <div class="radio-block">
+
+                      <input type="radio" placeholder="Введите сумму оплаты" id="delivery-order" name="method">
+                      <label for="delivery-order">Доставка курьером по адресу:</label>
+                    </div>
+                  </div>
+                  <div class="choose">
+                    <select>
+                      <option>8 марта, 32/1</option>
+                      <option>Менделеева, 150/4</option>
+                      <option>Космонавтов, 3</option>
+                      <option>Верхнеторговая площадь, 1 ("Гостиный двор")</option>
+                      <option>Менделеева, 205а (Лайфстайл-центр "Башкирия")</option>
+                  </select>
+                  </div>
+                  <div class="address">
+                    <input type="text" placeholder="Введите адрес" id="file-order-1">
+                  </div>
+                </div>
+
+              <div class="btn" >
+                <p><span> * </span> - Обязательные поля</p>
+                <button id="btn-send-order" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -109,7 +262,7 @@
               <li><a href="">Скидки</a></li>
               <li><a href="">Информация для клиентов</a></li>
               <li><a href="">Услуги бизнесу</a></li>
-              <li><a href="">Письмо директору</a></li>
+              <li><a href="" id="dir_mes">Письмо директору</a></li>
               <li><a href="">Вакансии</a></li>
               <li><a href="">Блог</a></li>
               <li><a href="">Контакты</a></li>
@@ -351,7 +504,7 @@
               <img src="./img/side-block-2.svg" alt="">
               <p>онлайн чат</p>
             </a>
-            <a class="red pay-btn" href="">
+            <a class="red pay-btn" id="pay-btn" href="">
               <img src="./img/side-block-1.svg" alt="">
               <p>онлайн оплата</p>
             </a>
@@ -387,7 +540,7 @@
                   <img class="w" src="./img/menu-5w.svg" alt="" />
                   <p>Услуги бизнесу</p>
                 </div>
-                <div class="menu-left-blocks-block">
+                <div class="menu-left-blocks-block" id="dir_mes1">
                   <img class="r" src="./img/menu-6.svg" alt="" />
                   <img class="w" src="./img/menu-6w.svg" alt="" />
                   <p>письмо директору</p>

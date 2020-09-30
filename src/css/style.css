@@ -3120,7 +3120,6 @@ table tr:first-child th:last-child {
   color: #000000;
 }
 .bg-pay-inline {
-  display: none;
   z-index: 9999;
   background: rgba(0, 0, 0, 0.59);
   position: fixed;
@@ -3134,6 +3133,9 @@ table tr:first-child th:last-child {
   transform: translate(-50%, -50%);
   width: 700px;
 }
+.bg-pay-inline .online-pay .top-noitems {
+  align-items: flex-start !important;
+}
 .bg-pay-inline .online-pay .top {
   position: relative;
   display: flex;
@@ -3141,11 +3143,30 @@ table tr:first-child th:last-child {
   padding: 30px;
   background: #eaf0f2;
 }
+.bg-pay-inline .online-pay .top p.title-under {
+  font-family: Exo2;
+  font-style: normal;
+  color: #555;
+  margin-left: 15px !important;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.bg-pay-inline .online-pay .top .pic-phone {
+  min-width: 54px;
+  height: 54px;
+  background: #d02f2f;
+  margin-right: 10px;
+}
+.bg-pay-inline .online-pay .top .pic-phone img {
+  padding: 12px 13px;
+  width: 30px;
+}
 .bg-pay-inline .online-pay .top .pic {
   width: 54px;
   height: 54px;
   background: #d02f2f;
   position: relative;
+  flex-basis: 54px;
 }
 .bg-pay-inline .online-pay .top .pic img {
   padding: 5px 5px;
@@ -3195,18 +3216,37 @@ table tr:first-child th:last-child {
   font-weight: bold;
   font-size: 18px;
 }
+.bg-pay-inline .online-pay .bottom form .input-main-noflex {
+  display: block !important;
+}
+.bg-pay-inline .online-pay .bottom form .input-main-noflex .input-block {
+  margin-bottom: 15px;
+  width: 100% !important;
+}
+.bg-pay-inline .online-pay .bottom form .input-main-noflex .input-block input {
+  width: 96% !important;
+}
 .bg-pay-inline .online-pay .bottom form .input-main {
   margin-bottom: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .bg-pay-inline .online-pay .bottom form .input-main .input-block {
-  margin: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 10px !important;
   box-sizing: border-box;
   word-wrap: break-word;
   margin-left: 15px;
   margin-right: 15px;
   width: calc(50% - 30px);
+}
+.bg-pay-inline .online-pay .bottom form .input-main .input-block a {
+  text-decoration: none;
+}
+.bg-pay-inline .online-pay .bottom form .input-main .input-block a span {
+  font-size: 14px;
 }
 .bg-pay-inline .online-pay .bottom form .input-main .input-block label {
   font-family: Exo2;
@@ -3217,7 +3257,7 @@ table tr:first-child th:last-child {
   color: #000000;
   display: block;
 }
-.bg-pay-inline .online-pay .bottom form .input-main .input-block input {
+.bg-pay-inline .online-pay .bottom form .input-main .input-block input[type=text] {
   width: 90%;
   border-radius: 2px;
   box-shadow: none;
@@ -3228,7 +3268,7 @@ table tr:first-child th:last-child {
   font-size: 14px;
   line-height: 15px;
 }
-.bg-pay-inline .online-pay .bottom form .input-main .input-block input:focus {
+.bg-pay-inline .online-pay .bottom form .input-main .input-block input[type=text]:focus {
   outline: #a3a2a2;
 }
 .bg-pay-inline .online-pay .bottom form .input-main .input-block .warning {
@@ -3261,4 +3301,131 @@ table tr:first-child th:last-child {
 .bg-pay-inline .online-pay .bottom form .btn button:focus,
 .bg-pay-inline .online-pay .bottom form .btn button:active {
   outline: none;
+}
+.bg-pay-inline .online-pay .bottom form .delivery .radio {
+  display: flex;
+}
+.bg-pay-inline .online-pay .bottom form .delivery .radio-block {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: calc(50% - 30px);
+}
+.bg-pay-inline .online-pay .bottom form .delivery .radio-block label {
+  font-family: Exo2;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 25px;
+  color: #000000;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.bg-pay-inline .online-pay .bottom form .delivery .choose {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.bg-pay-inline .online-pay .bottom form .delivery .choose select {
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid #d7dee3;
+  height: 34px;
+  padding: 0px 12px;
+  font-family: Exo2;
+  font-size: 14px;
+  line-height: 15px;
+}
+.bg-pay-inline .online-pay .bottom form .delivery .choose select:focus {
+  outline: #a3a2a2;
+}
+.bg-pay-inline .online-pay .bottom form .delivery .address {
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.bg-pay-inline .online-pay .bottom form .delivery .address input[type=text] {
+  width: 96%;
+  border-radius: 2px;
+  box-shadow: none;
+  border: 1px solid #d7dee3;
+  height: 34px;
+  padding: 0px 12px;
+  font-family: Exo2;
+  font-size: 14px;
+  line-height: 14px;
+}
+.bg-pay-inline .online-pay .bottom form .delivery .address input[type=text]:focus {
+  outline: #a3a2a2;
+}
+.bg-pay-inline .online-pay .bottom form .file-block {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.bg-pay-inline .online-pay .bottom form .file-block input[type=file] {
+  cursor: pointer;
+}
+.bg-pay-inline .online-pay .bottom form .file-block input[type=file]:hover {
+  cursor: pointer;
+}
+.bg-pay-inline .online-pay .bottom form .file-block #file {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 34px !important;
+  height: 34px !important;
+  opacity: 0;
+  cursor: pointer;
+  display: block;
+}
+.bg-pay-inline .online-pay .bottom form .file-block #file:hover {
+  cursor: pointer;
+}
+.bg-pay-inline .online-pay .bottom form .file-block .d-flex {
+  display: flex;
+}
+.bg-pay-inline .online-pay .bottom form .file-block .d-flex .sdfsdg {
+  position: relative;
+}
+.bg-pay-inline .online-pay .bottom form .file-block .d-flex .btn {
+  cursor: pointer;
+  background: #c21f13;
+  border: none;
+  border-radius: 0;
+  width: 100px;
+  box-sizing: border-box;
+  padding: 8px 9px;
+  color: #FFF;
+  font-size: 15px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  margin-left: 1rem;
+  max-height: 34px;
+  max-width: 34px;
+}
+.bg-pay-inline .online-pay .bottom form .file-block .d-flex .btn img {
+  max-width: 17px;
+}
+.bg-pay-inline .online-pay .bottom form .file-block input.file-name {
+  width: 100%;
+  border-radius: 2px;
+  box-shadow: none;
+  border: 1px solid #d7dee3;
+  height: 34px;
+  padding: 0px 12px;
+  font-family: Exo2;
+  font-size: 14px;
+  line-height: 15px;
+}
+.bg-pay-inline .online-pay .bottom form .file-block input.file-name:focus {
+  outline: #a3a2a2;
+}
+.pay-online {
+  display: none;
+}
+.mail-to-director {
+  display: none;
+}
+.order-online {
+  display: none;
 }

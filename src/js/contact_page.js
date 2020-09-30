@@ -95,12 +95,10 @@ chat.onclick = function(e){
 
 ///////////////////// pay
 
-///////////////////// pay
-
-const pay = document.querySelector('.pay-btn')
-const pay1 = document.querySelector('.pay-btn2')
-const pay_block = document.querySelector('.bg-pay-inline')
-const pay_close = document.querySelector('.close-pay')
+const pay = document.getElementById('pay-btn')
+// const pay1 = document.querySelector('.pay-btn1')
+const pay_block = document.querySelector('.pay-online')
+const pay_close = document.querySelector('#close-pay')
 pay.onclick = function(e){
 	e.preventDefault()
 	pay_block.style.display = 'block'
@@ -115,6 +113,7 @@ pay_close.onclick = function(e){
 	e.preventDefault(e)
 	pay_block.style.display = 'none'
 }
+
 
 //////////////////////// form
 
@@ -136,4 +135,26 @@ send.onclick = function(e){
 	if((a === '') || (b === '')){
 		warning.style.display = 'block'
 	}
+}
+
+
+
+///////////////////// mail to director
+
+const message_director = document.getElementById('dir_mes')
+// const message_director1 = document.getElementById('dir_mes1')
+const close_mes = document.querySelector('#close-mes-dir')
+const mail_director_block = document.querySelector('.mail-to-director')
+
+message_director.onclick = function(e){
+	e.preventDefault()
+	mail_director_block.style.display = 'block'
+}
+// message_director1.onclick = function(e){
+// 	e.preventDefault()
+// 	mail_director_block.style.display = 'block'
+// }
+close_mes.onclick = function(e){
+	e.preventDefault()
+	mail_director_block.style.display = 'none'
 }

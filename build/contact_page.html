@@ -28,44 +28,96 @@
         </div>
       </div>
     </div>
-    <div class="bg-pay-inline">
-      <div class="online-pay">
-        <div class="top">
-          <div class="pic">
-            <img src="./img/side-block-1.svg" alt="">
-          </div>
-          <div>
-            <h2>Оплата услуг</h2>
-          </div>
-          <a href="" class="close-pay">
-            <!-- <img class="grey" src="./img/close-pay-1.svg" alt="">
-            <img class="red" src="./img/close-pay-2.svg" alt=""> -->
-            <img class="grey" src="./img/close-11.svg" alt="">
-            <img class="red" src="./img/close-22.svg" alt="">
-          </a>
-        </div>
-        <div class="bottom">
-          <p>Уважаемые клиенты! Для вашего удобства реализована функция онлайн оплаты заказов. Вам необходимо указать номер заказа, сумму. Вы будете перенаправлены на шлюз ПАО "Сбербанк"</p>
-          <form>
-            <div class="input-main">
-              <div class="input-block">
-                <label for="order-number">Номер заказа: <span>*</span></label>
-                <input type="text" placeholder="Введите номер заказа" id="order-number">
-                <p id="order-war" class="warning">Поле не заполнено!</p>
-              </div>
-              <div class="input-block">
-                <label for="sum">Сумма оплаты: <span>*</span></label>
-                <input type="text" placeholder="Введите сумму оплаты" id="sum">
-              </div>
+
+    <div class="pay-online">
+      <div class="bg-pay-inline">
+        <div class="online-pay">
+          <div class="top">
+            <div class="pic">
+              <img src="./img/side-block-1.svg" alt="">
             </div>
-            <div class="btn" >
-              <p><span> * </span> - Обязательные поля</p>
-              <button id="btn-pay" type="submit">Оплатить</button>
+            <div>
+              <h2>Оплата услуг</h2>
             </div>
-          </form>
+            <a href="" class="close-pay" id="close-pay">
+              <!-- <img class="grey" src="./img/close-pay-1.svg" alt="">
+              <img class="red" src="./img/close-pay-2.svg" alt=""> -->
+              <img class="grey" src="./img/close-11.svg" alt="">
+              <img class="red" src="./img/close-22.svg" alt="">
+            </a>
+          </div>
+          <div class="bottom">
+            <p>Уважаемые клиенты! Для вашего удобства реализована функция онлайн оплаты заказов. Вам необходимо указать номер заказа, сумму. Вы будете перенаправлены на шлюз ПАО "Сбербанк"</p>
+            <form>
+              <div class="input-main">
+                <div class="input-block">
+                  <label for="order-number">Номер заказа: <span>*</span></label>
+                  <input type="text" placeholder="Введите номер заказа" id="order-number">
+                  <p id="order-war" class="warning">Поле не заполнено!</p>
+                </div>
+                <div class="input-block">
+                  <label for="sum">Сумма оплаты: <span>*</span></label>
+                  <input type="text" placeholder="Введите сумму оплаты" id="sum">
+                </div>
+              </div>
+              <div class="btn" >
+                <p><span> * </span> - Обязательные поля</p>
+                <button id="btn-pay" type="submit">Оплатить</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
+    <div class="mail-to-director">
+      <div class="bg-pay-inline">
+        <div class="online-pay">
+          <div class="top top-noitems">
+            <div class="pic-phone">
+              <img src="./img/phone-call.svg" alt="">
+            </div>
+            <div>
+              <h2>Письмо директору</h2>
+              <p class="title-under">Если Вы столкнулись с какой либо проблемой или у Вас есть предложение, Вы всегда можете написать руководителю и ваше письмо(жалоба) будет рассмотрена в ближайшее время</p>
+            </div>
+            <a href="" class="close-pay" id="close-mes-dir">
+              <!-- <img class="grey" src="./img/close-pay-1.svg" alt="">
+              <img class="red" src="./img/close-pay-2.svg" alt=""> -->
+              <img class="grey" src="./img/close-11.svg" alt="">
+              <img class="red" src="./img/close-22.svg" alt="">
+            </a>
+          </div>
+          <div class="bottom">
+            <form>
+              <div class="input-main input-main-noflex">
+                <div class="input-block">
+                  <label for="order-number">Имя: <span>*</span></label>
+                  <input type="text" placeholder="Введите имя" id="name">
+                  <p id="order-war" class="warning">Поле не заполнено!</p>
+                </div>
+                <div class="input-block">
+                  <label for="sum">Телефон: <span>*</span></label>
+                  <input type="text" placeholder="Введите номер телефона" id="phone">
+                </div>
+                <div class="input-block">
+                  <label for="sum">E-mail: <span>*</span></label>
+                  <input type="text" placeholder="Введите E-mail" id="email">
+                </div>
+                <div class="input-block">
+                  <label for="sum">Сообщение: </label>
+                  <input type="textarea" id="message">
+                </div>
+              </div>
+              <div class="btn" >
+                <p><span> * </span> - Обязательные поля</p>
+                <button id="btn-send" type="submit">Оплатить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="bg-mobile-menu">
       <section class="mobile-menu">
         <div class="top">
@@ -107,7 +159,7 @@
               <li><a href="">Скидки</a></li>
               <li><a href="">Информация для клиентов</a></li>
               <li><a href="">Услуги бизнесу</a></li>
-              <li><a href="">Письмо директору</a></li>
+              <li><a href=""  id="dir_mes">Письмо директору</a></li>
               <li><a href="">Вакансии</a></li>
               <li><a href="">Блог</a></li>
               <li><a href="">Контакты</a></li>
@@ -281,7 +333,7 @@
               <img src="./img/side-block-2.svg" alt="">
               <p>онлайн чат</p>
             </a>
-            <a class="red pay-btn" href="">
+            <a class="red pay-btn" id="pay-btn" href="">
               <img src="./img/side-block-1.svg" alt="">
               <p>онлайн оплата</p>
             </a>
