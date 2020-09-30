@@ -140,13 +140,13 @@ send.onclick = function(e){
 }
 
 
-// order online
+//////////////////////////////////// order online
 
+//file
 var fileInput  = document.querySelector( "#file" ),
     button     = document.querySelector( "#btn" ),
 		the_return = document.querySelector(".file-name");
 
-// console.log(the_return)
 button.addEventListener( "keydown", function( event ) {
     if ( event.keyCode == 13 || event.keyCode == 32 ) {
         fileInput.focus();
@@ -161,10 +161,10 @@ fileInput.addEventListener( "change", function( event ) {
     the_return.value = this.value;
 });
 
+//radio button
 let radio = document.getElementsByName('method')
 let choose_block = document.querySelector('.choose')
 let address_block = document.querySelector('.address')
-
 radio[0].onclick = function(){
 	choose_block.style.display = 'block'
 	address_block.style.display = 'none'
@@ -174,10 +174,38 @@ radio[1].onclick = function(){
 	address_block.style.display = 'block'
 }
 
-if(radio[0].checked){
+//open block
 
+const order_block = document.querySelector('.order-online-1')
+const btn_order_online = document.querySelectorAll('.btn-order-online')
+const order_online_close = document.getElementById('order-online-close')
+
+order_online_close.onclick = function(e){
+	e.preventDefault()
+	order_block.style.display = 'none'
 }
-if(radio[1].checked){
 
 
+btn_order_online[0].onclick = function(e){
+	e.preventDefault()
+	order_block.style.display = 'block'
 }
+btn_order_online[1].onclick = function(e){
+	e.preventDefault()
+	order_block.style.display = 'block'
+}
+btn_order_online[2].onclick = function(e){
+	e.preventDefault()
+	order_block.style.display = 'block'
+}
+btn_order_online[3].onclick = function(e){
+	e.preventDefault()
+	order_block.style.display = 'block'
+}
+
+// for( let i = 0; i < btn_order_online.lengthl; i++ ){
+// 	btn_order_online[i].addEventListener('click', function(e){
+// 		e.preventDefault()
+// 		orderBlock(e)
+// 	})
+// }
