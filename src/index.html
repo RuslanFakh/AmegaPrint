@@ -221,7 +221,61 @@
         </div>
       </div>
     </div>
+     </div>
+    <div class="ask-question">
+      <div class="bg-pay-inline">
+        <div class="online-pay">
+          <div class="top top-noitems">
+            <div class="pic-phone">
+              <img src="./img/phone-call.svg" alt="">
+            </div>
+            <div>
+              <h2>Задать вопрос</h2>
+              <p class="title-under">Менеджеры компании с радостью ответят на ваши вопросы и произведут расчет стоимости услуг и подготовят индивидуальное коммерческое предложение.</p>
+            </div>
+            <a href="" class="close-pay" id="close-ask-question">
+              <!-- <img class="grey" src="./img/close-pay-1.svg" alt="">
+              <img class="red" src="./img/close-pay-2.svg" alt=""> -->
+              <img class="grey" src="./img/close-11.svg" alt="">
+              <img class="red" src="./img/close-22.svg" alt="">
+            </a>
+          </div>
+          <div class="bottom">
+            <form>
+              <div class="input-main input-main-noflex">
+                <div class="input-block">
+                  <label for="name-question">Ваше имя: <span>*</span></label>
+                  <input type="text" placeholder="Введите имя" id="name-question">
+                  <p id="order-war" class="warning">Поле не заполнено!</p>
+                </div>
+                <div class="input-block">
+                  <label for="phone-question">Телефон: <span>*</span></label>
+                  <input type="text" placeholder="Введите номер телефона" id="phone-question">
+                </div>
+                <div class="input-block">
+                  <label for="email-question">E-mail:</label>
+                  <input type="text" placeholder="Введите E-mail" id="email-question">
+                </div>
+                <div class="input-block">
+                  <label for="order-question">Интересующий товар/услуга: </label>
+                  <input type="textarea" id="order-question">
+                </div>
+                <div class="input-block">
+                  <label for="message-question">Сообщение: </label>
+                  <input type="textarea" id="message-question">
+                </div>
+              </div>
+              <div class="btn" >
+                <p><span> * </span> - Обязательные поля</p>
+                <button id="btn-question" type="submit">Оплатить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
+
+
     <section class="bg-mobile-menu">
       <section class="mobile-menu">
         <div class="top">
@@ -247,7 +301,7 @@
             <li><a href="">Доставка</a></li>
             <li><a href="">Информация для клиентов</a></li>
             <li><a href="">Услуги бизнесу</a></li>
-            <li><a href="">Письмо директору</a></li>
+            <li><a href="" id="mobile-dm">Письмо директору</a></li>
             <li><a href="">Вакансии</a></li>
             <li><a href="">Блог</a></li>
             <li><a href="">Контакты</a></li>
@@ -259,7 +313,7 @@
         <section class="wrapper">
           <div class="list">
             <ul>
-              <li><a href="">Заказ онлайн</a></li>
+              <li><a href="" id="order-online-top">Заказ онлайн</a></li>
               <li><a href="">Скидки</a></li>
               <li><a href="">Информация для клиентов</a></li>
               <li><a href="">Услуги бизнесу</a></li>
@@ -717,7 +771,7 @@
                 произведут расчет стоимости услуг, подготовят индивидуальное
                 коммерческое предложение.
               </p>
-              <a class="question" href="">Задать вопрос</a>
+              <a class="question" id="question-btn" href="">Задать вопрос</a>
               <p>
                 Более того, вы можете связаться с нами через социальные сети
               </p>

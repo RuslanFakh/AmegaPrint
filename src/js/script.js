@@ -102,6 +102,7 @@ const message_director = document.getElementById('dir_mes')
 const message_director1 = document.getElementById('dir_mes1')
 const close_mes = document.querySelector('#close-mes-dir')
 const mail_director_block = document.querySelector('.mail-to-director')
+const mobile_dm = document.getElementById('mobile-dm')
 
 message_director.onclick = function(e){
 	e.preventDefault()
@@ -111,12 +112,14 @@ message_director1.onclick = function(e){
 	e.preventDefault()
 	mail_director_block.style.display = 'block'
 }
+mobile_dm.onclick = function(e){
+	e.preventDefault()
+	mail_director_block.style.display = 'block'
+}
 close_mes.onclick = function(e){
 	e.preventDefault()
 	mail_director_block.style.display = 'none'
 }
-
-
 //////////////////////// form
 
 const send = document.getElementById('btn-pay')
@@ -165,6 +168,9 @@ fileInput.addEventListener( "change", function( event ) {
 let radio = document.getElementsByName('method')
 let choose_block = document.querySelector('.choose')
 let address_block = document.querySelector('.address')
+
+
+
 radio[0].onclick = function(){
 	choose_block.style.display = 'block'
 	address_block.style.display = 'none'
@@ -179,13 +185,17 @@ radio[1].onclick = function(){
 const order_block = document.querySelector('.order-online-1')
 const btn_order_online = document.querySelectorAll('.btn-order-online')
 const order_online_close = document.getElementById('order-online-close')
+let order_online_top = document.getElementById('order-online-top')
 
 order_online_close.onclick = function(e){
 	e.preventDefault()
 	order_block.style.display = 'none'
 }
 
-
+order_online_top.onclick = function(e){
+	e.preventDefault()
+	order_block.style.display = 'block'
+}
 btn_order_online[0].onclick = function(e){
 	e.preventDefault()
 	order_block.style.display = 'block'
@@ -209,3 +219,19 @@ btn_order_online[3].onclick = function(e){
 // 		orderBlock(e)
 // 	})
 // }
+
+
+
+/////////////////////////////// ask question
+const ask_question = document.querySelector('.ask-question')
+const question_btn = document.getElementById('question-btn')
+const close_ask_question = document.getElementById('close-ask-question')
+
+question_btn.onclick = function(e){
+	e.preventDefault()
+	ask_question.style.display = 'block'
+}
+close_ask_question.onclick = function(e){
+	e.preventDefault()
+	ask_question.style.display = 'none'
+}

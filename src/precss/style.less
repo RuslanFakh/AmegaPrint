@@ -708,12 +708,19 @@ table {
   position: fixed;
   height: 100vh;
   width: 100%;
+
+  // overflow-x: scroll;
   .online-pay {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 700px;
+    .sm-block({
+      width: 350px;
+      height: 90vh;
+      overflow-x: hidden;
+    });
     .top-noitems{
       align-items: flex-start !important;
     }
@@ -722,6 +729,9 @@ table {
       display: flex;
       align-items: center;
       padding: 30px;
+      .sm-block({
+        padding: 20px;
+      });
       background: #eaf0f2;
       p.title-under{
         font-family: Exo2;
@@ -729,6 +739,7 @@ table {
         color: #555;
         margin-left: 15px !important;
         font-size: 14px;
+
         margin-top: 10px;
       }
       .pic-phone{
@@ -747,7 +758,18 @@ table {
         background: #d02f2f;
         position: relative;
         flex-basis: 54px;
+        .sm-block({
+          width: 34px !important;
+          height: 40px !important;
+
+        });
         img {
+          .sm-block({
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+            display: block;
+          });
           padding: 5px 5px;
           width: 80%;
         }
@@ -782,11 +804,17 @@ table {
         line-height: 25px;
         color: #000000;
         margin-left: 15px !important;
+        .sm-block({
+          font-size: 20px;
+        });
       }
     }
     .bottom {
       padding: 30px;
       background: #ffffff;
+      .sm-block({
+        padding: 20px;
+      });
       p {
         font-family: Exo2;
         font-style: normal;
@@ -795,6 +823,10 @@ table {
         line-height: 25px;
         color: #000000;
         margin-bottom: 20px;
+        .sm-block({
+          font-size: 14px;
+          line-height: 20px;
+        });
       }
       span {
         color: #d02f2f;
@@ -818,6 +850,9 @@ table {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        .sm-block({
+          display: block;
+        });
         .input-block {
           margin-left: 0 !important;
           margin-right: 0 !important;
@@ -830,6 +865,7 @@ table {
           }
           .col();
           .size(6);
+          .size-sm(12);
           label {
             font-family: Exo2;
             font-style: normal;
@@ -839,7 +875,10 @@ table {
             color: #000000;
             display: block;
           }
-          input[type=text] {
+          input[type=text], input[type=textarea] {
+            .sm-block({
+              width: 100%;
+            });
             width: 90%;
             border-radius: 2px;
             box-shadow: none;
@@ -889,10 +928,13 @@ table {
       .delivery{
         .radio{
           display: flex;
-
+          .sm-block({
+            display: block;
+          });
           &-block{
             .col();
             .size(6);
+            .size-sm(12);
             label {
               font-family: Exo2;
               font-style: normal;
@@ -1020,5 +1062,8 @@ table {
   display: none;
 }
 .order-online-1{
+  display: none;
+}
+.ask-question{
   display: none;
 }
