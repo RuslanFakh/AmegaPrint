@@ -204,7 +204,12 @@ const message_director = document.getElementById('dir_mes')
 const close_mes = document.querySelector('#close-mes-dir')
 const mail_director_block = document.querySelector('.mail-to-director')
 const mobile_dm = document.getElementById('mobile-dm')
+const director_message_side = document.getElementById('director-message-side')
 
+director_message_side.onclick = function(e){
+	e.preventDefault()
+	mail_director_block.style.display = 'block'
+}
 message_director.onclick = function(e){
 	e.preventDefault()
 	mail_director_block.style.display = 'block'

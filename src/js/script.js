@@ -186,12 +186,16 @@ const order_block = document.querySelector('.order-online-1')
 const btn_order_online = document.querySelectorAll('.btn-order-online')
 const order_online_close = document.getElementById('order-online-close')
 let order_online_top = document.getElementById('order-online-top')
+const order_online_menu_block = document.getElementById('order-online-menu-block')
 
 order_online_close.onclick = function(e){
 	e.preventDefault()
 	order_block.style.display = 'none'
 }
-
+order_online_menu_block.onclick = function(e){
+	e.preventDefault()
+	order_block.style.display = 'block'
+}
 order_online_top.onclick = function(e){
 	e.preventDefault()
 	order_block.style.display = 'block'

@@ -221,6 +221,88 @@
       </div>
     </div>
   </div>
+  <div class="summary">
+    <div class="bg-pay-inline">
+      <div class="online-pay">
+        <div class="top">
+          <div class="pic-phone">
+            <img src="./img/phone-call.svg" alt="">
+          </div>
+          <div>
+            <h2>Отправить резюме</h2>
+          </div>
+          <a href="" class="close-pay" id="summary-close">
+            <img class="grey" src="./img/close-11.svg" alt="">
+            <img class="red" src="./img/close-22.svg" alt="">
+          </a>
+        </div>
+        <div class="bottom">
+          <form>
+            <div class="input-main">
+              <div class="input-block-3">
+                <label for="summary-number">Ваше имя: <span>*</span></label>
+                <input type="text" placeholder="Введите номер заказа" id="summary-number">
+                <p id="summary-war" class="warning">Поле не заполнено!</p>
+              </div>
+              <div class="input-block-3">
+                <label for="summary-phone">Телефон: <span>*</span></label>
+                <input type="text" placeholder="Введите сумму оплаты" id="summary-phone">
+              </div>
+              <div class="input-block-3">
+                <label for="summary-mail">Email: <span>*</span></label>
+                <input type="text" placeholder="Введите номер заказа" id="summary-mail">
+                <p id="order-war" class="warning">Поле не заполнено!</p>
+              </div>
+            </div>
+            <div class="input-main input-main-noflex">
+              <div class="input-block">
+                <label for="readonly">Желаемая должность:: <span>*</span></label>
+                <input type="text" value="Оператор печатного салона, печатник" readonly id="readonly">
+                <p id="order-war" class="warning">Поле не заполнено!</p>
+              </div>
+            </div>
+            <div class="input-main input-main-noflex">
+              <div class="input-block">
+                <label for="order-number">Дополнительная информация:</label>
+                <input type="text" value="Оператор печатного салона, печатник">
+                <p id="order-war" class="warning">Поле не заполнено!</p>
+              </div>
+            </div>
+            <div class="input-main input-main-noflex">
+            <div class="input-block">
+              <div class="file-block">
+                <label for="file">Файл с резюме:</label>
+                <!-- <input type="file" name="file" id="file" class="file"> -->
+                <div class="d-flex">
+                  <input type="text" name="file-name" id="file-name-123" class="file-name" readonly="readonly">
+                  <div class="sdfsdg">
+                    <button id="btn-123" class="btn"><img src="./img/plus.svg" alt=""></button>
+                    <input type="file" name="file" id="file-123" class="file">
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="input-main">
+              <div class="input-block">
+                <label for="summary-mail">Введите код: <span>*</span></label>
+                <p id="capcha">Поменять картинку</p>
+              </div>
+              <div class="input-block">
+                <input type="text">
+              </div>
+            </div>
+
+            <div class="btn" >
+              <p><span> * </span> - Обязательные поля</p>
+              <button id="btn-summary" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <section class="bg-mobile-menu">
       <section class="mobile-menu">
@@ -653,7 +735,7 @@
                   <img src="./img/side-menu-4.svg" alt="">
                   <p>услуги бизнесу</p>
                 </a>
-                <a href="">
+                <a href="" id="director-message-side">
                   <img src="./img/side-menu-5.svg" alt="">
                   <p>письмо директору</p>
                 </a>

@@ -75,7 +75,7 @@
         display: flex;
         align-items: center;
         a{
-          display: block;
+          display: inline-block;
           text-decoration: none;
           padding: 10px 12px;
           border: solid 2px #D32F2F;
@@ -84,9 +84,7 @@
           width: 28px;
           height: 28px;
           img{
-            &:nth-child(odd){
-              margin-bottom: -7px;
-            }
+            margin-bottom: -7px;
             &.b{
               display: none;
             }
@@ -95,8 +93,12 @@
           &:hover{
             border: solid 2px #000000;
             img{
+              &:nth-child(odd){
+                margin-bottom: -7px;
+              }
               &.b{
                 display: inline-block;
+
               }
               &.r{
                 display: none;

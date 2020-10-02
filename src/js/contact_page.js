@@ -146,7 +146,12 @@ const message_director = document.getElementById('dir_mes')
 const close_mes = document.querySelector('#close-mes-dir')
 const mail_director_block = document.querySelector('.mail-to-director')
 const mobile_dm = document.getElementById('mobile-dm')
+const director_message_side = document.getElementById('director-message-side')
 
+director_message_side.onclick = function(e){
+	e.preventDefault()
+	mail_director_block.style.display = 'block'
+}
 message_director.onclick = function(e){
 	e.preventDefault()
 	mail_director_block.style.display = 'block'
@@ -235,3 +240,36 @@ btn_order_online[3].onclick = function(e){
 // 		orderBlock(e)
 // 	})
 // }
+
+///////////////////////////////////////// summary
+//file
+var fileInput  = document.querySelector( "#file-123" ),
+    button     = document.querySelector( "#btn-123" ),
+		the_return = document.querySelector("#file-name-123");
+
+button.addEventListener( "keydown", function( event ) {
+    if ( event.keyCode == 13 || event.keyCode == 32 ) {
+        fileInput.focus();
+    }
+});
+button.addEventListener( "click", function( event ) {
+	event.preventDefault()
+   fileInput.focus();
+   return false;
+});
+fileInput.addEventListener( "change", function( event ) {
+    the_return.value = this.value;
+});
+
+const summary_close = document.getElementById('summary-close')
+const summary_block = document.querySelector('.summary')
+const here = document.querySelector('.here')
+
+here.onclick = function(e){
+	e.preventDefault()
+	summary_block.style.display = 'block'
+}
+summary_close.onclick = function(e){
+	e.preventDefault()
+	summary_block.style.display = 'none'
+}
