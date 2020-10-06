@@ -243,23 +243,35 @@ btn_order_online[3].onclick = function(e){
 
 ///////////////////////////////////////// summary
 //file
-var fileInput  = document.querySelector( "#file-123" ),
-    button     = document.querySelector( "#btn-123" ),
-		the_return = document.querySelector("#file-name-123");
+var fileInput  = document.querySelectorAll( ".d-flex input.file" ),
+    button     = document.querySelectorAll( ".d-flex .btn" ),
+		the_return = document.querySelectorAll(".d-flex .file-name");
+		file_close = document.querySelectorAll('.d-flex .btn img')
+// console.log(file_close)
+for(let i = 0; i < button.length; i++){
+	button[i].addEventListener( "click", function( event ) {
+		event.preventDefault()
+		the_return[i].value = ''
+		file_close[i].classList.remove('rotate')
+		fileInput[i].style.display = 'block'
+		console.log(`${i} = ${the_return[i].value}`)
 
-button.addEventListener( "keydown", function( event ) {
-    if ( event.keyCode == 13 || event.keyCode == 32 ) {
-        fileInput.focus();
-    }
-});
-button.addEventListener( "click", function( event ) {
-	event.preventDefault()
-   fileInput.focus();
-   return false;
-});
-fileInput.addEventListener( "change", function( event ) {
-    the_return.value = this.value;
-});
+	});
+}
+for(let i = 0; i < fileInput.length; i++){
+	fileInput[i].addEventListener( "change", function( event ) {
+		the_return[i].value = this.value;
+		if(the_return[i].value != ''){
+			file_close[i].classList.add('rotate')
+			this.style.display = 'none'
+		}
+		else{
+			file_close[i].classList.remove('rotate')
+			this.style.display = 'block'
+		}
+	});
+}
+
 
 const summary_close = document.getElementById('summary-close')
 const summary_block = document.querySelector('.summary')
