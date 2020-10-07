@@ -93,7 +93,7 @@ chat.onclick = function(e){
 	alert('Это чат!')
 }
 
-///////////////////// pay
+///////////////////// online pay
 
 const pay = document.getElementById('pay-btn')
 // const pay1 = document.querySelector('.pay-btn1')
@@ -146,7 +146,7 @@ close_mes.onclick = function(e){
 //////////////////////////////////// order online
 
 //file
-var fileInput  = document.querySelector( "#file" ),
+/*var fileInput  = document.querySelector( "#file" ),
     button     = document.querySelector( "#btn" ),
 		the_return = document.querySelector(".file-name");
 
@@ -163,6 +163,43 @@ button.addEventListener( "click", function( event ) {
 fileInput.addEventListener( "change", function( event ) {
     the_return.value = this.value;
 });
+*/
+//////////////////////////////////// order online
+
+//file
+var fileInput  = document.querySelectorAll( ".d-flex input.file" ),
+    button     = document.querySelectorAll( ".d-flex .btn" ),
+		the_return = document.querySelectorAll(".d-flex .file-name");
+		file_close = document.querySelectorAll('.d-flex .btn img')
+		// pic_accept = document.querySelectorAll('.sdfsdg')
+// console.log(file_close)
+for(let i = 0; i < button.length; i++){
+	button[i].addEventListener( "click", function( event ) {
+		event.preventDefault()
+		the_return[i].value = ''
+		the_return[i].classList.remove('accept-bg')
+		file_close[i].classList.remove('rotate')
+		fileInput[i].style.display = 'block'
+		console.log(`${i} = ${the_return[i].value}`)
+
+	});
+}
+for(let i = 0; i < fileInput.length; i++){
+	fileInput[i].addEventListener( "change", function( event ) {
+		the_return[i].value = this.value;
+		if(the_return[i].value != ''){
+			file_close[i].classList.add('rotate')
+			the_return[i].classList.add('accept-bg')
+			// pic_accept[i].classList.add('pic_accept')
+			this.style.display = 'none'
+		}
+		else{
+			file_close[i].classList.remove('rotate')
+			this.style.display = 'block'
+		}
+	});
+}
+
 
 //radio button
 let radio = document.getElementsByName('method')
@@ -182,7 +219,7 @@ radio[1].onclick = function(){
 const order_block = document.querySelector('.order-online-1')
 const btn_order_online = document.querySelectorAll('.btn-order-online')
 const order_online_close = document.getElementById('order-online-close')
-let order_online_top = document.getElementById('order-online-top')
+const order_online_top = document.getElementById('order-online-top')
 
 order_online_close.onclick = function(e){
 	e.preventDefault()
@@ -219,12 +256,10 @@ btn_order_online[3].onclick = function(e){
 
 ///////////////////////////////////////// summary
 //file
-var fileInput  = document.querySelectorAll( ".d-flex input.file" ),
+/*var fileInput  = document.querySelectorAll( ".d-flex input.file" ),
     button     = document.querySelectorAll( ".d-flex .btn" ),
 		the_return = document.querySelectorAll(".d-flex .file-name");
 		file_close = document.querySelectorAll('.d-flex .btn img')
-		// pic_accept = document.querySelectorAll('.sdfsdg')
-// console.log(file_close)
 for(let i = 0; i < button.length; i++){
 	button[i].addEventListener( "click", function( event ) {
 		event.preventDefault()
@@ -251,12 +286,12 @@ for(let i = 0; i < fileInput.length; i++){
 		}
 	});
 }
-
+*/
 
 
 const summary_close = document.getElementById('summary-close')
 const summary_block = document.querySelector('.summary')
-const here = document.querySelector('.here')
+const here = document.querySelector('#here-link')
 
 here.onclick = function(e){
 	e.preventDefault()

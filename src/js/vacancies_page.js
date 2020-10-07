@@ -131,7 +131,7 @@ var fileInput  = document.querySelectorAll( ".d-flex input.file" ),
     button     = document.querySelectorAll( ".d-flex .btn" ),
 		the_return = document.querySelectorAll(".d-flex .file-name");
 		file_close = document.querySelectorAll('.d-flex .btn img')
-// console.log(file_close)
+
 for(let i = 0; i < button.length; i++){
 	button[i].addEventListener( "click", function( event ) {
 		event.preventDefault()

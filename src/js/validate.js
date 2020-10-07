@@ -55,7 +55,7 @@ md_send.addEventListener('click', function(e){
 md_name.oninput = function(){
   p_md_name.style.display = 'none'
 }
-md_phone.oninput = function(){
+md_phone.onchange = function(){
   p_md_phone.style.display = 'none'
 }
 md_mail.oninput = function(){
@@ -105,7 +105,7 @@ oo_name.oninput = function(){
 oo_surname.oninput = function(){
   p_oo_surname.style.display = 'none'
 }
-oo_phone.oninput = function(){
+oo_phone.onchange = function(){
   p_oo_phone.style.display = 'none'
 }
 oo_mail.oninput = function(){
@@ -135,7 +135,7 @@ btn_summary.addEventListener('click', function(e){
 summary_name.oninput = function(){
   p_summary_name.style.display = 'none'
 }
-summary_phone.oninput = function(){
+summary_phone.onchange = function(){
   p_summary_phone.style.display = 'none'
 }
 summary_mail.oninput = function(){
