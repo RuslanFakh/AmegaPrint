@@ -115,30 +115,6 @@ pay_close.onclick = function(e){
 }
 
 
-//////////////////////// form
-
-const send = document.getElementById('btn-pay')
-const field_number = document.getElementById('order-number')
-const field_sum = document.getElementById('sum')
-const warning = document.querySelector('.warning')
-
-
-let a, b
-field_number.addEventListener('input', function(){
-	a = document.getElementById('order-number').value
-})
-field_sum.addEventListener('input', function(){
-	b = document.getElementById('sum').value
-})
-send.onclick = function(e){
-	e.preventDefault()
-	if((a === '') || (b === '')){
-		warning.style.display = 'block'
-	}
-}
-
-
-
 ///////////////////// mail to director
 
 const message_director = document.getElementById('dir_mes')
@@ -247,11 +223,13 @@ var fileInput  = document.querySelectorAll( ".d-flex input.file" ),
     button     = document.querySelectorAll( ".d-flex .btn" ),
 		the_return = document.querySelectorAll(".d-flex .file-name");
 		file_close = document.querySelectorAll('.d-flex .btn img')
+		// pic_accept = document.querySelectorAll('.sdfsdg')
 // console.log(file_close)
 for(let i = 0; i < button.length; i++){
 	button[i].addEventListener( "click", function( event ) {
 		event.preventDefault()
 		the_return[i].value = ''
+		the_return[i].classList.remove('accept-bg')
 		file_close[i].classList.remove('rotate')
 		fileInput[i].style.display = 'block'
 		console.log(`${i} = ${the_return[i].value}`)
@@ -263,6 +241,8 @@ for(let i = 0; i < fileInput.length; i++){
 		the_return[i].value = this.value;
 		if(the_return[i].value != ''){
 			file_close[i].classList.add('rotate')
+			the_return[i].classList.add('accept-bg')
+			// pic_accept[i].classList.add('pic_accept')
 			this.style.display = 'none'
 		}
 		else{
@@ -271,6 +251,7 @@ for(let i = 0; i < fileInput.length; i++){
 		}
 	});
 }
+
 
 
 const summary_close = document.getElementById('summary-close')

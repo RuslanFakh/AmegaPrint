@@ -3487,10 +3487,11 @@ table tr:first-child th:last-child {
 .bg-pay-inline .online-pay .bottom form .input-main .input-block-3 input#readonly {
   background-color: #cfcfcf;
 }
-.bg-pay-inline .online-pay .bottom form .input-main .input-block input[type=text],
-.bg-pay-inline .online-pay .bottom form .input-main .input-block-3 input[type=text],
-.bg-pay-inline .online-pay .bottom form .input-main .input-block input[type=textarea],
-.bg-pay-inline .online-pay .bottom form .input-main .input-block-3 input[type=textarea] {
+.bg-pay-inline .online-pay .bottom form .input-main .input-block input[type="text"],
+.bg-pay-inline .online-pay .bottom form .input-main .input-block-3 input[type="text"],
+.bg-pay-inline .online-pay .bottom form .input-main .input-block input[type="textarea"],
+.bg-pay-inline .online-pay .bottom form .input-main .input-block-3 input[type="textarea"] {
+  position: relative;
   width: 90%;
   border-radius: 2px;
   box-shadow: none;
@@ -3502,27 +3503,29 @@ table tr:first-child th:last-child {
   line-height: 15px;
 }
 @media screen and (max-width: 414px) {
-  .bg-pay-inline .online-pay .bottom form .input-main .input-block input[type=text],
-  .bg-pay-inline .online-pay .bottom form .input-main .input-block-3 input[type=text],
-  .bg-pay-inline .online-pay .bottom form .input-main .input-block input[type=textarea],
-  .bg-pay-inline .online-pay .bottom form .input-main .input-block-3 input[type=textarea] {
+  .bg-pay-inline .online-pay .bottom form .input-main .input-block input[type="text"],
+  .bg-pay-inline .online-pay .bottom form .input-main .input-block-3 input[type="text"],
+  .bg-pay-inline .online-pay .bottom form .input-main .input-block input[type="textarea"],
+  .bg-pay-inline .online-pay .bottom form .input-main .input-block-3 input[type="textarea"] {
     width: 100%;
   }
 }
-.bg-pay-inline .online-pay .bottom form .input-main .input-block input[type=text]:focus,
-.bg-pay-inline .online-pay .bottom form .input-main .input-block-3 input[type=text]:focus,
-.bg-pay-inline .online-pay .bottom form .input-main .input-block input[type=textarea]:focus,
-.bg-pay-inline .online-pay .bottom form .input-main .input-block-3 input[type=textarea]:focus {
+.bg-pay-inline .online-pay .bottom form .input-main .input-block input[type="text"]:focus,
+.bg-pay-inline .online-pay .bottom form .input-main .input-block-3 input[type="text"]:focus,
+.bg-pay-inline .online-pay .bottom form .input-main .input-block input[type="textarea"]:focus,
+.bg-pay-inline .online-pay .bottom form .input-main .input-block-3 input[type="textarea"]:focus {
   outline: #a3a2a2;
 }
 .bg-pay-inline .online-pay .bottom form .input-main .input-block .warning,
 .bg-pay-inline .online-pay .bottom form .input-main .input-block-3 .warning {
-  display: none;
+  position: absolute;
   font-family: Exo2;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
+  line-height: 15px;
   color: #d02f2f;
+  margin: 0;
 }
 .bg-pay-inline .online-pay .bottom form .btn {
   display: flex;
@@ -3599,7 +3602,7 @@ table tr:first-child th:last-child {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.bg-pay-inline .online-pay .bottom form .delivery .address input[type=text] {
+.bg-pay-inline .online-pay .bottom form .delivery .address input[type="text"] {
   width: 96%;
   border-radius: 2px;
   box-shadow: none;
@@ -3610,17 +3613,17 @@ table tr:first-child th:last-child {
   font-size: 14px;
   line-height: 14px;
 }
-.bg-pay-inline .online-pay .bottom form .delivery .address input[type=text]:focus {
+.bg-pay-inline .online-pay .bottom form .delivery .address input[type="text"]:focus {
   outline: #a3a2a2;
 }
 .bg-pay-inline .online-pay .bottom form .file-block {
   cursor: pointer;
   margin-bottom: 5px;
 }
-.bg-pay-inline .online-pay .bottom form .file-block input[type=file] {
+.bg-pay-inline .online-pay .bottom form .file-block input[type="file"] {
   cursor: pointer;
 }
-.bg-pay-inline .online-pay .bottom form .file-block input[type=file]:hover {
+.bg-pay-inline .online-pay .bottom form .file-block input[type="file"]:hover {
   cursor: pointer;
 }
 .bg-pay-inline .online-pay .bottom form .file-block #file,
@@ -3652,7 +3655,7 @@ table tr:first-child th:last-child {
   width: 100px;
   box-sizing: border-box;
   padding: 8px 9px;
-  color: #FFF;
+  color: #fff;
   font-size: 15px;
   vertical-align: middle;
   text-transform: uppercase;
@@ -3663,16 +3666,34 @@ table tr:first-child th:last-child {
 .bg-pay-inline .online-pay .bottom form .file-block .d-flex .btn img {
   max-width: 17px;
 }
+.bg-pay-inline .online-pay .bottom form .file-block .accept-bg {
+  background: url(../img/circle-with-check-symbol.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 7px 50%;
+}
 .bg-pay-inline .online-pay .bottom form .file-block input.file-name {
   width: 100%;
   border-radius: 2px;
   box-shadow: none;
   border: 1px solid #d7dee3;
   height: 34px;
-  padding: 0px 12px;
+  padding-left: 35px !important;
   font-family: Exo2;
   font-size: 14px;
   line-height: 15px;
+  position: relative;
+}
+.bg-pay-inline .online-pay .bottom form .file-block input.file-name::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000000;
+  display: block;
+  width: 20px;
+  height: 20px;
+  z-index: 1000;
 }
 .bg-pay-inline .online-pay .bottom form .file-block input.file-name:focus {
   outline: #a3a2a2;
@@ -3693,5 +3714,23 @@ table tr:first-child th:last-child {
   display: none;
 }
 .summary {
+  display: none;
+}
+#p-order-number,
+#p-sum,
+#p-md-name,
+#p-md-phone,
+#p-md-mail,
+#p-oo-name,
+#p-oo-surname,
+#p-oo-phone,
+#p-oo-mail,
+#p-oo-file,
+#p-q-name,
+#p-q-phone,
+#p-summary-name,
+#p-summary-phone,
+#p-summary-mail,
+#p-summary-file {
   display: none;
 }

@@ -34,3 +34,25 @@ btn_prev.onclick = function(e){
   slides[step].classList.add('opacity')
   slides_text[step].classList.add('opacity')
 }
+
+
+/////////////////// ask question
+//inputs
+const name_question = document.getElementById('name-question')
+const phone_question = document.getElementById('phone-question')
+//messages
+const p_q_name = document.getElementById('p-q-name')
+const p_q_phone = document.getElementById('p-q-phone')
+
+const btn_question = document.getElementById('btn-question')
+$("#phone-question").mask("8(999) 999-9999");
+btn_question.addEventListener('click', function(e){
+  displayBlock(name_question, p_q_name, e)
+  displayBlock(name_question, p_q_phone, e)
+})
+name_question.oninput = function(){
+  p_q_name.style.display = 'none'
+}
+phone_question.oninput = function(){
+  p_q_phone.style.display = 'none'
+}

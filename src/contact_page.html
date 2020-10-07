@@ -53,11 +53,12 @@
                 <div class="input-block">
                   <label for="order-number">Номер заказа: <span>*</span></label>
                   <input type="text" placeholder="Введите номер заказа" id="order-number">
-                  <p id="order-war" class="warning">Поле не заполнено!</p>
+                  <p class="warning" id="p-order-number">Поле не заполнено!</p>
                 </div>
                 <div class="input-block">
                   <label for="sum">Сумма оплаты: <span>*</span></label>
                   <input type="text" placeholder="Введите сумму оплаты" id="sum">
+                  <p class="warning" id="p-sum">Поле не заполнено!</p>
                 </div>
               </div>
               <div class="btn" >
@@ -92,16 +93,18 @@
               <div class="input-main input-main-noflex">
                 <div class="input-block">
                   <label for="order-number">Имя: <span>*</span></label>
-                  <input type="text" placeholder="Введите имя" id="name">
-                  <p id="order-war" class="warning">Поле не заполнено!</p>
+                  <input type="text" placeholder="Введите имя" id="md-name">
+                  <p id="p-md-name" class="warning">Поле не заполнено!</p>
                 </div>
                 <div class="input-block">
                   <label for="sum">Телефон: <span>*</span></label>
-                  <input type="text" placeholder="Введите номер телефона" id="phone">
+                  <input type="text" placeholder="Введите номер телефона" id="md-phone">
+                  <p id="p-md-phone" class="warning">Поле не заполнено!</p>
                 </div>
                 <div class="input-block">
                   <label for="sum">E-mail: <span>*</span></label>
-                  <input type="text" placeholder="Введите E-mail" id="email">
+                  <input type="text" placeholder="Введите E-mail" id="md-email">
+                  <p id="p-md-mail" class="warning">Поле не заполнено!</p>
                 </div>
                 <div class="input-block">
                   <label for="sum">Сообщение: </label>
@@ -110,7 +113,7 @@
               </div>
               <div class="btn" >
                 <p><span> * </span> - Обязательные поля</p>
-                <button id="btn-send" type="submit">Оплатить</button>
+                <button id="md-send" type="submit">Оплатить</button>
               </div>
             </form>
           </div>
@@ -139,20 +142,23 @@
               <div class="input-main">
                 <div class="input-block">
                   <label for="name-order">Имя: <span>*</span></label>
-                  <input type="text" placeholder="Введите номер заказа" id="name-order">
-                  <p id="order-war" class="warning">Поле не заполнено!</p>
+                  <input type="text" placeholder="Введите номер заказа" id="oo-name">
+                  <p id="p-oo-name" class="warning">Поле не заполнено!</p>
                 </div>
                 <div class="input-block">
                   <label for="surname">Фамилия: <span>*</span></label>
-                  <input type="text" placeholder="Введите сумму оплаты" id="surname">
+                  <input type="text" placeholder="Введите сумму оплаты" id="oo-surname">
+                  <p id="p-oo-surname" class="warning">Поле не заполнено!</p>
                 </div>
                 <div class="input-block">
                   <label for="phone-order">Телефон: <span>*</span></label>
-                  <input type="text" placeholder="Введите сумму оплаты" id="phone-order">
+                  <input type="text" placeholder="Введите сумму оплаты" id="oo-phone">
+                  <p id="p-oo-phone" class="warning">Поле не заполнено!</p>
                 </div>
                 <div class="input-block">
                   <label for="email-order">E-mail: <span>*</span></label>
-                  <input type="text" placeholder="Введите сумму оплаты" id="email-order">
+                  <input type="text" placeholder="Введите сумму оплаты" id="oo-email">
+                  <p id="p-oo-mail" class="warning">Поле не заполнено!</p>
                 </div>
 
               </div >
@@ -210,6 +216,7 @@
                       </div>
                     </div>
                   </div>
+                  <p id="p-oo-file" class="warning">Выберите хотя-бы один файл</p>
                 </div>
               </div>
                 <div class="input-main input-main-noflex">
@@ -274,32 +281,33 @@
           <form>
             <div class="input-main">
               <div class="input-block-3">
-                <label for="summary-number">Ваше имя: <span>*</span></label>
-                <input type="text" placeholder="Введите номер заказа" id="summary-number">
-                <p id="summary-war" class="warning">Поле не заполнено!</p>
+                <label for="summary-name">Ваше имя: <span>*</span></label>
+                <input type="text" placeholder="Введите номер заказа" id="summary-name">
+                <p id="p-summary-name" class="warning">Поле не заполнено!</p>
               </div>
               <div class="input-block-3">
                 <label for="summary-phone">Телефон: <span>*</span></label>
                 <input type="text" placeholder="Введите сумму оплаты" id="summary-phone">
+                <p id="p-summary-phone" class="warning">Поле не заполнено!</p>
               </div>
               <div class="input-block-3">
                 <label for="summary-mail">Email: <span>*</span></label>
                 <input type="text" placeholder="Введите номер заказа" id="summary-mail">
-                <p id="order-war" class="warning">Поле не заполнено!</p>
+                <p id="p-summary-mail" class="warning">Поле не заполнено!</p>
               </div>
             </div>
             <div class="input-main input-main-noflex">
               <div class="input-block">
                 <label for="readonly">Желаемая должность:: <span>*</span></label>
                 <input type="text" value="Оператор печатного салона, печатник" readonly id="readonly">
-                <p id="order-war" class="warning">Поле не заполнено!</p>
+
               </div>
             </div>
             <div class="input-main input-main-noflex">
               <div class="input-block">
                 <label for="order-number">Дополнительная информация:</label>
                 <input type="text" value="Оператор печатного салона, печатник">
-                <p id="order-war" class="warning">Поле не заполнено!</p>
+
               </div>
             </div>
             <div class="input-main input-main-noflex">
@@ -315,18 +323,11 @@
                   </div>
 
                 </div>
+                <p id="p-summary-file" class="warning">Поле не заполнено!</p>
               </div>
             </div>
             </div>
-            <div class="input-main">
-              <div class="input-block">
-                <label for="summary-mail">Введите код: <span>*</span></label>
-                <p id="capcha">Поменять картинку</p>
-              </div>
-              <div class="input-block">
-                <input type="text">
-              </div>
-            </div>
+
 
             <div class="btn" >
               <p><span> * </span> - Обязательные поля</p>
@@ -956,7 +957,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/contact_page.js"></script>
+
+    <script src="js/validate.js"></script>
     <!-- <script src="js/script.js"></script> -->
   </body>
 </html>
