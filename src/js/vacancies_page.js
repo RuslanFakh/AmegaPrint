@@ -139,6 +139,7 @@ for(let i = 0; i < button.length; i++){
 		the_return[i].classList.remove('accept-bg')
 		file_close[i].classList.remove('rotate')
 		fileInput[i].style.display = 'block'
+		fileInput[i].value = ''
 		console.log(`${i} = ${the_return[i].value}`)
 
 	});

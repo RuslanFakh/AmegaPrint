@@ -132,6 +132,7 @@ for(let i = 0; i < 6; i++){
 		the_return[i].classList.remove('accept-bg')
 		file_close[i].classList.remove('rotate')
 		fileInput[i].style.display = 'block'
+		fileInput[i].value = ''
 	});
 }
 for(let i = 0; i < 6; i++){
