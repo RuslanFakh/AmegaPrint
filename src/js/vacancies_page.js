@@ -127,15 +127,16 @@ close_mes.onclick = function(e){
 
 //////////////////////////////////// order online
 
-var fileInput  = document.querySelectorAll( ".d-flex input.file" ),
+const fileInput  = document.querySelectorAll( ".d-flex input.file" ),
     button     = document.querySelectorAll( ".d-flex .btn" ),
-		the_return = document.querySelectorAll(".d-flex .file-name");
+		the_return = document.querySelectorAll(".d-flex .file-name"),
 		file_close = document.querySelectorAll('.d-flex .btn img')
 
 for(let i = 0; i < button.length; i++){
 	button[i].addEventListener( "click", function( event ) {
 		event.preventDefault()
 		the_return[i].value = ''
+		the_return[i].classList.remove('accept-bg')
 		file_close[i].classList.remove('rotate')
 		fileInput[i].style.display = 'block'
 		console.log(`${i} = ${the_return[i].value}`)
@@ -147,6 +148,7 @@ for(let i = 0; i < fileInput.length; i++){
 		the_return[i].value = this.value;
 		if(the_return[i].value != ''){
 			file_close[i].classList.add('rotate')
+			the_return[i].classList.add('accept-bg')
 			this.style.display = 'none'
 		}
 		else{
@@ -185,22 +187,29 @@ order_online_top.onclick = function(e){
 	e.preventDefault()
 	order_block.style.display = 'block'
 }
-btn_order_online[0].onclick = function(e){
-	e.preventDefault()
-	order_block.style.display = 'block'
+for(let i = 0; i < btn_order_online.length; i++){
+	btn_order_online[i].addEventListener('click', function(e){
+		e.preventDefault()
+		order_block.style.display = 'block'
+	})
+
 }
-btn_order_online[1].onclick = function(e){
-	e.preventDefault()
-	order_block.style.display = 'block'
-}
-btn_order_online[2].onclick = function(e){
-	e.preventDefault()
-	order_block.style.display = 'block'
-}
-btn_order_online[3].onclick = function(e){
-	e.preventDefault()
-	order_block.style.display = 'block'
-}
+// btn_order_online[0].onclick = function(e){
+// 	e.preventDefault()
+// 	order_block.style.display = 'block'
+// }
+// btn_order_online[1].onclick = function(e){
+// 	e.preventDefault()
+// 	order_block.style.display = 'block'
+// }
+// btn_order_online[2].onclick = function(e){
+// 	e.preventDefault()
+// 	order_block.style.display = 'block'
+// }
+// btn_order_online[3].onclick = function(e){
+// 	e.preventDefault()
+// 	order_block.style.display = 'block'
+// }
 
 // for( let i = 0; i < btn_order_online.lengthl; i++ ){
 // 	btn_order_online[i].addEventListener('click', function(e){
@@ -211,53 +220,46 @@ btn_order_online[3].onclick = function(e){
 
 ///////////////////////////////////////// summary
 //file
-var fileInput  = document.querySelectorAll( ".d-flex input.file" ),
-    button     = document.querySelectorAll( ".d-flex .btn" ),
-		the_return = document.querySelectorAll(".d-flex .file-name");
-		file_close = document.querySelectorAll('.d-flex .btn img')
-		// pic_accept = document.querySelectorAll('.sdfsdg')
-// console.log(file_close)
-for(let i = 0; i < button.length; i++){
-	button[i].addEventListener( "click", function( event ) {
-		event.preventDefault()
-		the_return[i].value = ''
-		the_return[i].classList.remove('accept-bg')
-		file_close[i].classList.remove('rotate')
-		fileInput[i].style.display = 'block'
-		console.log(`${i} = ${the_return[i].value}`)
+// const fileInput  = document.querySelectorAll( ".d-flex input.file" ),
+//     button     = document.querySelectorAll( ".d-flex .btn" ),
+// 		the_return = document.querySelectorAll(".d-flex .file-name"),
+// 		file_close = document.querySelectorAll('.d-flex .btn img')
+// for(let i = 0; i < button.length; i++){
+// 	button[i].addEventListener( "click", function( event ) {
+// 		event.preventDefault()
+// 		the_return[i].value = ''
+// 		the_return[i].classList.remove('accept-bg')
+// 		file_close[i].classList.remove('rotate')
+// 		fileInput[i].style.display = 'block'
+// 		console.log(`${i} = ${the_return[i].value}`)
 
-	});
-}
-for(let i = 0; i < fileInput.length; i++){
-	fileInput[i].addEventListener( "change", function( event ) {
-		the_return[i].value = this.value;
-		if(the_return[i].value != ''){
-			file_close[i].classList.add('rotate')
-			the_return[i].classList.add('accept-bg')
-			// pic_accept[i].classList.add('pic_accept')
-			this.style.display = 'none'
-		}
-		else{
-			file_close[i].classList.remove('rotate')
-			this.style.display = 'block'
-		}
-	});
-}
+// 	});
+// }
+// for(let i = 0; i < fileInput.length; i++){
+// 	fileInput[i].addEventListener( "change", function( event ) {
+// 		the_return[i].value = this.value;
+// 		if(the_return[i].value != ''){
+// 			file_close[i].classList.add('rotate')
+// 			the_return[i].classList.add('accept-bg')
+// 			// pic_accept[i].classList.add('pic_accept')
+// 			this.style.display = 'none'
+// 		}
+// 		else{
+// 			file_close[i].classList.remove('rotate')
+// 			this.style.display = 'block'
+// 		}
+// 	});
+// }
 
 
 const summary_close = document.getElementById('summary-close')
 const summary_block = document.querySelector('.summary')
 const here = document.querySelector('.here')
 const send_summary = document.getElementById('send-summary')
-
 send_summary.onclick = function(e){
 	e.preventDefault()
 	summary_block.style.display = 'block'
 }
-// here.onclick = function(e){
-// 	e.preventDefault()
-// 	summary_block.style.display = 'block'
-// }
 summary_close.onclick = function(e){
 	e.preventDefault()
 	summary_block.style.display = 'none'

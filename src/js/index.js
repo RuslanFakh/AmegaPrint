@@ -8,20 +8,15 @@ let step = 0
 
 btn_next.onclick = function(e){
   e.preventDefault();
-
-  // for(let i=0; i < slides.length; i++){
 		slides[step].classList.remove('opacity')
 		slides_text[step].classList.remove('opacity')
-
     step++
     if(step == slides.length){
       step = 0
     }
     slides[step].classList.add('opacity')
     slides_text[step].classList.add('opacity')
-  // }
 }
-
 btn_prev.onclick = function(e){
   e.preventDefault()
   slides[step].classList.remove('opacity')
@@ -37,14 +32,28 @@ btn_prev.onclick = function(e){
 
 
 /////////////////// ask question
+//main block
+const ask_question = document.querySelector('.ask-question')
+const question_btn = document.getElementById('question-btn')
+const close_ask_question = document.getElementById('close-ask-question')
+//open & close block
+question_btn.onclick = function(e){
+	e.preventDefault()
+	ask_question.style.display = 'block'
+}
+close_ask_question.onclick = function(e){
+	e.preventDefault()
+	ask_question.style.display = 'none'
+}
 //inputs
 const name_question = document.getElementById('name-question')
 const phone_question = document.getElementById('phone-question')
 //messages
 const p_q_name = document.getElementById('p-q-name')
 const p_q_phone = document.getElementById('p-q-phone')
-
+//send btn
 const btn_question = document.getElementById('btn-question')
+//validate form
 $("#phone-question").mask("8(999) 999-9999");
 btn_question.addEventListener('click', function(e){
   displayBlock(name_question, p_q_name, e)
@@ -53,6 +62,6 @@ btn_question.addEventListener('click', function(e){
 name_question.oninput = function(){
   p_q_name.style.display = 'none'
 }
-phone_question.oninput = function(){
+phone_question.onchange = function(){
   p_q_phone.style.display = 'none'
 }
