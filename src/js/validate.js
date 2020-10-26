@@ -1,3 +1,14 @@
+// window.onload = function () {
+//   const input = document.querySelector('#test');
+//   input.addEventListener('keyup', function (e) {
+//     const { value } = e.target;
+//     if (value === '') return;
+//     if (e.keyCode === 13) {
+//       window.location = `/search/q=${value}`
+//     }
+//   })
+// }
+
 /////////////////////         pay-online
 const sum = document.getElementById('sum')
 const p_sum = document.getElementById('p-sum')
