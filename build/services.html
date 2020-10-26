@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"  />
     <title>АмегаPrint</title>
     <link rel="shortcut icon" type="image/png" href="img/wheel.svg" />
   </head>
@@ -174,7 +175,7 @@
                     <div class="d-flex">
                       <input type="text" name="file-name" id="file-name" class="file-name" readonly="readonly">
                       <div class="sdfsdg">
-                        <button  class="btn"><img src="./img/plus.svg" alt=""></button>
+                        <button id="btn" class="btn"><img src="./img/plus.svg" alt=""></button>
                         <input type="file" name="file" id="file" class="file" >
                       </div>
                     </div>
@@ -183,7 +184,7 @@
                     <div class="d-flex">
                       <input type="text" name="file-name" id="file-name" class="file-name" readonly="readonly">
                       <div class="sdfsdg">
-                        <button  class="btn"><img src="./img/plus.svg" alt=""></button>
+                        <button id="btn" class="btn"><img src="./img/plus.svg" alt=""></button>
                         <input type="file" name="file" id="file" class="file">
                       </div>
                     </div>
@@ -192,7 +193,7 @@
                     <div class="d-flex">
                       <input type="text" name="file-name" id="file-name" class="file-name" readonly="readonly">
                       <div class="sdfsdg">
-                        <button  class="btn"><img src="./img/plus.svg" alt=""></button>
+                        <button id="btn" class="btn"><img src="./img/plus.svg" alt=""></button>
                         <input type="file" name="file" id="file" class="file">
                       </div>
                     </div>
@@ -201,7 +202,7 @@
                     <div class="d-flex">
                       <input type="text" name="file-name" id="file-name" class="file-name" readonly="readonly">
                       <div class="sdfsdg">
-                        <button  class="btn"><img src="./img/plus.svg" alt=""></button>
+                        <button id="btn" class="btn"><img src="./img/plus.svg" alt=""></button>
                         <input type="file" name="file" id="file" class="file">
                       </div>
                     </div>
@@ -210,7 +211,7 @@
                     <div class="d-flex">
                       <input type="text" name="file-name" id="file-name" class="file-name" readonly="readonly">
                       <div class="sdfsdg">
-                        <button  class="btn"><img src="./img/plus.svg" alt=""></button>
+                        <button id="btn" class="btn"><img src="./img/plus.svg" alt=""></button>
                         <input type="file" name="file" id="file" class="file">
                       </div>
                     </div>
@@ -261,7 +262,82 @@
       </div>
     </div>
      </div>
+     <div class="summary">
+      <div class="bg-pay-inline">
+        <div class="online-pay">
+          <div class="top">
+            <div class="pic-phone">
+              <img src="./img/phone-call.svg" alt="">
+            </div>
+            <div>
+              <h2>Отправить резюме</h2>
+            </div>
+            <a href="" class="close-pay" id="summary-close">
+              <img class="grey" src="./img/close-11.svg" alt="">
+              <img class="red" src="./img/close-22.svg" alt="">
+            </a>
+          </div>
+          <div class="bottom">
+            <form>
+              <div class="input-main">
+                <div class="input-block-3">
+                  <label for="summary-name">Ваше имя: <span>*</span></label>
+                  <input type="text" placeholder="Введите номер заказа" id="summary-name">
+                  <p id="p-summary-name" class="warning">Поле не заполнено!</p>
+                </div>
+                <div class="input-block-3">
+                  <label for="summary-phone">Телефон: <span>*</span></label>
+                  <input type="text" placeholder="Введите сумму оплаты" id="summary-phone">
+                  <p id="p-summary-phone" class="warning">Поле не заполнено!</p>
+                </div>
+                <div class="input-block-3">
+                  <label for="summary-mail">Email: <span>*</span></label>
+                  <input type="text" placeholder="Введите номер заказа" id="summary-mail">
+                  <p id="p-summary-mail" class="warning">Поле не заполнено!</p>
+                </div>
+              </div>
+              <div class="input-main input-main-noflex">
+                <div class="input-block">
+                  <label for="readonly">Желаемая должность:: <span>*</span></label>
+                  <input type="text" value="Оператор печатного салона, печатник" readonly id="readonly">
 
+                </div>
+              </div>
+              <div class="input-main input-main-noflex">
+                <div class="input-block">
+                  <label for="order-number">Дополнительная информация:</label>
+                  <input type="text" value="Оператор печатного салона, печатник">
+
+                </div>
+              </div>
+              <div class="input-main input-main-noflex">
+              <div class="input-block">
+                <div class="file-block">
+                  <label for="file">Файл с резюме:</label>
+                  <!-- <input type="file" name="file" id="file" class="file"> -->
+                  <div class="d-flex">
+                    <input type="text" name="file-name" id="file-name-123" class="file-name" readonly="readonly">
+                    <div class="sdfsdg">
+                      <button id="btn-123" class="btn"><img src="./img/plus.svg" alt=""></button>
+                      <input type="file" name="file" id="file-123" class="file">
+                    </div>
+
+                  </div>
+                  <p id="p-summary-file" class="warning">Поле не заполнено!</p>
+                </div>
+              </div>
+              </div>
+
+
+              <div class="btn" >
+                <p><span> * </span> - Обязательные поля</p>
+                <button id="btn-summary" type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section class="bg-mobile-menu">
       <section class="mobile-menu">
@@ -466,65 +542,15 @@
           </div>
         </div>
       </nav>
-
       <section class="path">
         <div class="wrapper">
-          <a href="">Главная</a> / <a href="">Оперативная полиграфия</a> / <span>Печать визиток за 10 минут</span>
+          <a href="">Главная</a> / <a href="">Вакансии</a>
         </div>
       </section>
-
-      <section class="service">
-        <div class="wrapper">
-          <h2>Печать визиток за 10 минут</h2>
-          <div class="service-main">
-            <div class="list">
-              <ul>
-                <li>За <span class="red">10 минут</span> <span class="b">напечатаем 120</span> визиток в вашем присутствии при наличии готового макета. (Услуга доступна в филиале <span class="red">АмегаPrint</span> по ул. 8 Марта 32/1. Подробности просьба уточнять у менеджеров)</li>
-                <li>Тиражи от 48 штук</li>
-                <li>Исключительное качество печати</li>
-                <li>Широкий выбор дизайнерских бумаг</li>
-                <li>Печать на чёрных бумагах белыми чернилами УФ-печать</li>
-                <li>Возможность выборочной лакировки</li>
-                <li>Ламинирование визиток</li>
-                <li>Пластиковые визитки</li>
-                <a class="btn-order-online-rigth" href="">
-                  <img src="./img/btn-order-online.svg" alt="">
-                  <p>Заказ онлайн</p>
-                </a>
-              </ul>
-            </div>
-            <div class="slider-2">
-              <div class="text">оперативная полиграфия</div>
-              <a class="btn-prev" href="">
-                <img src="./img/slider-2-prev.svg" alt="">
-              </a>
-              <a class="btn-next" href="">
-                <img src="./img/slider-2-next.svg" alt="">
-              </a>
-              <div class="slider-2-img">
-                <img src="./img/slider-2-1.png" alt="">
-                <img src="./img/slider-2-2.png" alt="">
-                <img src="./img/slider-2-1.png" alt="">
-                <img src="./img/slider-2-2.png" alt="">
-
-              </div>
-              <div class="slider-2-line">
-                <img src="./img/slider-2-1.png" alt="">
-                <img src="./img/slider-2-2.png" alt="">
-                <img src="./img/slider-2-1.png" alt="">
-                <img src="./img/slider-2-2.png" alt="">
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="price-list">
+      <section class="contact-list">
         <div class="side-block-2">
           <div class="contain">
-            <a id="chat" class="white " href="">
+            <a id="chat" class="white" href="">
               <img src="./img/side-block-2.svg" alt="">
               <p>онлайн чат</p>
             </a>
@@ -536,314 +562,168 @@
           </div>
         </div>
         <div class="wrapper">
-          <div class="title-tabs">
-            <a href="" class="active"  id="btn-cost">
-              <img class="passive" src="./img/title-tabs-1.svg" alt="">
-              <img class="active" src="./img/title-tabs-1r.svg" alt="">
-              <p>Стоимость</p>
-            </a>
-            <a href="" id="btn-possibility">
-              <img class="passive" src="./img/title-tabs-2.svg" alt="">
-              <img class="active" src="./img/title-tabs-2r.svg" alt="">
-              <p>Дополнительные возможности</p>
-            </a>
-            <a href=""  id="btn-video">
-              <img class="passive" src="./img/title-tabs-3.svg" alt="">
-              <img class="active" src="./img/title-tabs-3r.svg" alt="">
-              <p>Видео-обзор печати</p>
-            </a>
-          </div>
-          <div class="price-list-main">
-            <div class="cost-block">
-              <div class="price-list-blocks">
-                <div class="list-item">
-                  <div class="title">Визитки</div>
-                  <div class="table-block">
-                    <p class="top">Цифровая печать на бумаге 300 гр/м2</p>
-                    <p class="under">Обычная бумага для визиток без фактуры, рисунков</p>
-                    <table>
-                      <tr>
-                        <th></th>
-                        <th>48 шт</th>
-                        <th>120 шт</th>
-                        <th>260 шт</th>
-                        <th>360 шт</th>
-                        <th>480 шт</th>
-                        <th>720 шт</th>
-                        <th>1008 шт</th>
-                      </tr>
-                      <tr>
-                        <td>односторонняя</td>
-                        <td>186 Р</td>
-                        <td>294 Р</td>
-                        <td>504 Р</td>
-                        <td>693 Р</td>
-                        <td>840 Р</td>
-                        <td>1134 Р</td>
-                        <td>1411 Р</td>
-                      </tr>
-                      <tr>
-                        <td>двусторонняя</td>
-                        <td>249 Р</td>
-                        <td>436 Р</td>
-                        <td>748 Р</td>
-                        <td>1029 Р</td>
-                        <td>1248 Р</td>
-                        <td>1684 Р</td>
-                        <td>2096 Р</td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-                <div class="list-item">
-                  <div class="title">Визитки</div>
-                  <div class="table-block">
-                    <p class="top">Цифровая печать на дизайнерской бумаге</p>
-                    <p class="under">Цветная, фактурная бумага разной плотности в ассортименте</p>
-                    <table>
-                      <tr>
-                        <th></th>
-                        <th>48 шт</th>
-                        <th>120 шт</th>
-                        <th>260 шт</th>
-                        <th>360 шт</th>
-                        <th>480 шт</th>
-                        <th>720 шт</th>
-                        <th>1008 шт</th>
-                      </tr>
-                      <tr>
-                        <td>односторонняя</td>
-                        <td>186 Р</td>
-                        <td>294 Р</td>
-                        <td>504 Р</td>
-                        <td>693 Р</td>
-                        <td>840 Р</td>
-                        <td>1134 Р</td>
-                        <td>1411 Р</td>
-                      </tr>
-                      <tr>
-                        <td>двусторонняя</td>
-                        <td>249 Р</td>
-                        <td>436 Р</td>
-                        <td>748 Р</td>
-                        <td>1029 Р</td>
-                        <td>1248 Р</td>
-                        <td>1684 Р</td>
-                        <td>2096 Р</td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-                <div class="list-item">
-                  <div class="title">Визитки</div>
-                  <div class="table-block">
-                    <p class="top">Цифровая печать на синтетической бумаге</p>
-                    <p class="under">Непромокаемая, прочная и долговечная бумага. Не нуждается в ламинации.</p>
-                    <table>
-                      <tr>
-                        <th></th>
-                        <th>48 шт</th>
-                        <th>120 шт</th>
-                        <th>260 шт</th>
-                        <th>360 шт</th>
-                        <th>480 шт</th>
-                        <th>720 шт</th>
-                        <th>1008 шт</th>
-                      </tr>
-                      <tr>
-                        <td>односторонняя</td>
-                        <td>186 Р</td>
-                        <td>294 Р</td>
-                        <td>504 Р</td>
-                        <td>693 Р</td>
-                        <td>840 Р</td>
-                        <td>1134 Р</td>
-                        <td>1411 Р</td>
-                      </tr>
-                      <tr>
-                        <td>двусторонняя</td>
-                        <td>249 Р</td>
-                        <td>436 Р</td>
-                        <td>748 Р</td>
-                        <td>1029 Р</td>
-                        <td>1248 Р</td>
-                        <td>1684 Р</td>
-                        <td>2096 Р</td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-                <div class="list-item">
-                  <div class="title">Премиум - визитки</div>
-                  <div class="table-block">
-                    <p class="top">УФ-печать на Touche Cover</p>
-                    <p class="under">Возможность печати белым цветом и выборочная лакировка</p>
-                    <table>
-                      <tr>
-                        <th></th>
-                        <th>48 шт</th>
-                        <th>120 шт</th>
-                        <th>260 шт</th>
-                        <th>360 шт</th>
-                        <th>480 шт</th>
-                        <th>720 шт</th>
-                        <th>1008 шт</th>
-                      </tr>
-                      <tr>
-                        <td>односторонняя</td>
-                        <td>186 Р</td>
-                        <td>294 Р</td>
-                        <td>504 Р</td>
-                        <td>693 Р</td>
-                        <td>840 Р</td>
-                        <td>1134 Р</td>
-                        <td>1411 Р</td>
-                      </tr>
-                      <tr>
-                        <td>двусторонняя</td>
-                        <td>249 Р</td>
-                        <td>436 Р</td>
-                        <td>748 Р</td>
-                        <td>1029 Р</td>
-                        <td>1248 Р</td>
-                        <td>1684 Р</td>
-                        <td>2096 Р</td>
-                      </tr>
-                    </table>
-                  </div>
-                </div>
-                <div class="info-item">
-                  <img src="./img/info 1.svg" alt="">
-                  <p class="info">Внимание! Все цены, указанные на сайте, имеют ознакомительный характер и могут отличаться от действующих. Цены в разных филиалах могут отличаться. Актуальную информацию по стоимости услуг уточняйте у Вашего менеджера.</p>
-                </div>
-              </div>
-              <a class="btn-order-online-rigth" href="">
-                <img src="./img/btn-order-online.svg" alt="">
-                <p>Заказ онлайн</p>
-              </a>
-              <div class="text-bottom">
-                <p><span>Визитная карточка</span> – носитель контактной информации, которым обмениваются при встречах с деловыми партнерами, клиентами, знакомыми. Это отличный способ оставить память о себе в простой и удобной форме.</p>
-                <p><span>Визитка в Уфе</span> — незаменимый аксессуар для представителей современного бизнеса. Поэтому она всегда должна быть под рукой. Печатный центр <span class="red">AmegaPRINT</span> предлагает оперативную печать визиток.</p>
-                <p>Мы готовы выполнить заказ любой сложности. Цифровая печать позволяет получать полиграфическую продукцию высокого качества <span class="red">за 10 минут</span>.</p>
-              </div>
-            </div>
-            <div class="possibility">
-              <p>Ламинация визиток от 28 до 150 мкм</p>
-              <p>Печать на самоклеющейся бумаге</p>
-              <p>УФ-печать пластиковых визиток</p>
-            </div>
-            <div class="video-block">
-              <div class="text-bottom">
-                <p><span>Визитная карточка</span> – носитель контактной информации, которым обмениваются при встречах с деловыми партнерами, клиентами, знакомыми. Это отличный способ оставить память о себе в простой и удобной форме.</p>
-                <p><span>Визитка в Уфе</span> — незаменимый аксессуар для представителей современного бизнеса. Поэтому она всегда должна быть под рукой. Печатный центр <span class="red">AmegaPRINT</span> предлагает оперативную печать визиток.</p>
-                <p>Мы готовы выполнить заказ любой сложности. Цифровая печать позволяет получать полиграфическую продукцию высокого качества <span class="red">за 10 минут</span>.</p>
-              </div>
-              <iframe src="https://www.youtube.com/embed/RPuaeZjBA5Y?start=7" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/RPuaeZjBA5Y?start=7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            </div>
-            <div class="side-menu">
-              <a href="">
-                <img src="./img/side-menu-1.svg" alt="">
-                <p>скидки</p>
-              </a>
-              <a href="">
-                <img src="./img/side-menu-2.svg" alt="">
-                <p>доставка</p>
-              </a>
-              <a href="">
-                <img src="./img/side-menu-3.svg" alt="">
-                <p>информация для клиентов</p>
-              </a>
-              <a href="">
-                <img src="./img/side-menu-4.svg" alt="">
-                <p>услуги бизнесу</p>
-              </a>
-              <a href="" id="director-message-side">
-                <img src="./img/side-menu-5.svg" alt="">
-                <p>письмо директору</p>
-              </a>
-            </div>
-          </div>
+          <h2>Каталог товаров</h2>
 
+            <div class="services">
+              <div class="services-sides-menus">
+                <div class="side-menu-top">
+                <ul>
+                  <li><a href="">Копировальный центр</a></li>
+                  <li><a href="">Широкоформатная печать</a></li>
+                  <li><a href="">Оперативная полиграфия</a></li>
+                  <li><a href="">Промо-продукция</a></li>
+                  <li><a href="">Дизайн</a></li>
+                </ul>
+                </div>
+                <div class="side-menu">
+                  <a href="">
+                    <img src="./img/side-menu-1.svg" alt="">
+                    <p>скидки</p>
+                  </a>
+                  <a href="">
+                    <img src="./img/side-menu-2.svg" alt="">
+                    <p>доставка</p>
+                  </a>
+                  <a href="">
+                    <img src="./img/side-menu-3.svg" alt="">
+                    <p>информация для клиентов</p>
+                  </a>
+                  <a href="">
+                    <img src="./img/side-menu-4.svg" alt="">
+                    <p>услуги бизнесу</p>
+                  </a>
+                  <a href="" id="director-message-side">
+                    <img src="./img/side-menu-5.svg" alt="">
+                    <p>письмо директору</p>
+                  </a>
+                </div>
+              </div>
+              <div class="services-main">
+                <div class="description-blocks">
+                  <a href="" class="description-blocks-block">
+                    <div class="title">
+                      <h3>Копировальный центр</h3>
+                      <img src="./img/desc1.svg" alt="" />
+                    </div>
+                    <ul>
+                      <li>Цветная и черно-белая печать A3, A4</li>
+                      <li>Печать чертежей и карт</li>
+                      <li>Копирование чертежей</li>
+                      <li>Срочное фото на документы</li>
+                      <li>Сканирование документов и чертежей</li>
+                      <li>Тиражирование / Ризография</li>
+                      <li>Печать фотографий</li>
+                      <li>Срочное фото на документы</li>
+                      <li>Ламинирование А4, А3, А2, А1</li>
+                      <li>Брошюровка и Переплет</li>
+                      <li>Фальцовка чертежей</li>
+                      <li>Термоклеевой переплёт</li>
+                      <li>Печать на конвертах</li>
+                    </ul>
+                    <!-- <div>
+                      <a href=""
+                        >еще <b>8</b> предложений
+                        <img src="./img/arrow.svg" alt="" />
+                      </a>
+                    </div> -->
+                  </a>
+                  <a href="" class="description-blocks-block">
+                    <div class="title">
+                      <h3>Широкоформатная печать</h3>
+                      <img src="./img/desc2.svg" alt="" />
+                    </div>
+                    <ul>
+                      <li>Широкоформатная печать на пленке</li>
+                      <li>Широкоформатная печать на баннерной ткани</li>
+                      <li>Печать на холсте</li>
+                      <li>Таблички и стенды на пластике</li>
+                      <li>Широкоформатная печать на бумаге</li>
+                      <li>Плоттерная и контурная резка</li>
+                      <li>Штендер (транспарант) участника шествия «Бессмертный полк»</li>
+                    </ul>
+                    <!-- <div>
+                      <a href=""
+                        >еще <b>3</b> предложений
+                        <img src="./img/arrow.svg" alt="" />
+                      </a>
+                    </div> -->
+                  </a>
+                  <a href="" class="description-blocks-block">
+                    <div class="title">
+                      <h3>Оперативная полиграфия</h3>
+                      <img src="./img/desc3.svg" alt="" />
+                    </div>
+                    <ul>
+                      <li>Визитки за 10 минут</li>
+                      <li>Листовки и флаеры</li>
+                      <li>Каталоги и брошюры</li>
+                      <li>Меню для ресторанов</li>
+                      <li>Этикетки и наклейки</li>
+                      <li>Дипломы, грамоты, сертификаты</li>
+                      <li>Календари</li>
+                      <li>Постеры и плакаты</li>
+                      <li>Блокноты</li>
+                      <li>Папки</li>
+                      <li>Конверты из дизайнерской бумаги</li>
+                      <li>Открытки и приглашения</li>
+                      <li>Кубарики</li>
+                    </ul>
+                    <!-- <div>
+                      <a href=""
+                        >еще <b>9</b> предложений
+                        <img src="./img/arrow.svg" alt="" />
+                      </a>
+                    </div> -->
+                  </a>
+                  <a href="" class="description-blocks-block">
+                    <div class="title">
+                      <h3>Промо-продукция</h3>
+                      <img src="./img/desc4.svg" alt="" />
+                    </div>
+                    <ul>
+                      <li>Мобильные рекламные стенды</li>
+                      <li>Печать на футболках</li>
+                      <li>Печать на ручках</li>
+                      <li>Печать на чехлах</li>
+                      <li>Печать на кружках</li>
+                      <li>Изготовление значков</li>
+                      <li>Бейсболки с логотипом компании</li>
+                      <li>Логотипы на спецодежду</li>
+                      <li>Изготовление бейджей</li>
+                      <li>Подставка для смартфона</li>
+                      <li>Тейбл-тенты</li>
+                      <li>Настольные визитницы</li>
+                      <li>Эко-сумки</li>
+                      <li>УФ-печать</li>
+                    </ul>
+                    <!-- <div>
+                      <a href=""
+                        >еще <b>9</b> предложений
+                        <img src="./img/arrow.svg" alt="" />
+                      </a>
+                    </div> -->
+                  </a>
+                  <a href="" class="description-blocks-block">
+                    <div class="title">
+                      <h3>Промо-продукция</h3>
+                      <img src="./img/desc4.svg" alt="" />
+                    </div>
+                    <ul>
+                      <li>Фирменный стиль</li>
+                      <li>Услуги дизайнера</li>
+                    </ul>
+                  </a>
+                </div>
+              </div>
+            </div>
         </div>
       </section>
 
-      <section class="offer">
-        <div class="wrapper">
-          <div class="offer-block">
-            <h2>Выгодное предложение для вас</h2>
-            <img src="./img/offer.png" alt="">
-            <p>Если Вы не желаете тратить драгоценное время на ожидание, когда будет готов заказ на полиграфическую продукцию, добро пожаловать в компанию <span class="red">AmegaPRINT</span>.</p>
-            <p>Мы печатаем визитки на различных типах бумаги. Если у Вас нет готового макета, то наши дизайнеры смогут разработать уникальный дизайн визитной карточки, который будет полностью отвечать Вашим потребностям.</p>
-            <p>Мы предлагаем ощутить следующие преимущества сотрудничества:</p>
-            <ul>
-              <li>высокая скорость изготовления визиток;</li>
-              <li>возможность заказать любой тираж полиграфической продукции;</li>
-              <li>великолепное качество каждого экземпляра;</li>
-              <li>высокий уровень сервиса.</li>
-            </ul>
-            <p>На выходе получаются респектабельные и запоминающиеся визитные карточки. Еще одно преимущество нашей продукции – низкая цена. Цифровой печати не требуется допечатная подготовка, пленка, изготовление специальных форм. Отсутствие вех этих пунктов позволяет минимизировать себестоимость печатных изделий и впоследствии предлагать клиентам комфортные цены.</p>
-            <p>Готовые образцы продукции мы храним в специальной базе. Поэтому при следующем заказе визиток Вам достаточно будет просто позвонить и оформить заказ. Тираж сможете забрать в любое удобное время. Макеты для печати можно направить на наш адрес. Также мы предлагаем воспользоваться услугой отправка онлайн. Позвоните, чтобы узнать подробности.</p>
-            <p>Для выполнения заявок мы применяем современное оборудование. Изготовление визиток в Уфе осуществляется при помощи цифровой печати. Она позволяет быстро получать необходимое количество экземпляров продукции. Притом оттиск визитных карточек ничем не уступает изделиям, которые создаются при помощи офсетного способа. Визитки получаются безупречного качества, четкими и яркими. Такая продукция произведет впечатление на Ваших партнеров, клиентов и заказчиков. Обращайтесь. Печать визитных карточек <span class="red">за 10 минут</span> – наша работа.</p>
-            <div class="links-block">
-              <div>
-                <a href="">
-                  <img src="./img/arrow-l.svg" alt="">
-                  <p>Предыдущее: <span>Этикетки и наклейки</span></p>
-                </a>
-              </div>
-              <div>
-                <a href="">
-                  <p>Следующее: <span>Листовки и флаеры</span></p>
-                  <img src="./img/arrow-r.svg" alt="">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="maybe-interes">
-        <div class="wrapper">
-          <div class="maybe-interes-width">
-          <h2>Возможно, вас заинтересует</h2>
-          <div class="maybe-interes-blocks">
-            <div class="maybe-interes-blocks-block">
-              <img src="./img/mb-interes-1.png" alt="" />
-              <p class="title">Накатка на пластик</p>
-              <p>
-                Накатка – это нанесение изображения, расположенного на плёнке,
-                на ровную поверхность.
-              </p>
-              <a href="">Подробнее</a>
-            </div>
-            <div class="maybe-interes-blocks-block">
-              <img src="./img/mb-interes-2.png" alt="" />
-              <p class="title">Печать на футболках</p>
-              <p>
-                Накатка – это нанесение изображения, расположенного на плёнке,
-                на ровную поверхность.
-              </p>
-              <a href="">Подробнее</a>
-            </div>
-            <div class="maybe-interes-blocks-block">
-              <img src="./img/mb-interes-3.png" alt="" />
-              <p class="title">Листовки и флаеры</p>
-              <p>
-                Накатка – это нанесение изображения, расположенного на плёнке,
-                на ровную поверхность.
-              </p>
-              <a href="">Подробнее</a>
-            </div>
-          </div>
-          </div>
-        </div>
-      </section>
       <section class="map">
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af92ff328051ebee3e8030c4bd13fd37b28264a7f08cf513a58a6c8c421618c29&amp;source=constructor"></iframe>
-
       </section>
 
-      <footer>
+     <footer>
         <div class="mobile">
           <div class="bg">
             <div class="logo-block">
@@ -926,10 +806,12 @@
       </footer>
     </div>
 
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/item_page.js"></script>
+    <script src="js/vacancies_page.js"></script>
+
     <script src="js/validate.js"></script>
     <!-- <script src="js/script.js"></script> -->
   </body>
