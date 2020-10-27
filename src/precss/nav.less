@@ -12,6 +12,51 @@ nav {
       background: none;
       box-shadow: none;
     });
+    li.main{
+      position: relative;
+      &:hover{
+        ul.submenu{
+          display: block;
+        }
+      }
+      ul.submenu{
+        &::before{
+          content: '';
+          border: 10px solid transparent;
+          border-bottom: 10px solid  #b63131;
+          position: absolute;
+          top: 0px;
+          left: 20px;
+        }
+        position: relative;
+        display: none;
+        z-index: 9999;
+        position: absolute;
+        // display: block;
+        li{
+          background: #b63131;
+          border-top: #E5E5E5 solid 1px;
+          &:first-child{
+            border-top: none;
+          }
+          padding: 5px;
+          &:hover{
+            background: #922626;
+          }
+          a{
+            color: #ffffff;
+            font-family: Exo2;
+            font-size: 14px;
+            text-decoration: none;
+            text-align: left;
+            margin: 0;
+            display: inline-block;
+            white-space: nowrap;
+          }
+
+        }
+      }
+    }
     ul {
 
       display: flex;

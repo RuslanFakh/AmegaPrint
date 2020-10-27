@@ -114,7 +114,7 @@
               </div>
               <div class="btn" >
                 <p><span> * </span> - Обязательные поля</p>
-                <button id="md-send" type="submit">Оплатить</button>
+                <button id="md-send" type="submit">Отправить</button>
               </div>
             </form>
           </div>
@@ -141,22 +141,22 @@
               <div class="input-main">
                 <div class="input-block">
                   <label for="name-order">Имя: <span>*</span></label>
-                  <input type="text" placeholder="Введите номер заказа" id="oo-name">
+                  <input type="text" placeholder="Имя" id="oo-name">
                   <p id="p-oo-name" class="warning">Поле не заполнено!</p>
                 </div>
                 <div class="input-block">
                   <label for="surname">Фамилия: <span>*</span></label>
-                  <input type="text" placeholder="Введите сумму оплаты" id="oo-surname">
+                  <input type="text" placeholder="Фамилия" id="oo-surname">
                   <p id="p-oo-surname" class="warning">Поле не заполнено!</p>
                 </div>
                 <div class="input-block">
                   <label for="phone-order">Телефон: <span>*</span></label>
-                  <input type="text" placeholder="Введите сумму оплаты" id="oo-phone">
+                  <input type="text" placeholder="Телефон" id="oo-phone">
                   <p id="p-oo-phone" class="warning">Поле не заполнено!</p>
                 </div>
                 <div class="input-block">
                   <label for="email-order">E-mail: <span>*</span></label>
-                  <input type="text" placeholder="Введите сумму оплаты" id="oo-email">
+                  <input type="text" placeholder="Эл. почта" id="oo-email">
                   <p id="p-oo-mail" class="warning">Поле не заполнено!</p>
                 </div>
 
@@ -164,7 +164,7 @@
               <div class="input-main input-main-noflex">
                 <div class="input-block">
                   <label for="comment-order">Ваш комментарий к заказу (тираж, цветность, формат печати, сроки изготовления) </label>
-                  <input type="text" placeholder="Введите сумму оплаты" id="comment-order">
+                  <input type="text" id="comment-order">
                 </div>
               </div>
               <div class="input-main input-main-noflex">
@@ -221,7 +221,7 @@
                 <div class="input-main input-main-noflex">
                   <div class="input-block">
                     <label for="file-order">Если у вас более одного файла и/или их размер более 10 мб, загрузите их на файлообменник, например на <a href=""><span>http://dropmefiles.com</span></a>. Ссылку на файл разместите в это поле.</label>
-                    <input type="text" placeholder="Введите сумму оплаты" id="file-order">
+                    <input type="text" id="file-order">
                   </div>
                 </div>
                 <div class="delivery">
@@ -307,7 +307,7 @@
               </div>
               <div class="btn" >
                 <p><span> * </span> - Обязательные поля</p>
-                <button id="btn-question" type="submit">Оплатить</button>
+                <button id="btn-question" type="submit">Отправить</button>
               </div>
             </form>
           </div>
@@ -349,92 +349,37 @@
         </div>
       </section>
     </section>
-      <section class="top-line">
-        <section class="wrapper">
-          <div class="list">
-            <ul>
-              <li><a href="" id="order-online-top">Заказ онлайн</a></li>
-              <li><a href="">Скидки</a></li>
-              <li><a href="">Информация для клиентов</a></li>
-              <li><a href="">Услуги бизнесу</a></li>
-              <li><a href="" id="dir_mes">Письмо директору</a></li>
-              <li><a href="" id="vacancies-top">Вакансии</a></li>
-              <li><a href="">Блог</a></li>
-              <li><a href="">Контакты</a></li>
-            </ul>
-          </div>
-        </section>
+    <section class="top-line">
+      <section class="wrapper">
+        <div class="list">
+          <ul>
+            <li><a href="" id="order-online-top">Заказ онлайн</a></li>
+            <li><a href="">Скидки</a></li>
+            <li><a href="">Информация для клиентов</a></li>
+            <li><a href="">Услуги бизнесу</a></li>
+            <li><a href="" id="dir_mes">Письмо директору</a></li>
+            <li><a href="" id="vacancies-top">Вакансии</a></li>
+            <li><a href="">Блог</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
+        </div>
       </section>
-      <header>
-        <div class="wrapper">
-          <div class="logo-block">
-            <a href="/"><img src="./img/Logo1.svg" alt="" /></a>
-          </div>
-          <div class="input-field">
-            <div class="input-block">
-              <label for="search">Поиск по сайту</label>
-              <input
-                type="text"
-                name=""
-                id="search"
-                placeholder="Введите запрос"
-              />
-            </div>
-            <div class="select-block">
-              <label for="contact">Контакты</label>
-              <div class="select">
-                <input class="select__input" type="hidden", name="number">
-                <button class="select__current">Выберите адрес</button>
-                <div class="select__list">
-                  <button class="select__item" data-value="One">
-                    <div>ул. 8 марта, 32/1</div>
-                    <div class="little">(Главный филиал)</div>
-                  </button>
-                  <button class="select__item" data-value="Two">ул. Менделеева, 150/4</button>
-                  <button class="select__item" data-value="Three">ул. Космонавтов, 3</button>
-                  <button class="select__item" data-value="Four">
-                    <div>пл. Верхнеторговая, 1</div>
-                    <div class="little">("Гостиный двор")</div>
-                  </button>
-                  <button class="select__item" data-value="Five">
-                    <div>ул. Менделеева, 205а</div>
-                    <div class="little">(Лайфстайл-центр "Башкирия")</div>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="phone">
-            <p>Главный филиал</p>
-            <div class="number">
-              <img src="./img/phone-red.svg" alt="" />
-              <a href="tel:8-347-246-38-99">+7 (347) <b>246-38-99</b></a>
-            </div>
-          </div>
-          <div class="btn-order-online">
-            <a href="">
-              <p>Заказ онлайн</p>
-              <img src="./img/btn-order-online.svg" alt="" />
-            </a>
-          </div>
+    </section>
+    <header>
+      <div class="wrapper">
+        <div class="logo-block">
+          <a href="/"><img src="./img/Logo1.svg" alt="" /></a>
         </div>
-      </header>
-      <section class="header_mobile">
-        <div class="bg">
-          <div class="logo-block">
-            <a href="/"><img src="./img/logo-mobile.svg" alt="" /></a>
+        <div class="input-field">
+          <div class="input-block">
+            <label for="search">Поиск по сайту</label>
+            <input
+              type="text"
+              name=""
+              id="search"
+              placeholder="Введите запрос"
+            />
           </div>
-          <div class="btn-order-online">
-            <a href="">
-              <p>Заказ онлайн</p>
-              <img src="./img/btn-order-online.svg" alt="" />
-            </a>
-          </div>
-          <div class="btn-menu" id="btn-menu">
-            <a href=""><img src="./img/menu 1.svg" alt=""></a>
-          </div>
-        </div>
-        <div class="bg">
           <div class="select-block">
             <label for="contact">Контакты</label>
             <div class="select">
@@ -458,6 +403,568 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="phone">
+          <p>Главный филиал</p>
+          <div class="number">
+            <img src="./img/phone-red.svg" alt="" />
+            <a href="tel:8-347-246-38-99">+7 (347) <b>246-38-99</b></a>
+          </div>
+        </div>
+        <div class="btn-order-online">
+          <a href="">
+            <p>Заказ онлайн</p>
+            <img src="./img/btn-order-online.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="header_mobile">
+      <div class="bg">
+        <div class="logo-block">
+          <a href="/"><img src="./img/logo-mobile.svg" alt="" /></a>
+        </div>
+        <div class="btn-order-online">
+          <a href="">
+            <p>Заказ онлайн</p>
+            <img src="./img/btn-order-online.svg" alt="" />
+          </a>
+        </div>
+        <div class="btn-menu" id="btn-menu">
+          <a href=""><img src="./img/menu 1.svg" alt=""></a>
+        </div>
+      </div>
+      <div class="bg">
+        <div class="select-block">
+          <label for="contact">Контакты</label>
+          <div class="select">
+            <input class="select__input" type="hidden", name="number">
+            <button class="select__current">Выберите адрес</button>
+            <div class="select__list">
+              <button class="select__item" data-value="One">
+                <div>ул. 8 марта, 32/1</div>
+                <div class="little">(Главный филиал)</div>
+              </button>
+              <button class="select__item" data-value="Two">ул. Менделеева, 150/4</button>
+              <button class="select__item" data-value="Three">ул. Космонавтов, 3</button>
+              <button class="select__item" data-value="Four">
+                <div>пл. Верхнеторговая, 1</div>
+                <div class="little">("Гостиный двор")</div>
+              </button>
+              <button class="select__item" data-value="Five">
+                <div>ул. Менделеева, 205а</div>
+                <div class="little">(Лайфстайл-центр "Башкирия")</div>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="phone">
+          <p>Главный филиал</p>
+          <div class="number">
+            <img src="./img/phone-red.svg" alt="" />
+            <a href="tel:8-347-246-38-99">+7 (347) <b>246-38-99</b></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav>
+      <div class="nav-bg">
+        <div class="wrapper">
+          <ul>
+            <li class="main">
+              <a href="">
+                <div class="nav-block-img">
+                  <img src="./img/nav-pic-1.svg" alt="" />
+                </div>
+                <p>Копировальный центр</p>
+              </a>
+              <ul class="submenu">
+                <li><a href="">Цветная и черно-белая печать A3, A4</a></li>
+                <li><a href="">Печать чертежей и карт</a></li>
+                <li><a href="">Копирование чертежей</a></li>
+                <li><a href="">Срочное фото на документы</a></li>
+                <li><a href="">Тиражирование / Ризография</a></li>
+                <li><a href="">Печать фотографий</a></li>
+                <li><a href="">Ламинирование А4, А3, А2, А1</a></li>
+                <li><a href="">Брошюровка и Переплет</a></li>
+                <li><a href="">Фальцовка чертежей</a></li>
+                <li><a href="">Термоклеевой переплёт</a></li>
+                <li><a href="">Печать на конвертах</a></li>
+              </ul>
+            </li>
+
+            <li class="line"></li>
+            <li class="main">
+              <a href="">
+                <div class="nav-block-img">
+                  <img src="./img/nav-pic-2.svg" alt="" />
+                </div>
+                <p>Широкоформатная печать</p>
+              </a>
+              <ul class="submenu">
+                <li><a href="">Широкоформатная печать на пленке</a></li>
+                <li><a href="">Широкоформатная печать на баннерной ткани</a></li>
+                <li><a href="">Печать на холсте</a></li>
+                <li><a href="">Таблички и стенды на пластике</a></li>
+                <li><a href="">Широкоформатная печать на бумаге</a></li>
+                <li><a href="">Плоттерная и контурная резка</a></li>
+                <li><a href="">Штендер (транспарант) участника шествия «Бессмертный полк»</a></li>
+              </ul>
+            </li>
+            <li class="line"></li>
+            <li class="main">
+              <a href="">
+                <div class="nav-block-img">
+                  <img src="./img/nav-pic-3.svg" alt="" />
+                </div>
+                <p>Оперативная полиграфия</p>
+              </a>
+              <ul class="submenu">
+                <li><a href="">Визитки за 10 минут</a></li>
+                <li><a href="">Листовки и флаеры</a></li>
+                <li><a href="">Каталоги и брошюры</a></li>
+                <li><a href="">Меню для ресторанов</a></li>
+                <li><a href="">Этикетки и наклейки</a></li>
+                <li><a href="">Дипломы, грамоты, сертификаты</a></li>
+                <li><a href="">Календари</a></li>
+                <li><a href="">Постеры и плакаты</a></li>
+                <li><a href="">Блокноты</a></li>
+                <li><a href="">Папки</a></li>
+                <li><a href="">Конверты из дизайнерской бумаги</a></li>
+                <li><a href="">Открытки и приглашения</a></li>
+                <li><a href="">Кубарики</a></li>
+              </ul>
+            </li>
+            <li class="line"></li>
+            <li class="main">
+              <a href="">
+                <div class="nav-block-img">
+                  <img src="./img/nav-pic-4.svg" alt="" />
+                </div>
+                <p>Промо- продукция</p>
+              </a>
+              <ul class="submenu">
+                <li><a href="">Мобильные рекламные стенды</a></li>
+                <li><a href="">Печать на футболках</a></li>
+                <li><a href="">Печать на ручках</a></li>
+                <li><a href="">Печать на чехлах</a></li>
+                <li><a href="">Печать на кружках</a></li>
+                <li><a href="">Изготовление значков</a></li>
+                <li><a href="">Бейсболки с логотипом компании</a></li>
+                <li><a href="">Логотипы на спецодежду</a></li>
+                <li><a href="">Изготовление бейджей</a></li>
+                <li><a href="">Подставка для смартфона</a></li>
+                <li><a href="">Тейбл-тенты</a></li>
+                <li><a href="">Настольные визитницы</a></li>
+                <li><a href="">Эко-сумки</a></li>
+                <li><a href="">УФ-печать</a></li>
+              </ul>
+            </li>
+            <li class="line"></li>
+            <li class="main">
+              <a href="">
+                <div class="nav-block-img">
+                  <img src="./img/nav-pic-5.svg" alt="" />
+                </div>
+                <p>Дизайн</p>
+              </a>
+              <ul class="submenu">
+                <li><a href="">Услуги дизайнера</a></li>
+                <li><a href="">Фирменный стиль</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="slider">
+      <img class="bg-pic" src="./img/grey-shit-bg.svg" alt="">
+      <img class="bg-pic-2" src="./img/Frame.svg" alt="">
+      <div class="wrapper">
+        <div class="slick-slider-bloc-mather-fucker">
+        <div class="slider-block">
+          <div class="slider-container">
+            <div class="slider-block-text opacity">
+              <div class="text-slider">
+                <p class="main">Эко-ручки</p>
+                  <span class="promo">Промо-продукция</span><br />
+                  <p class="main">с вашим логотипом</p>
+                </p>
+                <p class="under">
+                  Максимально экологичный и современный способ поддержки
+                  лояльности и узнаваемости вашего бизнеса
+                </p>
+              </div>
+              <div class="small-block">
+                <p class="small-block-title">Ассортимент</p>
+                <p class="under">Большой выбор цветовой гаммы</p>
+              </div>
+              <div class="small-block">
+                <p class="small-block-title">скорость</p>
+                <p class="under">Печать тиражей в кратчайшие сроки</p>
+              </div>
+            </div>
+            <div class="slider-block-text">
+              <div class="text-slider">
+                <p class="main">Печать </p>
+                <p style="margin-bottom: 20px;" class="main">наклеек в Уфе</p><br />
+                <span class="promo">Изготавливаем стикеры для оформления</span>
+                <ul>
+                  <li><p class="under">витрин</p></li>
+                  <li><p class="under">продуктов питания</p></li>
+                  <li><p class="under">автомобиля</p></li>
+                  <li><p class="under">свадебных бутылок</p></li>
+                  <li><p class="under">сувенирной продукции</p></li>
+                </ul>
+                <p class="under-vv">
+                  Мы используем качественные расходные материалы, <br>
+                  что существенно повышаетт срок эксплуатации.
+                </p>
+              </div>
+            </div>
+            <div class="slider-block-text">
+              <div class="text-slider">
+                <p class="main">Подставки</p><br />
+                  <p class="main">для смартфонов</p><br />
+                  <span class="promo vvv">из натурального бука</span>
+                </p>
+                <p class="under-vv">
+                  с нанесением полноцветного логотипа
+                </p>
+              </div>
+
+            </div>
+          </div>
+            <div class="slider-block-slider">
+              <div class="items">
+                <img class="item opacity" src="./img/vector7.png" alt="">
+                <img class="item" src="./img/vector7.png" alt="">
+                <img class="item" src="./img/vector7.png" alt="">
+                <!-- <img class="item" src="./img/nakleyki.jpg" alt="">
+                <img class="item" src="./img/podsavki.jpg" alt=""> -->
+              </div>
+              <div class="btn-slider">
+                <a class="prev" href=""><img src="./img/slider-left.svg" alt=""></a>
+                <a class="next" href=""><img src="./img/slider-right.svg" alt=""></a>
+              </div>
+            </div>
+
+        </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="menu-container">
+      <div class="side-block-2">
+        <div class="contain">
+          <a id="chat" class="white" href="">
+            <img src="./img/side-block-2.svg" alt="">
+            <p>онлайн чат</p>
+          </a>
+          <a class="red pay-btn" id="pay-btn" href="">
+            <img src="./img/side-block-1.svg" alt="">
+            <p>онлайн оплата</p>
+          </a>
+
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="menu">
+          <div class="menu-left">
+            <div class="menu-left-blocks">
+              <div class="menu-left-blocks-block" id="order-online-menu-block">
+                <img class="r" src="./img/menu-1.svg" alt="" />
+                <img class="w" src="./img/menu-1w.svg" alt="" />
+                <p>заказ онлайн</p>
+              </div>
+              <div class="menu-left-blocks-block">
+                <img class="r" src="./img/menu-2.svg" alt="" />
+                <img class="w" src="./img/menu-2w.svg" alt="" />
+                <p>скидки</p>
+              </div>
+              <div class="menu-left-blocks-block">
+                <img class="r" src="./img/menu-3.svg" alt="" />
+                <img class="w" src="./img/menu-3w.svg" alt="" />
+                <p>доставка</p>
+              </div>
+              <div class="menu-left-blocks-block">
+                <img class="r" src="./img/menu-4.svg" alt="" />
+                <img class="w" src="./img/menu-4w.svg" alt="" />
+                <p>информация для клиентов</p>
+              </div>
+              <div class="menu-left-blocks-block">
+                <img class="r" src="./img/menu-5.svg" alt="" />
+                <img class="w" src="./img/menu-5w.svg" alt="" />
+                <p>Услуги бизнесу</p>
+              </div>
+              <div class="menu-left-blocks-block" id="dir_mes1">
+                <img class="r" src="./img/menu-6.svg" alt="" />
+                <img class="w" src="./img/menu-6w.svg" alt="" />
+                <p>письмо директору</p>
+              </div>
+            </div>
+          </div>
+          <div class="menu-right">
+            <div class="side-block">
+              <div class="contain">
+                <a class="red pay-btn1" href="">
+                  <img src="./img/side-block-1.svg" alt="">
+                  <p>онлайн оплата</p>
+                </a>
+                <a id="chat" class="white" href="">
+                  <img src="./img/side-block-2.svg" alt="">
+                  <p>онлайн чат</p>
+                </a>
+              </div>
+            </div>
+
+            <p class="top">Копировальный центр АмегаПРИНТ</p>
+            <p class="main">Новый формат в печати</p>
+            <p class="text">
+              Нужно быстро напечатать рекламный буклет? Отсканировать
+              документы? Разработать макет грамот или промо продукции вашей
+              фирмы? Хотите нанести логотип на сувенирную продукцию или с
+              максимальной точностью выполнить печать чертежей?
+            </p>
+            <div class="d2">
+              <div><img src="./img/!.svg" alt="" /></div>
+              <p class="text">
+                Копировальный центр <b>АмегаПринт</b> в Уфе справиться с любой
+                самой сложной задачей.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantage">
+      <div class="wrapper">
+        <div class="advantage-blocks">
+          <div class="advantage-blocks-block">
+            <img src="./img/advantage11.png" alt="" />
+            <p>
+              с <span>2009</span> года <br />
+              работаем для вас
+            </p>
+          </div>
+          <div class="advantage-blocks-block">
+            <img src="./img/advantage22.png" alt="" />
+            <p>
+              <span>5</span> филиалов <br />
+              в <span>4</span>-х районах г. Уфа
+            </p>
+          </div>
+          <div class="advantage-blocks-block">
+            <img src="./img/advantage33.png" alt="" />
+            <p>
+              <span>быстрая</span> <br />
+              качественная печать
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="description">
+      <div class="wrapper">
+        <h2>АмегаПРИНТ – полиграфия для каждого</h2>
+        <p class="under">
+          Копицентр «АмегаПРИНТ» предлагает услуги копирования, сканирования,
+          печати на бумаге различной плотности, пластике, ткани. Оперативно
+          выполняем заказы любым тиражом от 1 экземпляра. Осуществляем
+          предпечатную подготовку макетов, послепечатную обработку, включая
+          ламинирование, брошюрование, фальцовку в Уфе по доступным ценам.
+        </p>
+        <div class="description-blocks">
+          <div class="description-blocks-block">
+            <div class="title">
+              <h3>Копировальный центр</h3>
+              <img src="./img/desc1.svg" alt="" />
+            </div>
+            <ul>
+              <li><a href="">Цветная и черно-белая печать A3, A4</a></li>
+              <li><a href="">Печать чертежей и карт</a></li>
+              <li><a href="">Копирование чертежей</a></li>
+              <li><a href="">Срочное фото на документы</a></li>
+              <li><a href="">Тиражирование / Ризография</a></li>
+              <li><a href="">Печать фотографий</a></li>
+              <li><a href="">Ламинирование А4, А3, А2, А1</a></li>
+              <li><a href="">Брошюровка и Переплет</a></li>
+              <li><a href="">Фальцовка чертежей</a></li>
+              <li><a href="">Термоклеевой переплёт</a></li>
+              <li><a href="">Печать на конвертах</a></li>
+            </ul>
+          </div>
+          <div class="description-blocks-block">
+            <div class="title">
+              <h3>Широкоформатная печать</h3>
+              <img src="./img/desc2.svg" alt="" />
+            </div>
+            <ul>
+              <li><a href="">Широкоформатная печать на пленке</a></li>
+              <li><a href="">Широкоформатная печать на баннерной ткани</a></li>
+              <li><a href="">Печать на холсте</a></li>
+              <li><a href="">Таблички и стенды на пластике</a></li>
+              <li><a href="">Широкоформатная печать на бумаге</a></li>
+              <li><a href="">Плоттерная и контурная резка</a></li>
+              <li><a href="">Штендер (транспарант) участника шествия «Бессмертный полк»</a></li>
+            </ul>
+          </div>
+          <div class="description-blocks-block">
+            <div class="title">
+              <h3>Оперативная полиграфия</h3>
+              <img src="./img/desc3.svg" alt="" />
+            </div>
+            <ul>
+              <li><a href="">Визитки за 10 минут</a></li>
+              <li><a href="">Листовки и флаеры</a></li>
+              <li><a href="">Каталоги и брошюры</a></li>
+              <li><a href="">Меню для ресторанов</a></li>
+              <li><a href="">Этикетки и наклейки</a></li>
+              <li><a href="">Дипломы, грамоты, сертификаты</a></li>
+              <li><a href="">Календари</a></li>
+              <li><a href="">Постеры и плакаты</a></li>
+              <li><a href="">Блокноты</a></li>
+              <li><a href="">Папки</a></li>
+              <li><a href="">Конверты из дизайнерской бумаги</a></li>
+              <li><a href="">Открытки и приглашения</a></li>
+              <li><a href="">Кубарики</a></li>
+            </ul>
+          </div>
+          <div class="description-blocks-block">
+            <div class="title">
+              <h3>Промо-продукция</h3>
+              <img src="./img/desc4.svg" alt="" />
+            </div>
+            <ul>
+              <li><a href="">Мобильные рекламные стенды</a></li>
+              <li><a href="">Печать на футболках</a></li>
+              <li><a href="">Печать на ручках</a></li>
+              <li><a href="">Печать на чехлах</a></li>
+              <li><a href="">Печать на кружках</a></li>
+              <li><a href="">Изготовление значков</a></li>
+              <li><a href="">Бейсболки с логотипом компании</a></li>
+              <li><a href="">Логотипы на спецодежду</a></li>
+              <li><a href="">Изготовление бейджей</a></li>
+              <li><a href="">Подставка для смартфона</a></li>
+              <li><a href="">Тейбл-тенты</a></li>
+              <li><a href="">Настольные визитницы</a></li>
+              <li><a href="">Эко-сумки</a></li>
+              <li><a href="">УФ-печать</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="player">
+      <div class="wrapper">
+        <a href="https://youtu.be/RPuaeZjBA5Y" data-fancybox="gallery3">
+          <img class="r" src="./img/play-r.svg" alt="" />
+          <img class="b" src="./img/play-b.svg" alt="" />
+        </a>
+        <p class="put-btn">Нажми на кнопку</p>
+        <p class="under">чтобы <span>за 1 минуту</span> узнать о нас</p>
+      </div>
+    </section>
+    <section class="consultation">
+      <div class="wrapper">
+        <div class="consultation-block">
+          <div class="pic-block">
+            <img src="./img/consultation.png" alt="" />
+          </div>
+          <div class="text-block">
+            <h2>Консультация по услугам</h2>
+            <p>
+              Менеджеры компании с радостью ответят на ваши вопросы,
+              произведут расчет стоимости услуг, подготовят индивидуальное
+              коммерческое предложение.
+            </p>
+            <a class="question" id="question-btn" href="">Задать вопрос</a>
+            <p>
+              Более того, вы можете связаться с нами через социальные сети
+            </p>
+            <div class="social">
+              <a href="">
+                <img class="r" src="./img/vk.svg" alt="" />
+                <img class="b" src="./img/vk-b.svg" alt="" />
+              </a>
+              <a href="">
+                <img class="r" src="./img/inst.svg" alt="" />
+                <img class="b" src="./img/inst-b.svg" alt="" />
+              </a>
+              <a href="">
+                <img class="r" src="./img/yb.svg" alt="" />
+                <img class="b" src="./img/yb-b.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="top-clients">
+      <div class="wrapper">
+        <h2>Информация для продвинутых клиентов</h2>
+        <div class="top-clients-blocks">
+          <div class="top-clients-blocks-block">
+            <img src="./img/Rectangle 41.png" alt="" />
+            <p class="title">Технология накатки пленки на пластик</p>
+            <p>
+              Накатка – это нанесение изображения, расположенного на плёнке,
+              на ровную поверхность.
+            </p>
+            <a href="">Подробнее</a>
+          </div>
+          <div class="top-clients-blocks-block">
+            <img src="./img/Rectangle 43.png" alt="" />
+            <p class="title">Тренды в принтах футболок 2020</p>
+            <p>
+              Накатка – это нанесение изображения, расположенного на плёнке,
+              на ровную поверхность.
+            </p>
+            <a href="">Подробнее</a>
+          </div>
+          <div class="top-clients-blocks-block">
+            <img src="./img/Rectangle 45.png" alt="" />
+            <p class="title">Требования к макетам</p>
+            <p>
+              Накатка – это нанесение изображения, расположенного на плёнке,
+              на ровную поверхность.
+            </p>
+            <a href="">Подробнее</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af92ff328051ebee3e8030c4bd13fd37b28264a7f08cf513a58a6c8c421618c29&amp;source=constructor"></iframe>
+
+    </section>
+    <footer>
+      <div class="mobile">
+        <div class="bg">
+          <div class="logo-block">
+            <a href="/"><img src="./img/logo-mobile.svg" alt="" /></a>
+          </div>
+          <div class="btn-order-online">
+            <a href="">
+              <p>Заказ онлайн</p>
+              <img src="./img/btn-order-online.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="bg2">
+          <div class="list">
+            <ul>
+              <li><a href="">Заказ онлайн</a></li>
+              <li><a href="">Скидки</a></li>
+              <li><a href="">Доставка</a></li>
+              <li><a href="">Информация для клиентов</a></li>
+              <li><a href="">Услуги бизнесу</a></li>
+              <li><a href="">Письмо директору</a></li>
+              <li><a href="">Вакансии</a></li>
+              <li><a href="">Блог</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </div>
           <div class="phone">
             <p>Главный филиал</p>
             <div class="number">
@@ -466,492 +973,52 @@
             </div>
           </div>
         </div>
-      </section>
-      <nav>
-        <div class="nav-bg">
-          <div class="wrapper">
+      </div>
+      <div class="wrapper">
+        <div class="top">
+          <div>
+            <a href="/"><img src="./img/Logo1.svg" alt="" /></a>
+          </div>
+          <div class="menu">
             <ul>
-              <li>
-                <a href="">
-                  <div class="nav-block-img">
-                    <img src="./img/nav-pic-1.svg" alt="" />
-                  </div>
-                  <p>Копировальный центр</p>
-                </a>
-              </li>
-              <li class="line"></li>
-              <li>
-                <a href="">
-                  <div class="nav-block-img">
-                    <img src="./img/nav-pic-2.svg" alt="" />
-                  </div>
-                  <p>Широкоформатная печать</p>
-                </a>
-              </li>
-              <li class="line"></li>
-              <li>
-                <a href="">
-                  <div class="nav-block-img">
-                    <img src="./img/nav-pic-3.svg" alt="" />
-                  </div>
-                  <p>Оперативная полиграфия</p>
-                </a>
-              </li>
-              <li class="line"></li>
-              <li>
-                <a href="">
-                  <div class="nav-block-img">
-                    <img src="./img/nav-pic-4.svg" alt="" />
-                  </div>
-                  <p>Промо- продукция</p>
-                </a>
-              </li>
-              <li class="line"></li>
-              <li>
-                <a href="">
-                  <div class="nav-block-img">
-                    <img src="./img/nav-pic-5.svg" alt="" />
-                  </div>
-                  <p>Дизайн</p>
-                </a>
-              </li>
+              <li><a href="">Вакансии</a></li>
+              <li><a href="">Блог</a></li>
+              <li><a href="">Контакты</a></li>
             </ul>
           </div>
-        </div>
-      </nav>
-      <section class="slider">
-        <div class="wrapper">
-          <div class="slick-slider-bloc-mather-fucker">
-          <div class="slider-block">
-            <div class="slider-container">
-              <div class="slider-block-text opacity">
-                <div class="text-slider">
-                  <p class="main">Эко-ручки</p>
-                    <span class="promo">Промо-продукция</span><br />
-                    <p class="main">с вашим логотипом</p>
-                  </p>
-                  <p class="under">
-                    Максимально экологичный и современный способ поддержки
-                    лояльности и узнаваемости вашего бизнеса
-                  </p>
-                </div>
-                <div class="small-block">
-                  <p class="small-block-title">Ассортимент</p>
-                  <p class="under">Большой выбор цветовой гаммы</p>
-                </div>
-                <div class="small-block">
-                  <p class="small-block-title">скорость</p>
-                  <p class="under">Печать тиражей в кратчайшие сроки</p>
-                </div>
-              </div>
-              <div class="slider-block-text">
-                <div class="text-slider">
-                  <p class="main">Печать </p>
-                  <p style="margin-bottom: 20px;" class="main">наклеек в Уфе</p><br />
-                  <span class="promo">Изготавливаем стикеры для оформления</span>
-                  <ul>
-                    <li><p class="under">витрин</p></li>
-                    <li><p class="under">продуктов питания</p></li>
-                    <li><p class="under">автомобиля</p></li>
-                    <li><p class="under">свадебных бутылок</p></li>
-                    <li><p class="under">сувенирной продукции</p></li>
-                  </ul>
-                  <p class="under-vv">
-                    Мы используем качественные расходные материалы, <br>
-                    что существенно повышаетт срок эксплуатации.
-                  </p>
-                </div>
-              </div>
-              <div class="slider-block-text">
-                <div class="text-slider">
-                  <p class="main">Подставки</p><br />
-                    <p class="main">для смартфонов</p><br />
-                    <span class="promo vvv">из натурального бука</span>
-                  </p>
-                  <p class="under-vv">
-                    с нанесением полноцветного логотипа
-                  </p>
-                </div>
-
-              </div>
+          <div class="phone">
+            <div class="number">
+              <img src="./img/phone-red.svg" alt="" />
+              <a href="tel:8-347-246-38-99">+7 (347) <b>246-38-99</b></a>
             </div>
-              <div class="slider-block-slider">
-                <div class="items">
-                  <img class="item opacity" src="./img/vector7.png" alt="">
-                  <img class="item" src="./img/vector7.png" alt="">
-                  <img class="item" src="./img/vector7.png" alt="">
-                </div>
-                <div class="btn-slider">
-                  <a class="prev" href=""><img src="./img/slider-left.svg" alt=""></a>
-                  <a class="next" href=""><img src="./img/slider-right.svg" alt=""></a>
-                </div>
-              </div>
-
           </div>
-
-          </div>
-        </div>
-      </section>
-      <section class="menu-container">
-        <div class="side-block-2">
-          <div class="contain">
-            <a id="chat" class="white" href="">
-              <img src="./img/side-block-2.svg" alt="">
-              <p>онлайн чат</p>
+          <div class="btn-order-online">
+            <a href="">
+              <p>Заказ онлайн</p>
+              <img src="./img/btn-order-online.svg" alt="" />
             </a>
-            <a class="red pay-btn" id="pay-btn" href="">
-              <img src="./img/side-block-1.svg" alt="">
-              <p>онлайн оплата</p>
-            </a>
-
           </div>
         </div>
+      </div>
+      <div class="bottom">
         <div class="wrapper">
-          <div class="menu">
-            <div class="menu-left">
-              <div class="menu-left-blocks">
-                <div class="menu-left-blocks-block" id="order-online-menu-block">
-                  <img class="r" src="./img/menu-1.svg" alt="" />
-                  <img class="w" src="./img/menu-1w.svg" alt="" />
-                  <p>заказ онлайн</p>
-                </div>
-                <div class="menu-left-blocks-block">
-                  <img class="r" src="./img/menu-2.svg" alt="" />
-                  <img class="w" src="./img/menu-2w.svg" alt="" />
-                  <p>скидки</p>
-                </div>
-                <div class="menu-left-blocks-block">
-                  <img class="r" src="./img/menu-3.svg" alt="" />
-                  <img class="w" src="./img/menu-3w.svg" alt="" />
-                  <p>доставка</p>
-                </div>
-                <div class="menu-left-blocks-block">
-                  <img class="r" src="./img/menu-4.svg" alt="" />
-                  <img class="w" src="./img/menu-4w.svg" alt="" />
-                  <p>информация для клиентов</p>
-                </div>
-                <div class="menu-left-blocks-block">
-                  <img class="r" src="./img/menu-5.svg" alt="" />
-                  <img class="w" src="./img/menu-5w.svg" alt="" />
-                  <p>Услуги бизнесу</p>
-                </div>
-                <div class="menu-left-blocks-block" id="dir_mes1">
-                  <img class="r" src="./img/menu-6.svg" alt="" />
-                  <img class="w" src="./img/menu-6w.svg" alt="" />
-                  <p>письмо директору</p>
-                </div>
-              </div>
-            </div>
-            <div class="menu-right">
-              <div class="side-block">
-                <div class="contain">
-                  <a class="red pay-btn1" href="">
-                    <img src="./img/side-block-1.svg" alt="">
-                    <p>онлайн оплата</p>
-                  </a>
-                  <a id="chat" class="white" href="">
-                    <img src="./img/side-block-2.svg" alt="">
-                    <p>онлайн чат</p>
-                  </a>
-                </div>
-              </div>
-
-              <p class="top">Копировальный центр АмегаПРИНТ</p>
-              <p class="main">Новый формат в печати</p>
-              <p class="text">
-                Нужно быстро напечатать рекламный буклет? Отсканировать
-                документы? Разработать макет грамот или промо продукции вашей
-                фирмы? Хотите нанести логотип на сувенирную продукцию или с
-                максимальной точностью выполнить печать чертежей?
-              </p>
-              <div class="d2">
-                <div><img src="./img/!.svg" alt="" /></div>
-                <p class="text">
-                  Копировальный центр <b>АмегаПринт</b> в Уфе справиться с любой
-                  самой сложной задачей.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="advantage">
-        <div class="wrapper">
-          <div class="advantage-blocks">
-            <div class="advantage-blocks-block">
-              <img src="./img/advantage11.png" alt="" />
-              <p>
-                с <span>2009</span> года <br />
-                работаем для вас
-              </p>
-            </div>
-            <div class="advantage-blocks-block">
-              <img src="./img/advantage22.png" alt="" />
-              <p>
-                <span>5</span> филиалов <br />
-                в <span>4</span>-х районах г. Уфа
-              </p>
-            </div>
-            <div class="advantage-blocks-block">
-              <img src="./img/advantage33.png" alt="" />
-              <p>
-                <span>быстрая</span> <br />
-                качественная печать
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="description">
-        <div class="wrapper">
-          <h2>АмегаПРИНТ – полиграфия для каждого</h2>
-          <p class="under">
-            Копицентр «АмегаПРИНТ» предлагает услуги копирования, сканирования,
-            печати на бумаге различной плотности, пластике, ткани. Оперативно
-            выполняем заказы любым тиражом от 1 экземпляра. Осуществляем
-            предпечатную подготовку макетов, послепечатную обработку, включая
-            ламинирование, брошюрование, фальцовку в Уфе по доступным ценам.
-          </p>
-          <div class="description-blocks">
-            <div class="description-blocks-block">
-              <div class="title">
-                <h3>Копировальный центр</h3>
-                <img src="./img/desc1.svg" alt="" />
-              </div>
-              <ul>
-                <li>Цветная и черно-белая печать A3, A4</li>
-                <li>Печать чертежей и карт</li>
-                <li>Копирование чертежей</li>
-                <li>Срочное фото на документы</li>
-              </ul>
-              <div>
-                <a href=""
-                  >еще <b>8</b> предложений
-                  <img src="./img/arrow.svg" alt="" />
-                </a>
-              </div>
-            </div>
-            <div class="description-blocks-block">
-              <div class="title">
-                <h3>Широкоформатная печать</h3>
-                <img src="./img/desc2.svg" alt="" />
-              </div>
-              <ul>
-                <li>Широкоформатная печать на пленке</li>
-                <li>Широкоформатная печать на баннерной ткани</li>
-                <li>Печать на холсте</li>
-                <li>Таблички и стенды на пластике</li>
-              </ul>
-              <div>
-                <a href=""
-                  >еще <b>3</b> предложений
-                  <img src="./img/arrow.svg" alt="" />
-                </a>
-              </div>
-            </div>
-            <div class="description-blocks-block">
-              <div class="title">
-                <h3>Оперативная полиграфия</h3>
-                <img src="./img/desc3.svg" alt="" />
-              </div>
-              <ul>
-                <li>Визитки за 10 минут</li>
-                <li>Листовки и флаеры</li>
-                <li>Каталоги и брошюры</li>
-                <li>Меню для ресторанов</li>
-              </ul>
-              <div>
-                <a href=""
-                  >еще <b>9</b> предложений
-                  <img src="./img/arrow.svg" alt="" />
-                </a>
-              </div>
-            </div>
-            <div class="description-blocks-block">
-              <div class="title">
-                <h3>Промо-продукция</h3>
-                <img src="./img/desc4.svg" alt="" />
-              </div>
-              <ul>
-                <li>Широкоформатная печать на пленке</li>
-                <li>Широкоформатная печать на баннерной ткани</li>
-                <li>Печать на холсте</li>
-                <li>Таблички и стенды на пластике</li>
-              </ul>
-              <div>
-                <a href=""
-                  >еще <b>9</b> предложений
-                  <img src="./img/arrow.svg" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="player">
-        <div class="wrapper">
-          <a href="https://youtu.be/RPuaeZjBA5Y" data-fancybox="gallery3">
-            <img class="r" src="./img/play-r.svg" alt="" />
-            <img class="b" src="./img/play-b.svg" alt="" />
-          </a>
-          <p class="put-btn">Нажми на кнопку</p>
-          <p class="under">чтобы <span>за 1 минуту</span> узнать о нас</p>
-        </div>
-      </section>
-      <section class="consultation">
-        <div class="wrapper">
-          <div class="consultation-block">
-            <div class="pic-block">
-              <img src="./img/consultation.png" alt="" />
-            </div>
-            <div class="text-block">
-              <h2>Консультация по услугам</h2>
-              <p>
-                Менеджеры компании с радостью ответят на ваши вопросы,
-                произведут расчет стоимости услуг, подготовят индивидуальное
-                коммерческое предложение.
-              </p>
-              <a class="question" id="question-btn" href="">Задать вопрос</a>
-              <p>
-                Более того, вы можете связаться с нами через социальные сети
-              </p>
-              <div class="social">
-                <a href="">
-                  <img class="r" src="./img/vk.svg" alt="" />
-                  <img class="b" src="./img/vk-b.svg" alt="" />
-                </a>
-                <a href="">
-                  <img class="r" src="./img/inst.svg" alt="" />
-                  <img class="b" src="./img/inst-b.svg" alt="" />
-                </a>
-                <a href="">
-                  <img class="r" src="./img/yb.svg" alt="" />
-                  <img class="b" src="./img/yb-b.svg" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="top-clients">
-        <div class="wrapper">
-          <h2>Информация для продвинутых клиентов</h2>
-          <div class="top-clients-blocks">
-            <div class="top-clients-blocks-block">
-              <img src="./img/Rectangle 41.png" alt="" />
-              <p class="title">Технология накатки пленки на пластик</p>
-              <p>
-                Накатка – это нанесение изображения, расположенного на плёнке,
-                на ровную поверхность.
-              </p>
-              <a href="">Подробнее</a>
-            </div>
-            <div class="top-clients-blocks-block">
-              <img src="./img/Rectangle 43.png" alt="" />
-              <p class="title">Тренды в принтах футболок 2020</p>
-              <p>
-                Накатка – это нанесение изображения, расположенного на плёнке,
-                на ровную поверхность.
-              </p>
-              <a href="">Подробнее</a>
-            </div>
-            <div class="top-clients-blocks-block">
-              <img src="./img/Rectangle 45.png" alt="" />
-              <p class="title">Требования к макетам</p>
-              <p>
-                Накатка – это нанесение изображения, расположенного на плёнке,
-                на ровную поверхность.
-              </p>
-              <a href="">Подробнее</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af92ff328051ebee3e8030c4bd13fd37b28264a7f08cf513a58a6c8c421618c29&amp;source=constructor"></iframe>
-
-      </section>
-      <footer>
-        <div class="mobile">
-          <div class="bg">
-            <div class="logo-block">
-              <a href="/"><img src="./img/logo-mobile.svg" alt="" /></a>
-            </div>
-            <div class="btn-order-online">
-              <a href="">
-                <p>Заказ онлайн</p>
-                <img src="./img/btn-order-online.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="bg2">
-            <div class="list">
-              <ul>
-                <li><a href="">Заказ онлайн</a></li>
-                <li><a href="">Скидки</a></li>
-                <li><a href="">Доставка</a></li>
-                <li><a href="">Информация для клиентов</a></li>
-                <li><a href="">Услуги бизнесу</a></li>
-                <li><a href="">Письмо директору</a></li>
-                <li><a href="">Вакансии</a></li>
-                <li><a href="">Блог</a></li>
-                <li><a href="">Контакты</a></li>
-              </ul>
-            </div>
-            <div class="phone">
-              <p>Главный филиал</p>
-              <div class="number">
-                <img src="./img/phone-red.svg" alt="" />
-                <a href="tel:8-347-246-38-99">+7 (347) <b>246-38-99</b></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="top">
+          <div class="text">
             <div>
-              <a href="/"><img src="./img/Logo1.svg" alt="" /></a>
+              <p>© <span id="year"></span> Печатный центр <a href="">АмегаПринт</a></p>
+              <p>Продвижение сайта <a href="https://lezhebokov.com/">Lezhebokov.com</a></p>
             </div>
-            <div class="menu">
-              <ul>
-                <li><a href="">Вакансии</a></li>
-                <li><a href="">Блог</a></li>
-                <li><a href="">Контакты</a></li>
-              </ul>
-            </div>
-            <div class="phone">
-              <div class="number">
-                <img src="./img/phone-red.svg" alt="" />
-                <a href="tel:8-347-246-38-99">+7 (347) <b>246-38-99</b></a>
-              </div>
-            </div>
-            <div class="btn-order-online">
-              <a href="">
-                <p>Заказ онлайн</p>
-                <img src="./img/btn-order-online.svg" alt="" />
-              </a>
+            <div style="max-width: 630px">
+              <p>
+                АмегаPRINT является зарегистрированным товарным знаком, все
+                материалы на сайте являются интеллектуальной собственностью
+                компании. Полное или частичное копирование информации
+                запрещено
+              </p>
             </div>
           </div>
         </div>
-        <div class="bottom">
-          <div class="wrapper">
-            <div class="text">
-              <div>
-                <p>© <span id="year"></span> Печатный центр <a href="">АмегаПринт</a></p>
-                <p>Продвижение сайта <a href="https://lezhebokov.com/">Lezhebokov.com</a></p>
-              </div>
-              <div style="max-width: 630px">
-                <p>
-                  АмегаPRINT является зарегистрированным товарным знаком, все
-                  материалы на сайте являются интеллектуальной собственностью
-                  компании. Полное или частичное копирование информации
-                  запрещено
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      </div>
+    </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>

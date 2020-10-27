@@ -5,6 +5,12 @@
   src: url('../fonts/Exo2-VariableFont_wght.ttf');
   /* Путь к файлу со шрифтом */
 }
+@font-face {
+  font-family: Exo2Bold;
+  /* Имя шрифта */
+  src: url('../fonts/Exo2-bold.otf');
+  /* Путь к файлу со шрифтом */
+}
 body,
 div,
 dl,
@@ -147,6 +153,7 @@ img {
 .top-line {
   background: #ffffff;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
 }
 @media screen and (max-width: 414px) {
   .top-line {
@@ -176,7 +183,9 @@ img {
   opacity: 0.4;
 }
 header {
-  margin: 18px auto;
+  background: #ffffff;
+  margin: 18px auto 0;
+  padding-bottom: 18px;
 }
 @media screen and (max-width: 414px) {
   header {
@@ -282,6 +291,47 @@ nav .nav-bg {
     background: none;
     box-shadow: none;
   }
+}
+nav .nav-bg li.main {
+  position: relative;
+}
+nav .nav-bg li.main:hover ul.submenu {
+  display: block;
+}
+nav .nav-bg li.main ul.submenu {
+  position: relative;
+  display: none;
+  z-index: 9999;
+  position: absolute;
+}
+nav .nav-bg li.main ul.submenu::before {
+  content: '';
+  border: 10px solid transparent;
+  border-bottom: 10px solid #b63131;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+}
+nav .nav-bg li.main ul.submenu li {
+  background: #b63131;
+  border-top: #E5E5E5 solid 1px;
+  padding: 5px;
+}
+nav .nav-bg li.main ul.submenu li:first-child {
+  border-top: none;
+}
+nav .nav-bg li.main ul.submenu li:hover {
+  background: #922626;
+}
+nav .nav-bg li.main ul.submenu li a {
+  color: #ffffff;
+  font-family: Exo2;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: left;
+  margin: 0;
+  display: inline-block;
+  white-space: nowrap;
 }
 nav .nav-bg ul {
   display: flex;
@@ -403,7 +453,41 @@ nav .nav-bg ul li a p {
     line-height: 12px;
   }
 }
+.slider {
+  position: relative;
+  margin-bottom: -70px;
+}
+@media screen and (max-width: 414px) {
+  .slider {
+    margin-bottom: 0px;
+  }
+}
+.slider img.bg-pic {
+  position: absolute;
+  top: -200px;
+  right: 300px;
+  z-index: -1000;
+  opacity: 50%;
+}
+@media screen and (max-width: 768px) {
+  .slider img.bg-pic {
+    display: none;
+  }
+}
+.slider img.bg-pic-2 {
+  position: absolute;
+  z-index: -1000;
+  top: -100px;
+  left: 300px;
+}
+@media screen and (max-width: 768px) {
+  .slider img.bg-pic-2 {
+    display: none;
+  }
+}
 .slider .slider-block {
+  margin-left: 50px;
+  margin-right: 50px;
   margin-bottom: -30px;
   display: flex !important;
   align-items: center;
@@ -412,6 +496,8 @@ nav .nav-bg ul li a p {
   .slider .slider-block {
     margin-top: 20px;
     margin-bottom: 40px;
+    margin-left: 0;
+    margin-right: 0;
     display: block !important;
   }
 }
@@ -427,6 +513,11 @@ nav .nav-bg ul li a p {
 @media screen and (max-width: 414px) {
   .slider .slider-block .slider-container {
     width: calc(100% - 30px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider .slider-block .slider-container {
+    height: 300px;
   }
 }
 @media screen and (max-width: 414px) {
@@ -494,7 +585,7 @@ nav .nav-bg ul li a p {
   display: inline-block;
 }
 .slider .slider-block .slider-container .slider-block-text .text-slider p.main {
-  font-family: Exo2;
+  font-family: Exo2Bold;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -524,7 +615,7 @@ nav .nav-bg ul li a p {
   }
 }
 .slider .slider-block .slider-container .slider-block-text .small-block-title {
-  font-family: Exo2;
+  font-family: Exo2Bold;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -1038,7 +1129,13 @@ nav .nav-bg ul li a p {
   font-weight: 300;
   font-size: 12px;
   line-height: 19px;
+}
+.description-blocks-block ul li a {
+  text-decoration: none;
   color: #000000;
+}
+.description-blocks-block ul li a:hover {
+  color: #D32F2F;
 }
 .description-blocks-block ul li::before {
   content: '';
@@ -1057,25 +1154,6 @@ nav .nav-bg ul li a p {
 }
 .description-blocks-block .title img {
   display: block;
-}
-.description-blocks-block a {
-  display: block;
-  font-family: Exo2;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: right;
-  text-decoration-line: underline;
-  color: #D32F2F;
-}
-@media screen and (max-width: 414px) {
-  .description-blocks-block a {
-    margin-top: 8px;
-  }
-}
-.description-blocks-block a img {
-  margin-left: 10px;
 }
 .player {
   padding: 130px 0;
@@ -3245,6 +3323,7 @@ table tr:first-child th:last-child {
 .select__item {
   background: #ffffff;
   font-family: Exo2;
+  font-weight: bold;
   font-size: 12px;
   line-height: 14px;
   font-size: 11px;
