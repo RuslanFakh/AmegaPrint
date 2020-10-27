@@ -1,13 +1,13 @@
-// window.onload = function () {
-//   const input = document.querySelector('#test');
-//   input.addEventListener('keyup', function (e) {
-//     const { value } = e.target;
-//     if (value === '') return;
-//     if (e.keyCode === 13) {
-//       window.location = `/search/q=${value}`
-//     }
-//   })
-// }
+window.onload = function () {
+  const input = document.querySelector('input#search');
+  input.addEventListener('keyup', function (e) {
+    const { value } = e.target;
+    if (value === '') return;
+    if (e.keyCode === 13) {
+      window.location.href = `/search/q=${value}`
+    }
+  })
+}
 
 /////////////////////         pay-online
 const sum = document.getElementById('sum')
