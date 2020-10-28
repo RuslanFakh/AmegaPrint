@@ -1,0 +1,40 @@
+.indexText{
+  font-family: Exo2;
+  margin-bottom: 40px;
+  h2, h3{
+    text-align: center;
+    font-weight: bold;
+  }
+  h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  p{
+    margin: 10px auto 20px;
+    text-indent: 20px;
+    line-height: 25px;
+  }
+  &-block{
+    margin: 10px auto;
+    ul{
+      li{
+        margin: 10px;
+        position: relative;
+        line-height: 25px;
+        &::before{
+          content: '•';
+          margin-right: 10px;
+          display: block;
+          position: absolute;
+          left: -15px;
+        }
+        span{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

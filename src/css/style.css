@@ -723,6 +723,34 @@ nav .nav-bg ul li a p {
     right: -20px;
   }
 }
+.slider-222 .slider-pics {
+  height: 440px;
+  position: relative;
+}
+.slider-222 .slider-pics a {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 1s;
+}
+.slider-222 .slider-pics a.opacity {
+  opacity: 1;
+}
+.slider-222 .slider-pics .prev {
+  z-index: 1000;
+  transform: translateY(-50%);
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+}
+.slider-222 .slider-pics .next {
+  z-index: 1000;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 .menu-container {
   margin: 20px auto;
   position: relative;
@@ -1386,6 +1414,45 @@ nav .nav-bg ul li a p {
 .top-clients-blocks-block a:hover {
   color: #D32F2F;
   border: 2px solid #D32F2F;
+}
+.indexText {
+  font-family: Exo2;
+  margin-bottom: 40px;
+}
+.indexText h2,
+.indexText h3 {
+  text-align: center;
+  font-weight: bold;
+}
+.indexText h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.indexText h3 {
+  font-size: 20px;
+}
+.indexText p {
+  margin: 10px auto 20px;
+  text-indent: 20px;
+  line-height: 25px;
+}
+.indexText-block {
+  margin: 10px auto;
+}
+.indexText-block ul li {
+  margin: 10px;
+  position: relative;
+  line-height: 25px;
+}
+.indexText-block ul li::before {
+  content: '•';
+  margin-right: 10px;
+  display: block;
+  position: absolute;
+  left: -15px;
+}
+.indexText-block ul li span {
+  font-weight: bold;
 }
 .map iframe {
   width: 100%;
