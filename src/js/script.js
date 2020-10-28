@@ -1,3 +1,13 @@
+document.addEventListener('keydown', function(e) {
+	if (e.code === 'Escape') {
+		document.body.style.overflow = ''
+		mobile_block.style.display = 'none'
+		pay_block.style.display = 'none'
+		mail_director_block.style.display = 'none'
+		order_block.style.display = 'none'
+	}
+});
+
 ///////////////////////mobile menu
 const btn_menu = document.querySelector('.btn-menu')
 const btn_close = document.querySelector('.close')

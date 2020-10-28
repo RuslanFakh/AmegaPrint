@@ -1,3 +1,15 @@
+document.addEventListener('keydown', function(e) {
+	if (e.code === 'Escape') {
+		document.body.style.overflow = ''
+		mobile_block.style.display = 'none'
+		pay_block.style.display = 'none'
+		mail_director_block.style.display = 'none'
+		order_block.style.display = 'none'
+		summary_block.style.display = 'none'
+	}
+});
+
+
 //contact_page
 let listContact = document.querySelector('.contact-list .title-tabs .btn-list')
 let mapContact = document.querySelector('.contact-list .title-tabs .btn-map')

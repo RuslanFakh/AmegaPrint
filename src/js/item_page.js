@@ -1,3 +1,15 @@
+document.addEventListener('keydown', function(e) {
+	if (e.code === 'Escape') {
+		document.body.style.overflow = ''
+		mobile_block.style.display = 'none'
+		pay_block.style.display = 'none'
+		mail_director_block.style.display = 'none'
+		order_block.style.display = 'none'
+	}
+});
+
+
+
 const costTab = document.getElementById('btn-cost')
 const possibilityTab = document.getElementById('btn-possibility')
 const videoTab = document.getElementById('btn-video')
