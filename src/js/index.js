@@ -31,35 +31,9 @@ btn_prev.onclick = function(e){
   slides_text[step].classList.add('opacity')
 }
 
-// const slides = document.querySelectorAll('.slider-pics a')
-// const btn_prev = document.querySelector('.slider-pics .prev')
-// const btn_next = document.querySelector('.slider-pics .next')
-
-// let step = 0
-
-// btn_next.onclick = function(e){
-//   e.preventDefault();
-// 		slides[step].classList.remove('opacity')
-//     step++
-//     if(step == slides.length){
-//       step = 0
-//     }
-//     slides[step].classList.add('opacity')
-// }
-// btn_prev.onclick = function(e){
-//   e.preventDefault()
-//   slides[step].classList.remove('opacity')
-//   step--
-//   if(step < 0){
-//     step = slides.length - 1
-//   }
-
-//   slides[step].classList.add('opacity')
-// }
 
 
-/////////////////// ask question
-//main block
+///////////////////////main block
   const ask_question = document.querySelector('.ask-question')
   const question_btn = document.getElementById('question-btn')
   const close_ask_question = document.getElementById('close-ask-question')

@@ -9,6 +9,46 @@ window.onload = function () {
   })
 }
 
+///////////////////////////// select
+const aaaa = document.querySelectorAll('.select__current')
+if(localStorage.getItem('adress')){
+  aaaa.forEach(elem =>{
+    elem.textContent = localStorage.getItem('adress')
+    elem.style.color = 'black'
+  })
+}
+document.querySelectorAll('.select').forEach(select => { //Выбриаем все выпадающие списки на странице
+	let selectCurrent = select.querySelector('.select__current'),
+			selectList = select.querySelector('.select__list'),
+			selectInput = select.querySelector('.select__input'),
+      selectItem = select.querySelectorAll('.select__item');
+
+  if(!localStorage.getItem('adress')){
+    selectCurrent.textContent = localStorage.getItem('adress')
+  }
+	selectCurrent.addEventListener('click', () => {//по клику добавляем/удалям класс
+		selectList.classList.toggle('select__list--show')
+	})
+	selectItem.forEach(item =>{//обходим элементы списка
+		item.addEventListener('click', ()=>{//обрабатываем событие клик по элементу
+			let itemValue = item.getAttribute('data-value')//получаем значение из data-атрибута
+      let itemText = item.textContent//получаем содержание элемента (текст)
+      localStorage.setItem('adress', itemText)
+			selectInput.value = itemValue//присваиваем инпуту ранее полученное значение из data-атрибута
+			selectCurrent.textContent = itemText//присваиваем текущее значение (текст)
+      selectCurrent.style.color = 'black'
+      window.location.href = '/contacts/'
+      selectListHide()//скрываем выпадающий список
+		})
+	})
+	let selectListHide = () => {// функция закрытия выпадающего списка
+		selectList.classList.remove('select__list--show')
+	}
+	document.addEventListener('mouseup', (e) =>{//Закрываем выпадающий сисок, если клик был вне области
+    if (!select.contains(e.target))	selectListHide()
+  })
+})
+
 /////////////////////         pay-online
 const sum = document.getElementById('sum')
 const p_sum = document.getElementById('p-sum')

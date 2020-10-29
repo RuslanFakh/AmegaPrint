@@ -3263,6 +3263,9 @@ table tr:first-child th:last-child {
   padding: 14px;
   border-radius: 7px;
 }
+.title-tabs a img {
+  height: 13px;
+}
 @media screen and (max-width: 375px) {
   .title-tabs a {
     padding: 5px;
