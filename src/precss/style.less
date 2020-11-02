@@ -446,6 +446,7 @@ table {
     background: #ffffff;
     border: none;
     width: 130px;
+    height: 15px;
     .xs-block({
       width: 100px;
     });
@@ -659,7 +660,57 @@ table {
     }
   }
 }
+.side-block{
+  display: none;
+  .md-block({
+    display: block;
+  });
+  position: fixed;
+  right: 10px;
+  top: 30%;
+  z-index: 1001;
+  .contain{
+    background: rgba(0, 0, 0, 0.59);
+    backdrop-filter: blur(5px);
+    border-radius: 7px;
+    padding: 10px;
+    a{
+      text-decoration: none;
+      padding: 6px 10px;
+      text-align: center;
+      display: block;
+      &:first-child{
+        margin-bottom: 12px;
+      }
+      p{
+        font-family: Exo2;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 6px;
+        line-height: 6px;
+        max-width: 30px;
+      }
+      &.red{
+        p{
+          color: #ffffff;
+        }
 
+        background: #D32F2F;
+        box-shadow: 0px 0px 19px rgba(95, 95, 95, 0.11);
+        border-radius: 7px;
+      }
+      &.white{
+        p{
+          color: #000000;
+        }
+
+        background: #FFFFFF;
+        box-shadow: 0px 0px 19px rgba(95, 95, 95, 0.11);
+        border-radius: 7px;
+      }
+    }
+  }
+}
 .side-block-2 {
   position: fixed;
   right: -160px;

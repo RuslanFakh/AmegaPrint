@@ -1,4 +1,27 @@
 window.onload = function () {
+  // localStorage.clear()
+  // const aaaa = document.querySelectorAll('.select__current')
+  // if(localStorage.getItem('adressAmegaPrint')){
+  //   aaaa.forEach(elem =>{
+  //     elem.textContent = localStorage.getItem('adressAmegaPrint')
+  //     elem.style.color = 'black'
+  //   })
+  // }
+  // else if(localStorage.getItem('adressAmegaPrint') == null){
+  //   aaaa.forEach( elem => {
+  //     elem.textContent = 'Выберите адрес'
+  //   })
+  // }
+  document.querySelectorAll('.select__current').forEach(elem => {
+    if(localStorage.getItem('adressAmegaPrint')){
+      elem.textContent = localStorage.getItem('adressAmegaPrint')
+      elem.style.color = 'black'
+    }
+    else if (localStorage.getItem('adressAmegaPrint') == null){
+      elem.textContent = 'Выберите адрес'
+    }
+  })
+  console.log(typeof localStorage.getItem('adressAmegaPrint') + ' : ' + localStorage.getItem('adressAmegaPrint'))
   const input = document.querySelector('input#search');
   input.addEventListener('keyup', function (e) {
     const { value } = e.target;
@@ -10,21 +33,20 @@ window.onload = function () {
 }
 
 ///////////////////////////// select
-const aaaa = document.querySelectorAll('.select__current')
-if(localStorage.getItem('adress')){
-  aaaa.forEach(elem =>{
-    elem.textContent = localStorage.getItem('adress')
-    elem.style.color = 'black'
-  })
-}
+// if(localStorage.getItem('adressAmegaPrint') == null){
+//   document.querySelectorAll('.select__current').forEach( elem => {
+//     elem.textContent = 'Выберите адрес'
+//   })
+// }
+
 document.querySelectorAll('.select').forEach(select => { //Выбриаем все выпадающие списки на странице
 	let selectCurrent = select.querySelector('.select__current'),
 			selectList = select.querySelector('.select__list'),
 			selectInput = select.querySelector('.select__input'),
       selectItem = select.querySelectorAll('.select__item');
 
-  if(!localStorage.getItem('adress')){
-    selectCurrent.textContent = localStorage.getItem('adress')
+  if(!localStorage.getItem('adressAmegaPrint')){
+    selectCurrent.textContent = localStorage.getItem('adressAmegaPrint')
   }
 	selectCurrent.addEventListener('click', () => {//по клику добавляем/удалям класс
 		selectList.classList.toggle('select__list--show')
@@ -33,7 +55,7 @@ document.querySelectorAll('.select').forEach(select => { //Выбриаем вс
 		item.addEventListener('click', ()=>{//обрабатываем событие клик по элементу
 			let itemValue = item.getAttribute('data-value')//получаем значение из data-атрибута
       let itemText = item.textContent//получаем содержание элемента (текст)
-      localStorage.setItem('adress', itemText)
+      localStorage.setItem('adressAmegaPrint', itemText)
 			selectInput.value = itemValue//присваиваем инпуту ранее полученное значение из data-атрибута
 			selectCurrent.textContent = itemText//присваиваем текущее значение (текст)
       selectCurrent.style.color = 'black'
