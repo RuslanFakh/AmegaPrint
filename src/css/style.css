@@ -2032,6 +2032,9 @@ footer .bottom .text a {
     font-size: 10px;
   }
 }
+.service {
+  margin-top: 30px;
+}
 .service h2 {
   font-family: Exo2;
   font-style: normal;
@@ -2039,7 +2042,6 @@ footer .bottom .text a {
   font-size: 25px;
   line-height: 40px;
   color: #000000;
-  margin-top: 25px;
   margin-bottom: 25px;
 }
 .service-main {
