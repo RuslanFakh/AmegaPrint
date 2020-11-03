@@ -1,17 +1,4 @@
 window.onload = function () {
-  // localStorage.clear()
-  // const aaaa = document.querySelectorAll('.select__current')
-  // if(localStorage.getItem('adressAmegaPrint')){
-  //   aaaa.forEach(elem =>{
-  //     elem.textContent = localStorage.getItem('adressAmegaPrint')
-  //     elem.style.color = 'black'
-  //   })
-  // }
-  // else if(localStorage.getItem('adressAmegaPrint') == null){
-  //   aaaa.forEach( elem => {
-  //     elem.textContent = 'Выберите адрес'
-  //   })
-  // }
   document.querySelectorAll('.select__current').forEach(elem => {
     if(localStorage.getItem('adressAmegaPrint')){
       elem.textContent = localStorage.getItem('adressAmegaPrint')
@@ -21,7 +8,7 @@ window.onload = function () {
       elem.textContent = 'Выберите адрес'
     }
   })
-  console.log(typeof localStorage.getItem('adressAmegaPrint') + ' : ' + localStorage.getItem('adressAmegaPrint'))
+  // console.log(typeof localStorage.getItem('adressAmegaPrint') + ' : ' + localStorage.getItem('adressAmegaPrint'))
   const input = document.querySelector('input#search');
   input.addEventListener('keyup', function (e) {
     const { value } = e.target;
@@ -31,13 +18,6 @@ window.onload = function () {
     }
   })
 }
-
-///////////////////////////// select
-// if(localStorage.getItem('adressAmegaPrint') == null){
-//   document.querySelectorAll('.select__current').forEach( elem => {
-//     elem.textContent = 'Выберите адрес'
-//   })
-// }
 
 document.querySelectorAll('.select').forEach(select => { //Выбриаем все выпадающие списки на странице
 	let selectCurrent = select.querySelector('.select__current'),
@@ -53,13 +33,15 @@ document.querySelectorAll('.select').forEach(select => { //Выбриаем вс
 	})
 	selectItem.forEach(item =>{//обходим элементы списка
 		item.addEventListener('click', ()=>{//обрабатываем событие клик по элементу
-			let itemValue = item.getAttribute('data-value')//получаем значение из data-атрибута
+      let itemValue = item.getAttribute('data-value')//получаем значение из data-атрибута
+      let street = item.getAttribute('street')
       let itemText = item.textContent//получаем содержание элемента (текст)
       localStorage.setItem('adressAmegaPrint', itemText)
+      localStorage.setItem('adressAmegaPrintStreet', street)
 			selectInput.value = itemValue//присваиваем инпуту ранее полученное значение из data-атрибута
 			selectCurrent.textContent = itemText//присваиваем текущее значение (текст)
       selectCurrent.style.color = 'black'
-      window.location.href = '/contacts/'
+      window.location.href = `/contacts/`
       selectListHide()//скрываем выпадающий список
 		})
 	})
