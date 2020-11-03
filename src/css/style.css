@@ -2186,6 +2186,24 @@ footer .bottom .text a {
 .offer-block {
   max-width: 700px;
 }
+.offer a {
+  color: #d32f2f;
+}
+.offer h3 {
+  font-family: Exo2;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 22px;
+}
+@media screen and (max-width: 375px) {
+  .offer h3 {
+    margin-bottom: 14px;
+    text-align: center;
+  }
+}
 .offer h2 {
   font-family: Exo2;
   font-style: normal;
@@ -2228,9 +2246,11 @@ footer .bottom .text a {
     margin: 10px auto;
   }
 }
+.offer ol,
 .offer ul {
   margin-right: -10px;
 }
+.offer ol li,
 .offer ul li {
   font-family: Exo2;
   font-style: normal;
@@ -2241,6 +2261,7 @@ footer .bottom .text a {
   margin: 10px 15px;
   position: relative;
 }
+.offer ol li::before,
 .offer ul li::before {
   content: "";
   display: inline-block;
@@ -2358,6 +2379,9 @@ footer .bottom .text a {
     overflow-y: hidden;
   }
 }
+.price-list-main .cost-block {
+  width: 100%;
+}
 .price-list-main .cost-block a {
   text-decoration: none;
   color: #d02f2f;
@@ -2415,6 +2439,11 @@ footer .bottom .text a {
 .price-list-main .cost-block .price-list-blocks .list-item .table-block table th,
 .price-list-main .cost-block .price-list-blocks .list-item .table-block table td {
   padding: 9px 13px;
+}
+.price-list-main .cost-block .price-list-blocks .list-item .table-block ul li {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
 }
 .price-list-main .cost-block .price-list-blocks .list-item .table-block p {
   margin-bottom: 10px;
@@ -2492,22 +2521,27 @@ footer .bottom .text a {
   }
 }
 .price-list-main .video-block {
+  width: 100%;
   font-family: Exo2;
   display: none;
   background: #ffffff;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
   border-radius: 7px;
   padding: 23px;
-  width: 100%;
 }
 .price-list-main .video-block h2 {
   font-size: 25px;
 }
+.price-list-main .video-block a {
+  color: #d02f2f;
+}
+.price-list-main .video-block ol li,
 .price-list-main .video-block ul li {
   font-size: 12px;
   line-height: 14px;
   color: #000000;
 }
+.price-list-main .video-block ol li::before,
 .price-list-main .video-block ul li::before {
   content: '•';
   margin: 0 10px;
@@ -2539,7 +2573,22 @@ footer .bottom .text a {
   }
 }
 .price-list .text-bottom {
+  font-family: Exo2;
   margin-bottom: 20px;
+}
+.price-list .text-bottom h2 {
+  font-size: 25px;
+}
+.price-list .text-bottom ul li,
+.price-list .text-bottom ol li {
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+.price-list .text-bottom ul li::before,
+.price-list .text-bottom ol li::before {
+  content: '•';
+  margin: 0 10px;
 }
 .price-list .text-bottom p {
   margin-bottom: 10px;

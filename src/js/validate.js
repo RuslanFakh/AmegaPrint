@@ -41,7 +41,7 @@ document.querySelectorAll('.select').forEach(select => { //Выбриаем вс
 			selectInput.value = itemValue//присваиваем инпуту ранее полученное значение из data-атрибута
 			selectCurrent.textContent = itemText//присваиваем текущее значение (текст)
       selectCurrent.style.color = 'black'
-      window.location.href = `/contacts/`
+      window.location.href = `/contacts`
       selectListHide()//скрываем выпадающий список
 		})
 	})
