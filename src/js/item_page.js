@@ -8,10 +8,6 @@ document.addEventListener('keydown', function(e) {
 	}
 });
 
-
-
-
-
 $('.slider-2-img').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
