@@ -2379,6 +2379,22 @@ footer .bottom .text a {
     overflow-y: hidden;
   }
 }
+.price-list-main .business-text {
+  margin: 20px auto;
+  width: 100%;
+  font-family: Exo2;
+  font-size: 14px;
+}
+.price-list-main .business-text a {
+  text-decoration: none;
+  color: #d02f2f;
+}
+.price-list-main .business-text p {
+  margin: 10px auto;
+}
+.price-list-main .business-text p span {
+  font-weight: bold;
+}
 .price-list-main .cost-block {
   width: 100%;
 }
