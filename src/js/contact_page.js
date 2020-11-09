@@ -1,12 +1,18 @@
+// $('a[href^="#"]').click(function(){
+// 	//Сохраняем значение атрибута href в переменной:
+// 	var target = $(this).attr('href');
+// 	$('html, body').animate({scrollTop: $(target).offset().top}, 800);
+// 	return false;
+// });
 // window.onload = function(){
 	// console.log(localStorage.getItem('adressAmegaPrintStreet'))
 	// console.log(document.getElementById(localStorage.getItem('adressAmegaPrintStreet')))
-setTimeout(function(){
+// setTimeout(function(){
 	if(localStorage.getItem('adressAmegaPrintStreet') != null){
 		const down = document.getElementById(localStorage.getItem('adressAmegaPrintStreet'))
-		zenscroll.to(down, 1000)
+		$('html, body').animate({scrollTop: $(down).offset().top}, 800);
 	}
-}, 400)
+// }, 400)
 
 
 // }
