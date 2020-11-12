@@ -18,7 +18,16 @@ nav {
         ul.submenu{
           display: block;
         }
+
       }
+      .sm-block({
+        &:hover{
+          ul.submenu{
+            display: none;
+          }
+
+        }
+      });
       ul.submenu{
         &::before{
           content: '';

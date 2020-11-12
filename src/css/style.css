@@ -298,6 +298,11 @@ nav .nav-bg li.main {
 nav .nav-bg li.main:hover ul.submenu {
   display: block;
 }
+@media screen and (max-width: 414px) {
+  nav .nav-bg li.main:hover ul.submenu {
+    display: none;
+  }
+}
 nav .nav-bg li.main ul.submenu {
   position: relative;
   display: none;
@@ -700,6 +705,11 @@ nav .nav-bg ul li a p {
   text-align: center;
   display: flex;
   padding-bottom: 100px;
+}
+@media screen and (max-width: 414px) {
+  .slider .slider-block .slider-block-slider .items a {
+    padding-bottom: 0;
+  }
 }
 .slider .slider-block .slider-block-slider .items a.item {
   position: absolute;
@@ -1409,10 +1419,39 @@ nav .nav-bg ul li a p {
 .indexText-block ul li span {
   font-weight: bold;
 }
+.map {
+  position: relative;
+}
 .map iframe {
   width: 100%;
   border: 0;
   height: 330px;
+}
+.map iframe.pointer-events {
+  pointer-events: none;
+}
+.map #wrapMap {
+  position: relative;
+  cursor: help;
+  overflow: hidden;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+  border-image: initial;
+}
+.map .mapTitle {
+  position: absolute;
+  z-index: 1000;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px;
+  display: none;
+  padding: 5px 20px;
+  border-radius: 5px;
+  background: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+  border-image: initial;
+  font-family: Exo2;
 }
 footer .top {
   margin: 13px 30px;
@@ -1706,6 +1745,11 @@ footer .bottom .text a {
   margin-bottom: 10px;
   max-width: 132px;
   max-height: 132px;
+}
+@media screen and (max-width: 414px) {
+  .services-sides-menus {
+    display: none;
+  }
 }
 .services-sides-menus .side-menu {
   margin: 0;
@@ -2592,6 +2636,11 @@ footer .bottom .text a {
     min-height: 200px;
   }
 }
+@media screen and (max-width: 414px) {
+  .price-list-main .side-menu {
+    display: none;
+  }
+}
 .price-list .text-bottom {
   font-family: Exo2;
   margin-bottom: 20px;
@@ -2635,6 +2684,11 @@ footer .bottom .text a {
   font-size: 25px;
   line-height: 40px;
   color: #000000;
+}
+@media screen and (max-width: 414px) {
+  .contact-list h2 {
+    display: none;
+  }
 }
 @media screen and (max-width: 375px) {
   .contact-list h2 {
