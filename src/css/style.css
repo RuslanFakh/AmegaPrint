@@ -711,6 +711,21 @@ nav .nav-bg ul li a p {
     padding-bottom: 0;
   }
 }
+@media screen and (max-width: 414px) {
+  .slider .slider-block .slider-block-slider .items a {
+    height: 260px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .slider .slider-block .slider-block-slider .items a {
+    height: 230px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .slider .slider-block .slider-block-slider .items a {
+    height: 190px;
+  }
+}
 .slider .slider-block .slider-block-slider .items a.item {
   position: absolute;
   opacity: 0;
