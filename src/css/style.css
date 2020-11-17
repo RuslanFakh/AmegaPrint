@@ -2251,6 +2251,7 @@ footer .bottom .text a {
 }
 .offer a {
   color: #d32f2f;
+  display: inline-block;
 }
 .offer h3 {
   font-family: Exo2;

@@ -52,26 +52,45 @@ document.querySelectorAll('.select').forEach(select => { //Выбриаем вс
     if (!select.contains(e.target))	selectListHide()
   })
 })
-
+if(window.innerWidth < 415){
+  console.log('+')
+}
+else{
+  console.log('-')
+}
+console.log(window.innerWidth + ' Width')
 ///////////    map
-const wrapMap = document.querySelector('.map')
-var mapTitle = document.createElement('div'); mapTitle.className = 'mapTitle';// создаём элемент <div>, который будем перемещать вместе с указателем мыши пользователя
-mapTitle.textContent = 'Для активации карты нажмите по ней';// вписываем нужный нам текст внутрь элемента
-wrapMap.appendChild(mapTitle);// добавляем элемент с подсказкой последним элементов внутрь нашего <div> с id wrapMap
-wrapMap.onclick = function() {// по клику на карту
-    this.children[0].classList.remove('pointer-events'); // убираем атрибут "style", в котором прописано свойство "pointer-events"
-    mapTitle.parentElement.removeChild(mapTitle);// удаляем элемент с интерактивной подсказкой
+function map(){
+    const wrapMap = document.querySelector('.map')
+    var mapTitle = document.createElement('div'); mapTitle.className = 'mapTitle';// создаём элемент <div>, который будем перемещать вместе с указателем мыши пользователя
+    mapTitle.textContent = 'Для активации карты нажмите по ней';// вписываем нужный нам текст внутрь элемента
+    wrapMap.appendChild(mapTitle);// добавляем элемент с подсказкой последним элементов внутрь нашего <div> с id wrapMap
+    wrapMap.onclick = function() {// по клику на карту
+      this.children[0].classList.remove('pointer-events'); // убираем атрибут "style", в котором прописано свойство "pointer-events"
+      mapTitle.parentElement.removeChild(mapTitle);// удаляем элемент с интерактивной подсказкой
+
+    }
+
+    wrapMap.onmousemove = function(event) {// по движению мыши в области карты
+        mapTitle.style.display = 'block';// показываем подсказку
+        if(event.offsetY > 10) mapTitle.style.top = event.offsetY + 20 + 'px';// двигаем подсказку по области карты вместе с мышкой пользователя
+        if(event.offsetX > 10) mapTitle.style.left = event.offsetX + 20 + 'px';
+    }
+
+    wrapMap.onmouseleave = function() {// при уходе указателя мыши с области карты
+      mapTitle.style.display = 'none';// прячем подсказку
+    }
+
+}
+if(window.innerWidth > 414){
+  map()
+}
+else{
+  const map = document.querySelector('.map iframe')
+  map.classList.remove('pointer-events')
 }
 
-wrapMap.onmousemove = function(event) {// по движению мыши в области карты
-    mapTitle.style.display = 'block';// показываем подсказку
-    if(event.offsetY > 10) mapTitle.style.top = event.offsetY + 20 + 'px';// двигаем подсказку по области карты вместе с мышкой пользователя
-    if(event.offsetX > 10) mapTitle.style.left = event.offsetX + 20 + 'px';
-}
 
-wrapMap.onmouseleave = function() {// при уходе указателя мыши с области карты
-    mapTitle.style.display = 'none';// прячем подсказку
-}
 
 /////////////////////         pay-online
 const sum = document.getElementById('sum')
