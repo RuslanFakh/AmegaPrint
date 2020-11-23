@@ -184,8 +184,7 @@ img {
 }
 header {
   background: #ffffff;
-  margin: 18px auto 0;
-  padding-bottom: 18px;
+  margin: 15px auto 0;
 }
 @media screen and (max-width: 414px) {
   header {
@@ -196,6 +195,9 @@ header .wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+header .wrapper .logo-block {
+  max-width: 260px;
 }
 header .wrapper .logo-block a {
   display: block;
@@ -1469,7 +1471,7 @@ nav .nav-bg ul li a p {
   font-family: Exo2;
 }
 footer .top {
-  margin: 13px 30px;
+  margin: 0px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1478,6 +1480,9 @@ footer .top {
   footer .top {
     display: none;
   }
+}
+footer .top .logo {
+  max-width: 260px;
 }
 footer .top .menu {
   padding: 0 10px;
@@ -1513,6 +1518,11 @@ footer .mobile .bg {
   padding: 16px 28px;
   background: #FFFFFF;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+}
+@media screen and (max-width: 414px) {
+  footer .mobile .bg {
+    padding: 10px 10px 10px 0;
+  }
 }
 footer .mobile .bg2 {
   background: #FFFFFF;
@@ -2063,6 +2073,9 @@ footer .bottom .text a {
 .header_mobile .bg:nth-child(2) {
   padding-top: 0;
   padding-bottom: 7px;
+}
+.header_mobile .bg .btn-order-online {
+  margin-right: 10px;
 }
 @media screen and (max-width: 320px) {
   .header_mobile .bg {
