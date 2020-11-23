@@ -1,3 +1,16 @@
+//////////close all forms
+function closeAllForms(){
+  document.querySelectorAll('.form-display').forEach(elem => {
+    elem.style.display = 'none'
+  })
+  document.querySelector('.complete').style.display = 'block'
+}
+document.querySelector('button.btn-complete').onclick = function(e){
+  e.preventDefault()
+  document.querySelector('.complete').style.display = 'none'
+}
+
+////////// Выбор улицы
 window.onload = function () {
   document.querySelectorAll('.select__current').forEach(elem => {
     if(localStorage.getItem('adressAmegaPrint')){
@@ -52,13 +65,8 @@ document.querySelectorAll('.select').forEach(select => { //Выбриаем вс
     if (!select.contains(e.target))	selectListHide()
   })
 })
-if(window.innerWidth < 415){
-  console.log('+')
-}
-else{
-  console.log('-')
-}
-console.log(window.innerWidth + ' Width')
+
+
 ///////////    map
 function map(){
     const wrapMap = document.querySelector('.map')

@@ -31,7 +31,17 @@ btn_prev.onclick = function(e){
   slides_text[step].classList.add('opacity')
 }
 
-
+function complete(){
+  const completeBlock = document.getElementsByClassName('complete')
+  completeBlock.style.display = 'block'
+  const completeBtn = document.querySelectorAll('.btn-complete')
+  completeBtn.forEach(elem => {
+    elem.onclick = function(e){
+      e.preventDefault()
+      completeBlock.style.display = 'none'
+    }
+  })
+}
 
 ///////////////////////main block
   const ask_question = document.querySelector('.ask-question')
@@ -61,9 +71,11 @@ const p_q_phone = document.getElementById('p-q-phone')
 const btn_question = document.getElementById('btn-question')
 //validate form
 $("#phone-question").mask("8(999) 999-9999");
+
 btn_question.addEventListener('click', function(e){
   displayBlock(name_question, p_q_name, e)
   displayBlock(name_question, p_q_phone, e)
+  complete()
 })
 name_question.oninput = function(){
   p_q_name.style.display = 'none'

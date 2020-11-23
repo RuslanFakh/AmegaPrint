@@ -873,7 +873,7 @@ table {
       }
     }
     .bottom {
-      padding: 30px;
+      padding: 10px 30px;
       background: #ffffff;
       .sm-block({
         padding: 20px;
@@ -908,7 +908,7 @@ table {
           }
         }
         .input-main {
-          margin-bottom: 20px;
+          margin-bottom: 0px;
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
@@ -1189,6 +1189,67 @@ table {
 .rotate {
   transform: rotate(45deg);
 }
+.complete{
+  font-family: Exo2;
+  .online-pay{
+    height: unset;
+  }
+  .top{
+    display: flex;
+    align-items: center;
+  }
+  .bottom{
+    .btn-complete {
+      text-align: right;
+      button{
+        text-align: center;
+      cursor: pointer;
+      background: #c21f13;
+      border: none;
+      border-radius: 0;
+      width: 100px;
+      box-sizing: border-box;
+      padding: 8px 9px;
+      color: #fff;
+      font-size: 15px;
+      vertical-align: middle;
+      text-transform: uppercase;
+      margin-left: 1rem;
+      max-height: 34px;
+      // max-width: 34px;
+      img {
+        max-width: 17px;
+
+        // padding: 7px;
+      }
+    }
+  }
+  }
+  h2 {
+    font-family: Exo2;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 25px;
+    color: #000000;
+    margin-left: 15px !important;
+    .sm-block({
+      font-size: 20px;
+      max-width: 200px;
+    });
+  }
+  .pic-phone {
+    min-width: 54px;
+    height: 54px;
+    background: #d02f2f;
+    margin-right: 10px;
+    img {
+      padding: 12px 13px;
+      width: 30px;
+    }
+  }
+}
+
 
 .pay-online {
   display: none;
@@ -1203,6 +1264,9 @@ table {
   display: none;
 }
 .summary {
+  display: none;
+}
+.complete{
   display: none;
 }
 
