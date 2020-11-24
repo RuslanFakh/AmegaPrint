@@ -644,7 +644,7 @@
         <a href="">Главная</a> / <a href="">Контакты</a>
       </div>
     </section>
-    <section class="contact-list">
+    <section class="contact-list" itemscope itemtype="http://schema.org/Organization">
       <div class="side-block-2">
         <div class="contain">
           <a id="chat" class="white" href="">
@@ -672,11 +672,11 @@
             <p>Карта</p>
           </a>
         </div>
-          <div class="contact-list-main">
+          <div class="contact-list-main" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
             <div class="contact-list-blocks">
               <div class="list-item" id="marta8">
-                <div class="list-item-text">
-                  <p class="left">г. Уфа, ул. 8 марта, д. 32/1 <span>(Главный филиал)</span></p>
+                <div class="list-item-text" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                  <p class="left">г. <span itemprop="addressLocality">Уфа</span>, <span itemprop="streetAddress">8 марта, 32/1</span> <span>(Главный филиал)</span></p>
                   <a data-fancybox="gallery1" href="./img/foto-8.jpg" class="right">Фото печатного центра</a>
                 </div>
                 <table>
@@ -689,11 +689,11 @@
                   </tr>
                   <tr>
                     <td>
-                      <p><span><a href="tel:83472463899">+7 (347) 246-38-99</a></span></p>
-                      <p><span><a href="tel:83472991097">+7 (347) 299-10-97</a></span></p>
+                      <p><span><a href="tel:83472463899" itemprop="telephone">+7 (347) 246-38-99</a></span></p>
+                      <p><span><a href="tel:83472991097" itemprop="telephone">+7 (347) 299-10-97</a></span></p>
                     </td>
-                    <td>+7 (987) 132-42-25</td>
-                    <td><a href="mailto:8marta@amegaprint.ru">8marta@amegaprint.ru</a></td>
+                    <td itemprop="telephone">+7 (987) 132-42-25</td>
+                    <td><a href="mailto:8marta@amegaprint.ru" itemprop="email">8marta@amegaprint.ru</a></td>
                     <td>
                       <a href="https://yandex.ru/maps/-/CCQ3IXslSA"><img src="./img/yandex.svg" alt=""></a>
                       <a href="https://goo.gl/maps/ZjJyGtwR5ABz6taJ9"><img src="./img/google-maps.svg" alt=""></a>
