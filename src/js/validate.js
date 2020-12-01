@@ -1,4 +1,5 @@
 //////////close all forms
+// closeAllForms()
 function closeAllForms(){
   document.querySelectorAll('.form-display').forEach(elem => {
     elem.style.display = 'none'
@@ -9,6 +10,19 @@ document.querySelector('button.btn-complete').onclick = function(e){
   e.preventDefault()
   document.querySelector('.complete').style.display = 'none'
 }
+
+// orderOnline()
+function orderOnline(){
+  document.querySelectorAll('.form-display').forEach(elem => {
+    elem.style.display = 'none'
+  })
+  document.querySelector('.complete-online-order').style.display = 'block'
+}
+document.querySelector('button.btn-complete-online-order').onclick = function(e){
+  e.preventDefault()
+  document.querySelector('.complete-online-order').style.display = 'none'
+}
+
 
 ////////// Выбор улицы
 window.onload = function () {
@@ -27,11 +41,12 @@ window.onload = function () {
     const { value } = e.target;
     if (value === '') return;
     if (e.keyCode === 13) {
-      window.location.href = `/search/q=${value}`
+      window.location.href = `/search/?q=${value}&how=r`
     }
   })
 }
 
+//////// выпадающий список
 document.querySelectorAll('.select').forEach(select => { //Выбриаем все выпадающие списки на странице
 	let selectCurrent = select.querySelector('.select__current'),
 			selectList = select.querySelector('.select__list'),

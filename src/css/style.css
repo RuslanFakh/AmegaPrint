@@ -2739,6 +2739,35 @@ footer .bottom .text a {
     overflow-y: hidden;
   }
 }
+.contact-list-main .text-vacancies {
+  font-family: Exo2;
+}
+.contact-list-main .text-vacancies input[type=text] {
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #d7dee3;
+  height: 34px;
+  padding: 0 12px;
+  font-family: Exo2;
+  font-size: 14px;
+  line-height: 15px;
+}
+.contact-list-main .text-vacancies input[type=submit] {
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Exo2;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+  background-color: #c21f13;
+  font-size: 13px;
+  padding: 6px 18px;
+  margin-left: 20px;
+}
 .contact-list-main .contact-list-blocks {
   width: 100%;
   box-sizing: border-box;
@@ -4242,20 +4271,25 @@ table tr:first-child th:last-child {
 .rotate {
   transform: rotate(45deg);
 }
-.complete {
+.complete,
+.complete-online-order {
   font-family: Exo2;
 }
-.complete .online-pay {
+.complete .online-pay,
+.complete-online-order .online-pay {
   height: unset;
 }
-.complete .top {
+.complete .top,
+.complete-online-order .top {
   display: flex;
   align-items: center;
 }
-.complete .bottom .btn-complete {
+.complete .bottom .btn-complete,
+.complete-online-order .bottom .btn-complete {
   text-align: right;
 }
-.complete .bottom .btn-complete button {
+.complete .bottom .btn-complete button,
+.complete-online-order .bottom .btn-complete button {
   text-align: center;
   cursor: pointer;
   background: #c21f13;
@@ -4271,10 +4305,12 @@ table tr:first-child th:last-child {
   margin-left: 1rem;
   max-height: 34px;
 }
-.complete .bottom .btn-complete button img {
+.complete .bottom .btn-complete button img,
+.complete-online-order .bottom .btn-complete button img {
   max-width: 17px;
 }
-.complete h2 {
+.complete h2,
+.complete-online-order h2 {
   font-family: Exo2;
   font-style: normal;
   font-weight: bold;
@@ -4284,20 +4320,35 @@ table tr:first-child th:last-child {
   margin-left: 15px !important;
 }
 @media screen and (max-width: 414px) {
-  .complete h2 {
+  .complete h2,
+  .complete-online-order h2 {
     font-size: 20px;
     max-width: 200px;
   }
 }
-.complete .pic-phone {
+.complete .pic-phone,
+.complete-online-order .pic-phone {
   min-width: 54px;
   height: 54px;
   background: #d02f2f;
   margin-right: 10px;
 }
-.complete .pic-phone img {
+.complete .pic-phone img,
+.complete-online-order .pic-phone img {
   padding: 12px 13px;
   width: 30px;
+}
+.i404 {
+  display: none;
+}
+.t404 {
+  font-family: Exo2;
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+}
+.t404 a {
+  color: #d02f2f;
 }
 .pay-online {
   display: none;
@@ -4314,7 +4365,8 @@ table tr:first-child th:last-child {
 .summary {
   display: none;
 }
-.complete {
+.complete,
+.complete-online-order {
   display: none;
 }
 #p-order-number,

@@ -18,6 +18,7 @@
   &-main {
     display: flex;
     justify-content: space-between;
+
     // flex-direction: row-reverse;
     .md-block({
       flex-direction: column-reverse;
@@ -27,6 +28,39 @@
       flex-direction: column-reverse;
       overflow-y: hidden;
     });
+    .text-vacancies{
+      font-family: Exo2;
+      // width: 100%;
+      input[type=text]{
+        // width: 90%;
+        border-radius: 2px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: 1px solid #d7dee3;
+        height: 34px;
+        padding: 0 12px;
+        font-family: Exo2;
+        font-size: 14px;
+        line-height: 15px;
+        // width: 100%;
+      }
+      input[type=submit]{
+        cursor: pointer;
+        border: none;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: Exo2;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        color: #fff;
+        background-color: #c21f13;
+        font-size: 13px;
+        padding: 6px 18px;
+        margin-left: 20px;
+
+      }
+    }
     .contact-list-blocks {
       // display: none;
       // max-width: 700px;
