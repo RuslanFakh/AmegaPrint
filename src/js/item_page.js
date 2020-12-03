@@ -10,7 +10,9 @@ document.addEventListener('keydown', function(e) {
 
 $('.slider-2-img').slick({
   slidesToShow: 1,
-  slidesToScroll: 1,
+	slidesToScroll: 1,
+	autoplay: true,
+	autoplaySpeed: 2000,
   arrows: false,
   fade: true,
   asNavFor: '.slider-2-line',
@@ -26,7 +28,8 @@ $('.slider-2-line').slick({
   accessibility: true,
   arrows: true,
   prevArrow: $('.btn-prev'),
-  nextArrow: $('.btn-next')
+	nextArrow: $('.btn-next'),
+
 });
 
 //slider
