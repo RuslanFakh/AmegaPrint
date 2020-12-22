@@ -1,0 +1,37 @@
+.teh-treb{
+  h3{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  ul{
+    padding-bottom: 10px;
+  }
+  p{
+    text-indent: 20px;
+    padding-bottom: 10px;
+  }
+  li{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 14px;
+  }
+  ul{
+    li{
+      &::before{
+        content: '•';
+        padding-right: 10px;
+      }
+    }
+  }
+  a{
+    color: #D32F2F;
+    text-decoration: none;
+  }
+  span{
+    font-weight: bold;
+    &.italic{
+      font-style: italic;
+      font-weight: normal;
+    }
+  }
+}
